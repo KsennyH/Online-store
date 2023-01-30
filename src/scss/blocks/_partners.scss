@@ -1,0 +1,13 @@
+.partners {
+    background-color: #fff;
+    padding: 1.5625rem 0;
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item:not(:last-child) {
+        margin-right: 0.625rem;
+    }
+}

@@ -1,0 +1,38 @@
+.mobile-navigation {
+    display: none;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $grey-bg;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3.75rem 1.875rem;
+    text-align: center;
+    font-size: 1.125rem;
+    &.active {
+        display: flex;
+    }
+    &__item {
+        text-align: left;
+        position: relative;
+    }
+    &__item + &__item {
+        margin-top: 0.3125rem;
+    }
+    &__link {
+        width: 100%;
+        padding: 0.625rem 1.5625rem;
+    }
+    &__link-icon {
+        top: 0.625rem;
+    } 
+}
+
+
+

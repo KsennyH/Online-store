@@ -1,0 +1,29 @@
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.3125rem 5.375rem;
+    min-height: 3.125rem;
+    border-radius: 1.875rem;
+    color: $default;
+    background-color: $red;
+    font-size: 1.125rem;
+    font-family: 'Scada', sans-serif;
+    transition: background-color 0.5s ease;
+    &--small {
+        padding: 0.3125rem 5rem;
+        min-height: 2.5rem;
+    }
+    &--price {
+        display: flex;
+        min-height: 1.875rem;
+        font-size: 1rem;
+        padding: 0.3125rem 1.25rem;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $dark-bg;
+    }
+}

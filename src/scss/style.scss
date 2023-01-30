@@ -1,0 +1,23 @@
+// base
+@import "./base/variables";
+@import "./base/reset";
+@import "./base/base";
+@import "./base/fonts";
+
+// blocks
+@import './blocks/header/header';
+@import './blocks/header/top-header';
+@import './blocks/header/search-form';
+@import './blocks/header/user';
+@import './blocks/header/address-information';
+@import './blocks/header/bottom-header';
+@import './blocks/header/navigation';
+@import './blocks/header/dropdown';
+@import './blocks/motomir';
+@import './blocks/title';
+@import './blocks/partners';
+@import './blocks/popular-products';
+@import './blocks/product-card';
+@import './blocks/moto-news';
+@import './blocks/news-card';
+@import './blocks/btn';

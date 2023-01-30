@@ -1,0 +1,24 @@
+.user {
+    &:hover,
+    &:active,
+    &:focus {
+        .user__icon {
+            path {
+                fill: $red-hover;
+            }
+        }
+    }
+    &__icon {
+        margin-right: 0.625rem;
+        path {
+            transition: all 0.5s ease;
+            fill: #fff;
+        }
+        circle {
+            fill: #2EF30E;
+        }
+    }
+    &__label {
+        color: #fff;
+    }
+}

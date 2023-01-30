@@ -1,0 +1,7 @@
+mixin partners(partnersList)
+    .partners 
+        .container 
+            .partners__list 
+                each item in partnersList 
+                    li.partners__item 
+                        img(src="img/" + item.image, alt=item.altText).partners__img

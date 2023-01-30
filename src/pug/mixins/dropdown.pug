@@ -1,0 +1,7 @@
+mixin dropdown(navItems)
+    .dropdown 
+        nav.dropdown__menu 
+            ul.dropdown__list 
+                each item in navItems
+                    li.dropdown__item
+                        a(href=item.link).dropdown__link #{item.title}

@@ -1,0 +1,31 @@
+-const motoDropdown = [{ link: '#', title: 'Мотоциклы' }, { link: '#', title: 'Мопеды' }, { link: '#', title: 'Скутеры' }, { link: '#', title: 'Квадроциклы' }, { link: '#', title: 'Гидроциклы' }, { link: '#', title: 'Снегоходы' }]
+-const technics = [{ link: '#', title: 'Мотохимия' }, { link: '#', title: 'Шины' }, { link: '#', title: 'Расходники' }, { link: '#', title: 'Лобовые стекла' }, { link: '#', title: 'Пластик' }]
+-const outfit = [{ link: '#', title: 'Шлемы' }, { link: '#', title: 'Куртки' }, { link: '#', title: 'Комбинезоны' }, { link: '#', title: 'Перчатки' }, { link: '#', title: 'Мотоботы' }, { link: '#', title: 'Аксессуары' } ]
+
+
+
+.bottom-header 
+    .container 
+        .navigation 
+            ul.navigation__list 
+                li.navigation__item 
+                    +navlink("Главная", "#", " navigation__link--active")
+                li.navigation__item 
+                    +navlink("Мототехника", "mototechnics.html")
+                    +dropdown(motoDropdown)
+                li.navigation__item 
+                    +navlink("Мотозапчасти", "outfit.html")
+                    +dropdown(technics)
+                li.navigation__item 
+                    +navlink("Экипировка", "outfit.html")
+                    +dropdown(outfit)
+                li.navigation__item 
+                    +navlink("Мотосервис", "motoservices.html")
+                li.navigation__item 
+                    +navlink("Статьи", "articles.html")
+                li.navigation__item 
+                    +navlink("Контакты", "contacts.html")
+
+                
+        
+        
