@@ -1,0 +1,630 @@
+.title {
+  font-family: "Scada", sans-serif;
+  font-weight: 700;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #888;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.none {
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header {
+  font-family: "Scada", sans-serif;
+  font-size: 1.125rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-header {
+  background-color: #414141;
+  padding: 3.125rem 0;
+}
+
+.top-header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-header__logo {
+  flex: 0 1 auto;
+  margin-right: 1.875rem;
+}
+
+.top-header__form {
+  margin-bottom: 1.5625rem;
+}
+
+.top-header__actions {
+  margin-right: 2.5rem;
+  flex: 0 1 40%;
+}
+
+.top-header__users-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form {
+  font-family: "Scada", sans-serif;
+  font-size: inherit;
+  color: #fff;
+  position: relative;
+}
+
+.search-form__input {
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 1.875rem;
+  height: 2.5rem;
+  padding: 0.5rem 0.9375rem;
+}
+
+.search-form__input:hover,
+.search-form__input:active,
+.search-form__input:focus {
+  box-shadow: -0.0625rem 0px 0.5rem 0.0625rem #ffcbcb;
+}
+
+.search-form__button {
+  position: absolute;
+  top: 0.625rem;
+  right: 0.9375rem;
+}
+
+.search-form__icon path {
+  fill: #fff;
+}
+
+.user:hover .user__icon path,
+.user:active .user__icon path,
+.user:focus .user__icon path {
+  fill: #F24444;
+}
+
+.user__icon {
+  margin-right: 0.625rem;
+}
+
+.user__icon path {
+  transition: all 0.5s ease;
+  fill: #fff;
+}
+
+.user__icon circle {
+  fill: #2EF30E;
+}
+
+.user__label {
+  color: #fff;
+}
+
+.address-information {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.address-information__item + .address-information__item {
+  margin-top: 0.625rem;
+}
+
+.address-information__link {
+  display: flex;
+}
+
+.address-information__link:hover .address-information__icon path,
+.address-information__link:hover .address-information__icon rect,
+.address-information__link:active .address-information__icon path,
+.address-information__link:active .address-information__icon rect,
+.address-information__link:focus .address-information__icon path,
+.address-information__link:focus .address-information__icon rect {
+  stroke: #F24444;
+}
+
+.address-information__icon {
+  margin-right: 0.625rem;
+}
+
+.address-information__icon path,
+.address-information__icon rect {
+  transition: all 0.5s ease;
+  stroke: #fff;
+}
+
+.address-information__icon--right {
+  order: 1;
+  margin: 0 0 0 0.625rem;
+}
+
+.address-information__schedule {
+  margin-top: 1.25rem;
+}
+
+.bottom-header {
+  background-color: #555555;
+  padding: 0.625rem 0;
+}
+
+.bottom-header__mobile-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -0.625rem;
+}
+
+.navigation__item {
+  position: relative;
+  margin-right: 0.9375rem;
+}
+
+.navigation__item:last-child {
+  margin-right: 0;
+}
+
+.navigation__item:hover .dropdown {
+  visibility: inherit;
+  opacity: 1;
+}
+
+.navigation__link {
+  padding: 0.625rem;
+}
+
+.navigation__link:hover,
+.navigation__link:active,
+.navigation__link:focus {
+  color: #F24444;
+}
+
+.navigation__link--active span {
+  border-bottom: 0.125rem solid #F30E0E;
+}
+
+.dropdown {
+  font-family: "Scada", sans-serif;
+  font-size: 1.125rem;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: 3;
+  top: 100%;
+  left: -0.625rem;
+  padding-top: 0.625rem;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.dropdown__menu {
+  background-color: #414141;
+  border-radius: 0px 0px 0.1875rem 0.1875rem;
+  min-width: 12.5rem;
+}
+
+.dropdown__list {
+  padding: 0.3125rem;
+}
+
+.dropdown__item {
+  width: 100%;
+}
+
+.dropdown__item:hover {
+  background-color: #555555;
+  color: #F24444;
+}
+
+.dropdown__link {
+  padding: 0.5rem 0.9375rem;
+}
+
+.dropdown.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.motomir {
+  padding: 2.1875rem 0;
+}
+
+.motomir * + * {
+  margin-top: 0.9375rem;
+}
+
+.motomir__text {
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.motomir__text p + p {
+  margin-top: 0.625rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.partners {
+  background-color: #fff;
+  padding: 1.5625rem 0;
+}
+
+.partners__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.partners__item:not(:last-child) {
+  margin-right: 0.625rem;
+}
+
+.popular-products {
+  padding: 4.0625rem 0;
+  font-family: "Scada", sans-serif;
+  font-size: 1.125rem;
+}
+
+.popular-products__title {
+  text-align: left;
+  margin-bottom: -1.5625rem;
+}
+
+.popular-products__btns {
+  display: flex;
+  position: absolute;
+  top: 0.625rem;
+  right: 0;
+}
+
+.popular-products__slider .swiper-button-prev::after,
+.popular-products__slider .swiper-button-next::after {
+  display: none;
+}
+
+.popular-products__slider.swiper-container {
+  padding: 2.5rem 0;
+}
+
+.popular-products__slider .swiper-button-prev,
+.popular-products__slider .swiper-button-next {
+  position: static;
+}
+
+.popular-products__slider .swiper-button-prev {
+  margin-right: 0.625rem;
+}
+
+.product-card {
+  font-family: "Scada", sans-serif;
+  font-size: 1rem;
+  position: relative;
+  background-color: #fff;
+  border-radius: 1.125rem;
+  padding: 0.625rem;
+  color: #000;
+  box-shadow: none;
+  transition: box-shadow 0.7s ease-out;
+}
+
+.product-card:hover {
+  box-shadow: -0.125rem 0.125rem 1.1875rem 0.0625rem #FFCBCB;
+}
+
+.product-card:hover .product-card__overlay {
+  opacity: 1;
+}
+
+.product-card__img {
+  height: 9.375rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.625rem;
+}
+
+.product-card__img img {
+  height: 9.375rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.product-card__info {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.product-card__title {
+  text-align: center;
+}
+
+.product-card__article {
+  display: block;
+  font-size: 0.875rem;
+  color: #888;
+  margin-bottom: 1.125rem;
+}
+
+.product-card__information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.9375rem;
+}
+
+.product-card__text {
+  font-size: 0.875rem;
+  color: #888;
+}
+
+.product-card__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(250, 231, 230, 0.8);
+  border-radius: 1.125rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.product-card__overlay-link {
+  margin-bottom: 0.9375rem;
+}
+
+.moto-news {
+  padding: 0 0 1.875rem 0;
+}
+
+.moto-news__title {
+  margin-bottom: 3.125rem;
+}
+
+.moto-news__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  gap: 1.875rem;
+  margin-bottom: 3.125rem;
+}
+
+.moto-news__btn {
+  text-align: center;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  background: #FFFFFF;
+  color: #000;
+  border-radius: 1.125rem;
+  padding: 0.9375rem;
+}
+
+.news-card__img {
+  height: 12.8125rem;
+  margin-bottom: 1.5625rem;
+}
+
+.news-card__img picture {
+  display: flex;
+  justify-content: center;
+}
+
+.news-card__img picture img {
+  height: 12.8125rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.news-card__title-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 12.5rem;
+  left: 0;
+}
+
+.news-card__information {
+  flex: 1 0 auto;
+}
+
+.news-card__name {
+  margin-bottom: 0.9375rem;
+}
+
+.news-card__name:hover {
+  color: #F30E0E;
+}
+
+.news-card__preview {
+  max-height: 9.5rem;
+  overflow: hidden;
+  margin-bottom: 0.625rem;
+  line-height: 1.2;
+}
+
+.news-card__info {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+.news-card__link {
+  text-decoration: underline;
+}
+
+.news-card__link:hover,
+.news-card__link:focus,
+.news-card__link:active {
+  color: #F30E0E;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.3125rem 5.375rem;
+  min-height: 3.125rem;
+  border-radius: 1.875rem;
+  color: #fff;
+  background-color: #F30E0E;
+  font-size: 1.125rem;
+  font-family: "Scada", sans-serif;
+  transition: background-color 0.5s ease;
+}
+
+.btn--small {
+  padding: 0.3125rem 5rem;
+  min-height: 2.5rem;
+}
+
+.btn--price {
+  display: flex;
+  min-height: 1.875rem;
+  font-size: 1rem;
+  padding: 0.3125rem 1.25rem;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: #414141;
+}
+
+@supports (-webkit-appearance:none) {
+
+}
