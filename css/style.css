@@ -193,27 +193,16 @@ body {
   fill: #fff;
 }
 
-.user:hover .user__icon path,
-.user:active .user__icon path,
-.user:focus .user__icon path {
-  fill: #F24444;
+.user {
+  display: inline-flex;
+  align-items: center;
 }
 
 .user__icon {
-  margin-right: 0.625rem;
-}
-
-.user__icon path {
-  transition: all 0.5s ease;
-  fill: #fff;
-}
-
-.user__icon circle {
-  fill: #2EF30E;
-}
-
-.user__label {
-  color: #fff;
+  display: inline-block;
+  margin-right: 15px;
+  width: 25px;
+  height: 25px;
 }
 
 .address-information {
