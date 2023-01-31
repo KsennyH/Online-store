@@ -1,4 +1,5 @@
-mixin user(link, aria, title)
+mixin user(link, aria, title, className, xlink)
     a(href=link, aria-label=aria).user
-        block 
+        svg(class="" + className) 
+            use(xlink:href="@img/sprite.svg#" + xlink)
         span.user__label #{title}
