@@ -8,15 +8,12 @@
     border-radius: 1.125rem;
     padding: 0.9375rem;
     &__img {
-        height: 12.8125rem;
+        display: flex;
+        justify-content: center;
         margin-bottom: 1.5625rem;
-        picture {
-            display: flex;
-            justify-content: center;
-            img {
-                height: 12.8125rem;
-                object-fit: contain;
-            }
+        img {
+            height: 12.8125rem;
+            object-fit: contain;
         }
     }
     &__title-link {
