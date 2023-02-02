@@ -1,0 +1,16 @@
+-const navlist = [{ class: "footer-nav__link", href: "#", text: "Мотоциклы" }, { class: "footer-nav__link", href: "#", text: "Мопеды" }, { class: "footer-nav__link", href: "#", text: "Скутеры" }, { class: "footer-nav__link", href: "#", text: "Квадроциклы" }, { class: "footer-nav__link", href: "#", text: "Гидроциклы" }, { class: "footer-nav__link", href: "#", text: "Снегоходы" }]
+-const navlist2 = [{ class: "footer-nav__link", href: "#", text: "Мотохимия" }, { class: "footer-nav__link", href: "#", text: "Шины" }, { class: "footer-nav__link", href: "#", text: "Расходники" }, { class: "footer-nav__link", href: "#", text: "Лобовые стекла" }, { class: "footer-nav__link", href: "#", text: "Пластик" }]
+-const navlist3 = [{ class: "footer-nav__link", href: "#", text: "Мотошлемы" }, { class: "footer-nav__link", href: "#", text: "Мотокуртки" }, { class: "footer-nav__link", href: "#", text: "Мотокомбинезоны" }, { class: "footer-nav__link", href: "#", text: "Мотоперчатки" }, { class: "footer-nav__link", href: "#", text: "Мотоботы" }, { class: "footer-nav__link", href: "#", text: "Аксессуары" }]
+
+
+include ./logo.pug
+include ./social-list.pug
+include ./address-information.pug
+
+
++footerNav(navlist, "Мототехника")
++footerNav(navlist2, "Мотозапчасти")
++footerNav(navlist3, "Экипировка")
+
+
+

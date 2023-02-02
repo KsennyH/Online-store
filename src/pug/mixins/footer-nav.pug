@@ -1,0 +1,8 @@
+mixin footerNav(navlist, title)
+    .footer-nav 
+        ul.footer-nav__list
+            h4.footer-nav__label #{title}
+            .footer-nav__content
+                each item in navlist 
+                    li.footer-nav__item
+                        +link(item.class, item.href, item.text)
