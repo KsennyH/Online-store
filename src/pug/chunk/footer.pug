@@ -2,15 +2,25 @@
 -const navlist2 = [{ class: "footer-nav__link", href: "#", text: "Мотохимия" }, { class: "footer-nav__link", href: "#", text: "Шины" }, { class: "footer-nav__link", href: "#", text: "Расходники" }, { class: "footer-nav__link", href: "#", text: "Лобовые стекла" }, { class: "footer-nav__link", href: "#", text: "Пластик" }]
 -const navlist3 = [{ class: "footer-nav__link", href: "#", text: "Мотошлемы" }, { class: "footer-nav__link", href: "#", text: "Мотокуртки" }, { class: "footer-nav__link", href: "#", text: "Мотокомбинезоны" }, { class: "footer-nav__link", href: "#", text: "Мотоперчатки" }, { class: "footer-nav__link", href: "#", text: "Мотоботы" }, { class: "footer-nav__link", href: "#", text: "Аксессуары" }]
 
+.footer 
+    .footer__content 
+        .container 
+            .footer__inner 
+                .footer__social-info 
+                    include ./logo.pug
+                    include ./social-list.pug
+                .footer__info-content 
+                    include ./address-information.pug
+                        .address__information__schedule
+                            include ./schedule.pug
+                    +footerNav(navlist, "Мототехника")
+                    +footerNav(navlist2, "Мотозапчасти")
+                    +footerNav(navlist3, "Экипировка")
+    .footer__copyright
+        .container 
+            p © Магазин мототехники в Иваново 2018 - 2022
 
-include ./logo.pug
-include ./social-list.pug
-include ./address-information.pug
 
-
-+footerNav(navlist, "Мототехника")
-+footerNav(navlist2, "Мотозапчасти")
-+footerNav(navlist3, "Экипировка")
 
 
 
