@@ -1,0 +1,9 @@
+mixin toggle-block(title, inputs)
+    .toggle-block 
+        h5.toggle-block__title.filter-title #{title}
+        .toggle-block__body 
+            .toggle-block__inputs
+                each item in inputs
+                    label.toggle-block__label
+                        +input( item.id, item.min, item.max, item.placeholder, item.className, item.type)
+            .toggle-block__range

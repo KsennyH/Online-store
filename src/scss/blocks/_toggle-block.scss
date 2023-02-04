@@ -1,0 +1,22 @@
+.toggle-block {
+    &__title {
+        margin-bottom: 1.125rem;
+    }
+    &__inputs {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 1.5625rem;
+    }
+    &__label {
+        margin-bottom: 0.3125rem;
+    }
+    &__input {
+        width: 6.25rem;
+        height: 1.875rem;
+        border-radius: 0.125rem;
+        padding: 0.3125rem;
+    }
+}
+
+
