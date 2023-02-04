@@ -1,0 +1,14 @@
+nav.sorting 
+    ul.sorting__list 
+        li.sorting__item 
+            button.sorting-btn.sorting-btn--icon.sorting-btn--icon-arrow-up.active
+                span По цене
+        li.sorting__item 
+            button.sorting-btn.sorting-btn--icon.sorting-btn--icon-arrow-down
+                span По цене
+        li.sorting__item
+            +btn("sorting-btn", "По популярности")
+        li.sorting__item
+            +btn("sorting-btn", "По алфавиту")
+
+
