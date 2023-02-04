@@ -1,0 +1,6 @@
+mixin cards(cardslist)
+    .products-block
+        ul.products-block__list 
+            each item in cardslist 
+                li.products-block__item 
+                    +product-card(item.image, item.title, item.title, item.price, item.text)
