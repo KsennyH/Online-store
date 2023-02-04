@@ -1,0 +1,16 @@
+.pagination 
+    ul.pagination__list 
+        li.pagination__item 
+            a.pagination__link.pagination__link--no-border
+                svg(width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg").pagination__link-icon.pagination__link-icon--disabled
+                    path(d="M31 8L1 8M1 8L7.5625 15M1 8L7.5625 1" stroke="white")
+        li.pagination__item 
+            +link("pagination__link pagination__link--active", "#", "1")
+        li.pagination__item 
+            +link("pagination__link", "#", "2")
+        li.pagination__item 
+            +link("pagination__link", "#", "3")
+        li.pagination__item 
+            a(href="#").pagination__link.pagination__link--no-border
+                svg(width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg").pagination__link-icon
+                    path(d="M0 8H30M30 8L23.4375 1M30 8L23.4375 15" stroke="white")
