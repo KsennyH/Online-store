@@ -796,3 +796,22 @@ body {
 .pagination__link--no-border:hover {
   background-color: transparent;
 }
+
+.toggle-block__title {
+  margin-bottom: 1.125rem;
+}
+.toggle-block__inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1.5625rem;
+}
+.toggle-block__label {
+  margin-bottom: 0.3125rem;
+}
+.toggle-block__input {
+  width: 6.25rem;
+  height: 1.875rem;
+  border-radius: 0.125rem;
+  padding: 0.3125rem;
+}
