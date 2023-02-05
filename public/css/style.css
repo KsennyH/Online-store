@@ -1,4 +1,4 @@
-.filter-title, .title {
+.feature-top__title, .filter-title, .title {
   font-family: "Scada", sans-serif;
   font-weight: 700;
 }
@@ -1037,7 +1037,7 @@ body {
   margin-right: 0;
 }
 
-.btn-color.active .btn-color__tab {
+.btn-color.active .btn-color__tab, .btn-color:hover .btn-color__tab {
   border-bottom: 0.1875rem solid #414141;
   box-shadow: -0.125rem 0.125rem 0.1875rem rgba(0, 0, 0, 0.4);
 }
@@ -1046,6 +1046,7 @@ body {
   width: 3.125rem;
   height: 1.25rem;
   border-radius: 3px;
+  transition: box-shadow 0.2s ease;
 }
 .btn-color__tab--white {
   background-color: #fff;
@@ -1061,4 +1062,41 @@ body {
 }
 .btn-color__tab--grey {
   background-color: #c6bcab;
+}
+
+.feature-top {
+  padding: 1.125rem 0;
+  background-color: #414141;
+}
+.feature-top__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-top__title {
+  font-size: 1.125rem;
+  margin-right: 1.125rem;
+}
+.feature-top__btn {
+  width: 1.125rem;
+  height: 1.125rem;
+  border: 0.0625rem solid #FFFFFF;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.feature-top__btn.open .feature-top__sircle {
+  transform: translate(-50%, -50%) rotate(0);
+}
+.feature-top__sircle {
+  width: 0.625rem;
+  height: 0.0625rem;
+  background-color: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+}
+.feature-top__sircle + .feature-top__sircle {
+  transform: translate(-50%, -50%) rotate(90deg);
 }
