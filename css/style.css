@@ -1000,3 +1000,65 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.875rem;
 }
+
+.card-images__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+.card-images__image img {
+  height: 18.375rem;
+  object-fit: contain;
+}
+.card-images__image img.active {
+  display: block;
+}
+
+.color-block {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Scada", sans-serif;
+}
+.color-block__label {
+  display: block;
+  margin-right: 2.5rem;
+}
+.color-block__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.color-block__item {
+  margin-right: 0.625rem;
+}
+.color-block__item:last-child {
+  margin-right: 0;
+}
+
+.btn-color.active .btn-color__tab {
+  border-bottom: 0.1875rem solid #414141;
+  box-shadow: -0.125rem 0.125rem 0.1875rem rgba(0, 0, 0, 0.4);
+}
+.btn-color__tab {
+  display: inline-block;
+  width: 3.125rem;
+  height: 1.25rem;
+  border-radius: 3px;
+}
+.btn-color__tab--white {
+  background-color: #fff;
+}
+.btn-color__tab--red {
+  background-color: #F30E0E;
+}
+.btn-color__tab--black {
+  background-color: #000;
+}
+.btn-color__tab--yellow {
+  background-color: #e5f749;
+}
+.btn-color__tab--grey {
+  background-color: #c6bcab;
+}
