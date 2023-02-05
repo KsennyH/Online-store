@@ -14,13 +14,37 @@ block content
                         +breadcrumbs("breadcrumbs__link", "index.html", "Главная")
                         li.breadcrumbs__item 
                             span.breadcrumbs__link.breadcrumbs__link--active Мототехника
-
-            include ./chunk/price-block.pug
-            include ./chunk/size-block.pug
-            include ./chunk/sorting.pug
-            include ./chunk/technics-block.pug
-            include ./chunk/pagination.pug
-            .catalog__text
-                p Представляем вашему вниманию каталог мотоциклов с ценами и характеристиками. На данной странице представлены практически все бренды мотоциклов, скутеров и квадроциклов, продажа которых осуществляется на территории Ивановской области в официальных автосалонах. Каталог мототехники содержит подробную информацию о характеристиках и актуальных ценах на новые модели. 
-                p Благодаря разработанным сервисам, любой посетитель сам может сделать выбор: на сайте доступно сравнение мотоциклов, скутеров и квадроциклов по различным параметрам. Также есть возможность самостоятельно, задав характеристики мотоцикла, подобрать мототехнику.
-                           
+            .catalog
+                .container
+                    .catalog__inner
+                        .catalog__filter-btn 
+                            img(src="@img/filter.svg", alt="Фильтр")
+                        aside.catalog__filter
+                            form(action="/").filter
+                                .filter__price-block
+                                    include ./chunk/price-block.pug
+                                .filter__technics-block
+                                    include ./chunk/checkbox-technics.pug
+                                .filter__type-block 
+                                    include ./chunk/checkbox-mototype.pug
+                                .filter__brands-block 
+                                    include ./chunk/checkbox-brands.pug
+                                .filter__size-block 
+                                    include ./chunk/size-block.pug
+                                .filter__mileage-block 
+                                    include ./chunk/mileage-block.pug
+                                .filter__btn 
+                                    button(type="submit").btn.btn--small Показать
+                                .filter__reset 
+                                    button.filter__reset-btn Сбросить настройки
+                        .catalog__products
+                            .catalog__sorting 
+                                include ./chunk/sorting.pug
+                            .catalog__cards 
+                                include ./chunk/technics-block.pug
+                            .catalog__pagination
+                                include ./chunk/pagination.pug
+                            .catalog__text
+                                p Представляем вашему вниманию каталог мотоциклов с ценами и характеристиками. На данной странице представлены практически все бренды мотоциклов, скутеров и квадроциклов, продажа которых осуществляется на территории Ивановской области в официальных автосалонах. Каталог мототехники содержит подробную информацию о характеристиках и актуальных ценах на новые модели. 
+                                p Благодаря разработанным сервисам, любой посетитель сам может сделать выбор: на сайте доступно сравнение мотоциклов, скутеров и квадроциклов по различным параметрам. Также есть возможность самостоятельно, задав характеристики мотоцикла, подобрать мототехнику.
+        include ./chunk/footer.pug                                

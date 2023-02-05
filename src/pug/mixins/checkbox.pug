@@ -1,0 +1,5 @@
+mixin checkbox(text, className="checkbox__input", type="checkbox", checked="")
+    label.checkbox
+        input(class="" + className, type=type, checked=checked) 
+        span.checkbox__custom.custom-checkbox
+        span.checkbox__name #{text}

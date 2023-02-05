@@ -1,0 +1,7 @@
+mixin checkbox-block(title, checkList)
+    .checkbox-block 
+        h5.checkbox-block__title.filter-title #{title}
+        ul.checkbox-block__list
+            each item in checkList 
+                li.checkbox-block__item 
+                    +checkbox(item.text)

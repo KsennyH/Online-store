@@ -1,0 +1,5 @@
+mixin radio(name, text, className="radio__input", type="radio")
+    label.radio
+        input(name=name, class="" + className, type=type)
+        span.radio__custom.custom-radio
+        span.radio__name #{text}

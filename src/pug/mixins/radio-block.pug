@@ -1,0 +1,7 @@
+mixin radio-block(title, radioList)
+    .radio-block 
+        h5.radio-block__title.filter-title #{title}
+        ul.radio-block__list 
+            each item in radioList 
+                li.radio-block__item 
+                    +radio(item.name, item.text)
