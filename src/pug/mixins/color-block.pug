@@ -1,0 +1,7 @@
+mixin color-block(colors)
+    .color-block 
+        span.color-block__label Цвет:
+        ul.color-block__list 
+            each item in colors
+                li.color-block__item 
+                    +btn-color(item.dataColor, item.colorClass)
