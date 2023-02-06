@@ -1,0 +1,6 @@
+mixin characteristics(title, list)
+    .characteristics 
+        h5.characteristics__title #{title}
+        .characteristics__wrapper 
+            each item in list
+                p #{item.paragraph}

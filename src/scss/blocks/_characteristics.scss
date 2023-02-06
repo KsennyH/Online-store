@@ -1,0 +1,14 @@
+.characteristics {
+    flex: 0 0 30%;
+    p {
+        font-weight: 300;
+    }
+    p + p {
+        margin-top: 0.4375rem;
+    }
+    &__title {
+        @extend %title-font;
+        font-size: 1.125rem;
+        margin-bottom: 0.9375rem;
+    }
+}

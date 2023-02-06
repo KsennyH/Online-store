@@ -25,4 +25,9 @@ block content
                     block color-tabs
                         .product__color
                             include ./chunk/moto-color-block.pug
-            include ./chunk/feature-top.pug
+            .feature 
+                include ./chunk/feature-top.pug
+                .feature__bottom
+                    .container 
+                        .feature__inner
+                            include ./chunk/moto-features.pug
