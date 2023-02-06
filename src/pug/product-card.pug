@@ -17,17 +17,31 @@ block content
                         li.breadcrumbs__item 
                             span.breadcrumbs__link.breadcrumbs__link--active Wels Impulse 250сс
         
-            .container
-                +product("Wels Impulse 250сс", "Артикул: 26894", "150 000 руб.")
-                    block images
-                        .product__images  
-                            include ./chunk/moto-card-images.pug
-                    block color-tabs
-                        .product__color
-                            include ./chunk/moto-color-block.pug
-            .feature 
-                include ./chunk/feature-top.pug
-                .feature__bottom
+            .card-block
+                .card-block__info
+                    .container
+                        +product("Wels Impulse 250сс", "Артикул: 26894", "150 000 руб.")
+                            block images
+                                .product__images  
+                                    include ./chunk/moto-card-images.pug
+                            block color-tabs
+                                .product__color
+                                    include ./chunk/moto-color-block.pug
+                .card-block__feature
+                    .feature 
+                        include ./chunk/feature-top.pug
+                        .feature__bottom
+                            .container 
+                                .feature__inner
+                                    include ./chunk/moto-features.pug
+                .card-block__text 
                     .container 
-                        .feature__inner
-                            include ./chunk/moto-features.pug
+                        p Спортбайк начального уровня. Небольшой объем двигателя (250сс) и вес мотоцикла. Спортивная посадка и хорошая ветрозащита на скорости. Благодаря этому мотоцикл легко управляется даже пилотом без опыта вождения. Маленький расход топлива позволяет преодолевать большие расстояния на одном баке.
+                        p Агрессивный спортивный дизайн привлекает внимание. Заметная на дороге расцветка. Яркая линзовая оптика отлично справляется со своими обязанностями. Панель приборов хорошо считывается даже при ярком солнечном свете, что является очень важной функцией.
+                        p Это отличный вариант для тех кто хочет спортбайк небольшой кубатуры с хорошими техническими данными, надежным 165-м двигателем и броским экстерьером.
+                        p Производитель не скрывает того что Yamaha R1 послужила прообразом для создания IMPULSE 250cc. Даже цвет был позаимствован от юбилейной модели 2012 года.
+                        p Освещение на дороге обеспечивает фара с двумя линзами и LED подсветкой – ночь теперь дороге не помеха. Фары ближнего и дальнего света разделены, как и на R1. Свет они излучают яркий и сверхточный. В отличие от своего прототипа передние сигналы поворота на IMPULSE переехали с боковых обтекателей чуть ближе к головной оптике. 
+                        p Мотоцикл, который простит начинающему райдеру первые ошибки и даст начальные навыки для езды на таком классе как «спорт».
+            include ./chunk/partners.pug
+
+        include ./chunk/footer.pug
