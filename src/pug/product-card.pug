@@ -17,6 +17,12 @@ block content
                         li.breadcrumbs__item 
                             span.breadcrumbs__link.breadcrumbs__link--active Wels Impulse 250сс
         
-            include ./chunk/moto-card-images.pug
-            include ./chunk/moto-color-block.pug
+            .container
+                +product("Wels Impulse 250сс", "Артикул: 26894", "150 000 руб.")
+                    block images
+                        .product__images  
+                            include ./chunk/moto-card-images.pug
+                    block color-tabs
+                        .product__color
+                            include ./chunk/moto-color-block.pug
             include ./chunk/feature-top.pug

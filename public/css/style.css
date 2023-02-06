@@ -1,4 +1,4 @@
-.feature-top__title, .filter-title, .title {
+.product__price, .product__title, .feature-top__title, .filter-title, .title {
   font-family: "Scada", sans-serif;
   font-weight: 700;
 }
@@ -1099,4 +1099,43 @@ body {
 }
 .feature-top__sircle + .feature-top__sircle {
   transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+}
+.product__images {
+  flex: 0 0 46%;
+  margin-right: 1.875rem;
+}
+.product__content {
+  flex: 0 0 35%;
+}
+.product__title {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 0.625rem;
+}
+.product__article {
+  display: inline-block;
+  font-family: "Scada", sans-serif;
+  margin-bottom: 2.1875rem;
+}
+.product__color {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Scada", sans-serif;
+  margin-bottom: 2.1875rem;
+}
+.product__price {
+  font-size: 1.25rem;
+  display: inline-block;
+  margin-bottom: 2.1875rem;
+}
+.product__buttons {
+  display: flex;
+}
+.product__btn {
+  margin-right: 0.625rem;
 }
