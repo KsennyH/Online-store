@@ -21,4 +21,10 @@ block content
                         .articles__news
                             include ./chunk/news.pug
                         .articles__aside
-                            include ./chunk/category.pug
+                            .article-aside 
+                                .article-aside__search
+                                    include ./chunk/search-form.pug
+                                .article-aside__category
+                                    include ./chunk/category.pug
+                                .article-aside__tags
+                                    include ./chunk/tags.pug

@@ -1,0 +1,7 @@
+mixin tags(list)
+    .tags 
+        h5.tags__title Теги
+        ul.tags__list 
+            each item in list 
+                li.tags__item 
+                    +link(item.class="tags__link", item.href="#", item.text)
