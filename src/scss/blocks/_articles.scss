@@ -1,0 +1,14 @@
+.articles {
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__news {
+        flex: 0 1 67%;
+        margin-right: 1.875rem;
+    }
+    &__aside {
+        flex: 0 0 30%;
+    }
+}

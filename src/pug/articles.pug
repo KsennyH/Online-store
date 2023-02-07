@@ -15,4 +15,9 @@ block content
                         li.breadcrumbs__item 
                             span.breadcrumbs__link.breadcrumbs__link--active Статьи
             
-            include ./chunk/news.pug
+            .articles 
+                .container 
+                    .articles__wrapper
+                        .articles__news
+                            include ./chunk/news.pug
+                        .articles__aside
