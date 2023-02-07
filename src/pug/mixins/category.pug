@@ -1,0 +1,7 @@
+mixin category(list)
+    .category 
+        h5.category__title Категории
+        ul.category__list 
+            each item in list 
+                li.category__item 
+                    +link(item.class="category__link", item.href="#", item.text)

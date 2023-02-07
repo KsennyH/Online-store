@@ -1,0 +1,19 @@
+.category {
+    font-family: 'Scada', sans-serif;
+    &__title {
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    &__item + &__item {
+        margin-top: 0.9375rem;
+    }
+    &__link {
+        font-size: 1.125rem;
+        color: $default;
+        transition: color 0.5s ease-in-out;
+        &:hover {
+            color: $red-hover;
+        }
+    }
+}
