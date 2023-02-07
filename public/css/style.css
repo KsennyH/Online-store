@@ -1192,3 +1192,48 @@ body {
 .card-block__text p + p {
   margin-top: 0.625rem;
 }
+
+.article {
+  position: relative;
+}
+.article__image {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+.article__image img {
+  height: 23.75rem;
+  object-fit: contain;
+}
+.article__content {
+  background-color: #414141;
+  padding: 1.875rem 1.5625rem;
+  border-radius: 0 0 1.25rem 1.25rem;
+}
+.article__link {
+  text-decoration: underline;
+  margin-bottom: 0.9375rem;
+}
+.article__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 9.6875rem;
+  right: 0;
+  left: 0;
+}
+.article__text {
+  max-height: 5.25rem;
+  overflow: hidden;
+  margin-bottom: 1.5625rem;
+}
+.article__text p {
+  line-height: 1.8;
+}
+.article__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Scada", sans-serif;
+  font-size: 1rem;
+}

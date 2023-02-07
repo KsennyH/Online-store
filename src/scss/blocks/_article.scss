@@ -1,0 +1,44 @@
+.article {
+    position: relative;
+    &__image {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        img {
+            height: 23.75rem;
+            object-fit: contain;
+        }
+    }
+    &__content {
+        background-color: $dark-bg;
+        padding: 1.875rem 1.5625rem;
+        border-radius: 0 0 1.25rem 1.25rem;
+    }
+    &__link {
+        text-decoration: underline;
+        margin-bottom: 0.9375rem;
+    }
+    &__link::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 9.6875rem;
+        right: 0;
+        left: 0;
+    }
+    &__text {
+        max-height: 5.25rem;
+        overflow: hidden;
+        margin-bottom: 1.5625rem;
+        p {
+            line-height: 1.8;
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Scada', sans-serif;
+        font-size: 1rem;
+    }
+}
