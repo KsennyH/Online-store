@@ -1,0 +1,27 @@
+.article-pagination {
+    padding: 1.25rem 1.5625rem;
+    font-family: 'Scada', sans-serif;
+    font-size: 1.125rem;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        margin-right: 1.875rem;
+        flex: 0 1 18.75rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__icon {
+        &--disabled path{
+            stroke: #b1b9b9;
+        }
+    }
+}
