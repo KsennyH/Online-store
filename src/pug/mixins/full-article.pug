@@ -1,0 +1,13 @@
+mixin full-article(img, alt, title, preview, datetime, time, author)
+    .full-article 
+        .full-article__image 
+            img(src="@img/" + img, alt=alt)
+        .full-article__content 
+            h2.full-article__title.title #{title}
+            .full-article__preview 
+                p #{preview}
+            .full-article__text 
+                block text
+            .full-article__info 
+                time(datetime=datetime).full-article__date #{time}
+                span.full-article__author #{author}

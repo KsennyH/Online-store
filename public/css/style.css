@@ -1313,3 +1313,39 @@ body {
 .article-aside__category {
   margin-bottom: 2.5rem;
 }
+
+.full-article__image {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+.full-article__image img {
+  height: 23.75rem;
+  object-fit: contain;
+}
+.full-article__content {
+  background-color: #414141;
+  padding: 1.875rem 1.5625rem;
+  border-radius: 0 0 1.25rem 1.25rem;
+  line-height: 1.8;
+}
+.full-article__title {
+  margin-bottom: 0.9375rem;
+}
+.full-article__preview {
+  margin-bottom: 1.5625rem;
+}
+.full-article__text {
+  font-weight: 300;
+  margin-bottom: 1.5625rem;
+}
+.full-article__text p + p {
+  margin-top: 0.9375rem;
+}
+.full-article__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Scada", sans-serif;
+  font-size: 1rem;
+}
