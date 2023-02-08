@@ -1349,3 +1349,29 @@ body {
   font-family: "Scada", sans-serif;
   font-size: 1rem;
 }
+
+.article-pagination {
+  padding: 1.25rem 1.5625rem;
+  font-family: "Scada", sans-serif;
+  font-size: 1.125rem;
+}
+.article-pagination__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article-pagination__item {
+  margin-right: 1.875rem;
+  flex: 0 1 18.75rem;
+}
+.article-pagination__item:last-child {
+  margin-right: 0;
+}
+.article-pagination__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.article-pagination__icon--disabled path {
+  stroke: #b1b9b9;
+}
