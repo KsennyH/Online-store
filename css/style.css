@@ -1,4 +1,4 @@
-.add-comment__title, .comment__author, .characteristics__title, .product__price, .product__title, .feature-top__title, .filter-title, .title {
+.comments__title, .add-comment__title, .comment__author, .characteristics__title, .product__price, .product__title, .feature-top__title, .filter-title, .title {
   font-family: "Scada", sans-serif;
   font-weight: 700;
 }
@@ -1441,4 +1441,34 @@ body {
 }
 .add-comment__textarea:hover, .add-comment__textarea:active, .add-comment__textarea:focus {
   box-shadow: -0.0625rem 0px 0.5rem 0.0625rem #ffcbcb;
+}
+
+.comments {
+  padding: 1.5625rem 0;
+}
+.comments__top {
+  margin-bottom: 2.8125rem;
+}
+.comments__title {
+  font-size: 1.125rem;
+  margin-bottom: 1.5625rem;
+}
+.comments__item {
+  margin-bottom: 0.625rem;
+}
+.comments__item:last-child {
+  margin-bottom: 0;
+}
+
+.blog-page__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.blog-page__article {
+  flex: 0 1 48.75rem;
+  margin-right: 1.875rem;
+}
+.blog-page__aside {
+  flex: 0 0 30%;
 }
