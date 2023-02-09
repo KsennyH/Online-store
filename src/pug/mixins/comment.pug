@@ -1,0 +1,5 @@
+mixin comment(name, text, datetime, time)
+    .comment 
+        span.comment__author #{name}
+        p.comment__text #{text}
+        time(datetime=datetime).comment__date #{time}

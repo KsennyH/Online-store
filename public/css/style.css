@@ -1,4 +1,4 @@
-.characteristics__title, .product__price, .product__title, .feature-top__title, .filter-title, .title {
+.comment__author, .characteristics__title, .product__price, .product__title, .feature-top__title, .filter-title, .title {
   font-family: "Scada", sans-serif;
   font-weight: 700;
 }
@@ -1374,4 +1374,25 @@ body {
 }
 .article-pagination__icon--disabled path {
   stroke: #b1b9b9;
+}
+
+.comment {
+  background-color: #555555;
+  border-radius: 0.1875rem;
+  padding: 1.25rem 1.5625rem;
+}
+.comment__author {
+  display: block;
+  font-size: 1.125rem;
+  margin-bottom: 0.625rem;
+}
+.comment__text {
+  margin-bottom: 0.625rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+.comment__date {
+  display: block;
+  font-family: "Scada", sans-serif;
+  font-size: 0.875rem;
 }
