@@ -1,0 +1,14 @@
+.blog-page {
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__article {
+        flex: 0 1 48.75rem;
+        margin-right: 1.875rem;
+    }
+    &__aside {
+        flex: 0 0 30%;
+    }
+}
