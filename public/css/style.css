@@ -804,7 +804,7 @@ body {
 .filter__settings {
   padding: 1.5625rem 1.125rem;
 }
-.filter__price-block, .filter__technics-block, .filter__brands-block, .filter__size-block, .filter__mileage-block, .filter__type-block {
+.filter__price-block, .filter__technics-block, .filter__brands-block, .filter__size-block, .filter__mileage-block, .filter__material-block, .filter__type-block {
   margin-bottom: 30px;
 }
 .filter__btn {

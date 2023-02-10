@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="plagins/nouislider.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&amp;family=Scada:wght@400;700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;1,700&amp;display=swap"/>
+    <title>Экипировка</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"> 
+        <div class="top-header"> 
+          <div class="container"> 
+            <div class="top-header__inner"> 
+              <div class="top-header__logo"> 
+                <div class="logo"> <a class="logo__link" href="#"><img class="logo__img" src="img/header-logo.png" alt="Logo"/></a></div>
+              </div>
+              <div class="top-header__actions"> 
+                <div class="top-header__form"> 
+                  <form class="search-form" action="/">
+                    <input class="search-form__input" type="text"/>
+                    <button class="search-form__button">
+                      <svg class="search-form__icon"> 
+                        <use xlink:href="img/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+                <div class="top-header__users-wrapper"> <a class="user" href="login.html" aria-label="Личный кабинет">
+                    <svg class="user__icon"> 
+                      <use xlink:href="img/sprite.svg#user-login"></use>
+                    </svg><span class="user__label">Личный кабинет</span></a><a class="user" href="busket.html" aria-label="Корзина">
+                    <svg class="user__icon"> 
+                      <use xlink:href="img/sprite.svg#user-busket"></use>
+                    </svg><span class="user__label">Корзина</span></a>
+                </div>
+              </div>
+              <div class="top-header__info"> 
+                <div class="address-information"> 
+                  <ul class="address-information__list address-information__list--mobile"> 
+                    <li class="address-information__item"> <a class="address-information__link" href="contacts.html">
+                        <svg class="address-information__icon"> 
+                          <use xlink:href="img/sprite.svg#placeholder"></use>
+                        </svg><span class="address-information__label">Иваново, ул. Сакко, 54</span></a></li>
+                    <li class="address-information__item"> <a class="address-information__link address-information__link--phone" href="tel:84932134581">
+                        <svg class="address-information__icon"> 
+                          <use xlink:href="img/sprite.svg#phone"></use>
+                        </svg><span class="address-information__label">Тел. 8 (4932) 134-581</span></a></li>
+                    <li class="address-information__item"> <a class="address-information__link" href="mailto:motomirIvanovo@email.com">
+                        <svg class="address-information__icon"> 
+                          <use xlink:href="img/sprite.svg#mail"></use>
+                        </svg><span class="address-information__label">motomirIvanovo@email.com</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-header"> 
+          <div class="container"> 
+            <div class="navigation"> 
+              <ul class="navigation__list"> 
+                <li class="navigation__item"> <a class="navigation__link navigation__link--active" href="#"> <span>Главная</span></a>
+                </li>
+                <li class="navigation__item"> <a class="navigation__link" href="mototechnics.html"> <span>Мототехника</span></a>
+                  <div class="dropdown"> 
+                    <nav class="dropdown__menu"> 
+                      <ul class="dropdown__list"> 
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Мотоциклы</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Мопеды</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Скутеры</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Квадроциклы</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Гидроциклы</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Снегоходы</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </li>
+                <li class="navigation__item"> <a class="navigation__link" href="outfit.html"> <span>Мотозапчасти</span></a>
+                  <div class="dropdown"> 
+                    <nav class="dropdown__menu"> 
+                      <ul class="dropdown__list"> 
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Мотохимия</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Шины</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Расходники</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Лобовые стекла</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Пластик</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </li>
+                <li class="navigation__item"> <a class="navigation__link" href="outfit.html"> <span>Экипировка</span></a>
+                  <div class="dropdown"> 
+                    <nav class="dropdown__menu"> 
+                      <ul class="dropdown__list"> 
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Шлемы</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Куртки</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Комбинезоны</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Перчатки</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Мотоботы</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Аксессуары</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </li>
+                <li class="navigation__item"> <a class="navigation__link" href="motoservices.html"> <span>Мотосервис</span></a>
+                </li>
+                <li class="navigation__item"> <a class="navigation__link" href="articles.html"> <span>Статьи</span></a>
+                </li>
+                <li class="navigation__item"> <a class="navigation__link" href="contacts.html"> <span>Контакты</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main"> 
+        <div class="breadcrumbs"> 
+          <div class="container"> 
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+              <li class="breadcrumbs__item"> <span class="breadcrumbs__link breadcrumbs__link--active">Экипировка</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="catalog">
+          <div class="container">
+            <div class="catalog__inner">
+              <div class="catalog__filter-btn"> <img src="img/filter.svg" alt="Фильтр"/></div>
+              <aside class="catalog__filter">
+                <form class="filter" action="/">
+                  <div class="filter__price-block">
+                    <div class="toggle-block"> 
+                      <h5 class="toggle-block__title filter-title">Цена (руб)</h5>
+                      <div class="toggle-block__body"> 
+                        <div class="toggle-block__inputs">
+                          <label class="toggle-block__label">
+                            <input class="toggle-block__input" id="price-input-0" min="500" max="999999" placeholder="500" type="number"/>
+                          </label>
+                          <label class="toggle-block__label">
+                            <input class="toggle-block__input" id="price-input-1" min="500" max="999999" placeholder="999999" type="number"/>
+                          </label>
+                        </div>
+                        <div class="toggle-block__range"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter__technics-block">
+                    <div class="checkbox-block"> 
+                      <h5 class="checkbox-block__title filter-title">Тип товара</h5>
+                      <ul class="checkbox-block__list">
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">Шлемы</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">Куртки</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">Брюки</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">Комбинезоны</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">Перчатки</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">Мотоботы</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">Аксессуары</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter__type-block"> 
+                    <div class="checkbox-block"> 
+                      <h5 class="checkbox-block__title filter-title">Применяемость</h5>
+                      <ul class="checkbox-block__list">
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">Эндуро/кросс</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">Спорт</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">Город</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">Туризм</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter__brands-block"> 
+                    <div class="checkbox-block"> 
+                      <h5 class="checkbox-block__title filter-title">Бренд</h5>
+                      <ul class="checkbox-block__list">
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">SHOEI</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">ALPINESTARS</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">BIKERS</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">EVS</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">GO PRO</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">IXS</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">KAMIK</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">SPYKE</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">MCP</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">STADLER</span>
+                          </label>
+                        </li>
+                        <li class="checkbox-block__item"> 
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked=""/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">VANESSA</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter__material-block"> 
+                    <div class="radio-block"> 
+                      <h5 class="radio-block__title filter-title">Материал</h5>
+                      <ul class="radio-block__list"> 
+                        <li class="radio-block__item"> 
+                          <label class="radio">
+                            <input class="radio__input" name="material" type="radio"/><span class="radio__custom custom-radio"></span><span class="radio__name">Кожа</span>
+                          </label>
+                        </li>
+                        <li class="radio-block__item"> 
+                          <label class="radio">
+                            <input class="radio__input" name="material" type="radio"/><span class="radio__custom custom-radio"></span><span class="radio__name">Заменитель</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter__btn"> 
+                    <button class="btn btn--small" type="submit">Показать</button>
+                  </div>
+                  <div class="filter__reset"> 
+                    <button class="filter__reset-btn">Сбросить настройки</button>
+                  </div>
+                </form>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
