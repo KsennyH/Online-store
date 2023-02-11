@@ -25,6 +25,9 @@
         font-family: 'Scada', sans-serif;
         margin-bottom: 2.1875rem;
     }
+    &__size {
+        margin-bottom: 2.1875rem;
+    }
     &__price {
         @extend %title-font;
         font-size: 1.25rem;

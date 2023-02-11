@@ -1,0 +1,31 @@
+extends ./layout/app
+
+block variables
+    - const title = "Экипировка";
+
+block content
+    .wrapper
+        include ./chunk/header.pug
+
+        main.main
+            .breadcrumbs 
+                .container 
+                    ul.breadcrumbs__list
+                        +breadcrumbs("breadcrumbs__link", "index.html", "Главная")
+                        +breadcrumbs("breadcrumbs__link", "outfit.html", "Экипировка")
+                        +breadcrumbs("breadcrumbs__link", "#", "Шлемы")
+                        li.breadcrumbs__item 
+                            span.breadcrumbs__link.breadcrumbs__link--active SHOEI Мотошлем NEOTEC EXCURSION
+            .card-block
+                .card-block__info
+                    .container
+                        +product("SHOEI Мотошлем NEOTEC EXCURSION", "Артикул: 26673", "50 000 руб.")
+                            block images
+                                .product__images  
+                                    include ./chunk/outfit-card-images.pug
+                            block color-tabs
+                                .product__color
+                                    include ./chunk/outfit-color-block.pug
+                            block size 
+                                .product__size 
+                                    include ./chunk/outfit-size-block.pug

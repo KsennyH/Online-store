@@ -1128,6 +1128,9 @@ body {
   font-family: "Scada", sans-serif;
   margin-bottom: 2.1875rem;
 }
+.product__size {
+  margin-bottom: 2.1875rem;
+}
 .product__price {
   font-size: 1.25rem;
   display: inline-block;
@@ -1471,4 +1474,31 @@ body {
 }
 .blog-page__aside {
   flex: 0 0 30%;
+}
+
+.size-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Scada", sans-serif;
+}
+.size-block__list {
+  display: flex;
+  align-items: center;
+}
+.size-block__item {
+  margin-right: 0.625rem;
+}
+.size-block__item:last-child {
+  margin-right: 0;
+}
+.size-block__btn {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0.1875rem;
+  padding: 0.3125rem 0.625rem;
+}
+.size-block__btn.active {
+  background-color: #F30E0E;
+  border-color: #F30E0E;
 }
