@@ -1,4 +1,4 @@
-.comments__title, .add-comment__title, .comment__author, .characteristics__title, .product__price, .product__title, .feature-top__title, .filter-title, .title {
+.subtitle, .comments__title, .add-comment__title, .comment__author, .characteristics__title, .product__price, .product__title, .feature-top__title, .filter-title, .title {
   font-family: "Scada", sans-serif;
   font-weight: 700;
 }
@@ -1501,4 +1501,88 @@ body {
 .size-block__btn.active {
   background-color: #F30E0E;
   border-color: #F30E0E;
+}
+
+.sorting-tabs {
+  font-family: "Scada", sans-serif;
+  font-size: 1.125rem;
+  padding: 0.9375rem 0;
+}
+.sorting-tabs__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sorting-tabs__item {
+  margin: 0 0.9375rem 0.3125rem 0;
+}
+.sorting-tabs__item:last-child {
+  margin-right: 0;
+}
+
+.motoservices-tab {
+  background-color: #555555;
+  padding: 1.875rem;
+  border-radius: 1.125rem;
+}
+.motoservices-tab.active {
+  display: block;
+}
+.motoservices-tab__subtitle {
+  padding: 1.125rem 0;
+}
+.motoservices-tab__subtitle:first-child {
+  padding-top: 0;
+}
+.motoservices-tab__subtitle:last-child {
+  padding-bottom: 0;
+}
+.motoservices-tab__content {
+  font-weight: 300;
+  line-height: 1.8;
+}
+.motoservices-tab__content p + p {
+  margin-top: 0.625rem;
+}
+.motoservices-tab ul {
+  padding: 0.3125rem 0 0.625rem 2.5rem;
+}
+.motoservices-tab ul li {
+  padding-left: 1.5625rem;
+  position: relative;
+}
+.motoservices-tab ul li::before {
+  content: "";
+  position: absolute;
+  width: 0.4375rem;
+  height: 0.4375rem;
+  background-color: #F30E0E;
+  border-radius: 50%;
+  left: 0;
+  top: 0.625rem;
+}
+.motoservices-tab ul li + li {
+  margin-top: 0.625rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+}
+
+.motoservices {
+  padding-bottom: 3.125rem;
+}
+.motoservices__title {
+  margin-bottom: 1.5625rem;
+}
+.motoservices__text {
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 1.125rem;
+}
+.motoservices__text p + p {
+  margin-top: 0.625rem;
+}
+.motoservices__sorting {
+  margin-bottom: 1.125rem;
 }

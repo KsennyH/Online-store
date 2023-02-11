@@ -1,0 +1,28 @@
+extends ./layout/app
+
+block variables
+    - const title = "Мотосервис";
+
+block content 
+    .wrapper
+        include ./chunk/header.pug
+
+        main.main 
+            .breadcrumbs 
+                .container 
+                    ul.breadcrumbs__list
+                        +breadcrumbs("breadcrumbs__link", "index.html", "Главная")
+                        li.breadcrumbs__item 
+                            span.breadcrumbs__link.breadcrumbs__link--active Мотосервис
+
+            section.motoservices 
+                .container
+                    h1.motoservices__title.title Сервисный центр “Мотомир” в Иванове
+                    .motoservices__text 
+                        p Мотосервисы компании “Мотомир” предлагают вам полный спектр услуг по сервисному обслуживанию и ремонту мототехники. Наши сервисы оснащены спец. инструментом и диагностическим оборудованием для проведения системной диагностики, работ по восстановительному ремонту и  регулярному обслуживанию вашей техники. Механики проходят регулярное обучение в учебных центрах производителей, подтверждаемую сертификатами, и тестированием их навыков.
+                    .motoservices__sorting 
+                        include ./chunk/sorting-tabs.pug
+                    include ./chunk/repaire.pug
+                    include ./chunk/tuning.pug
+                    include ./chunk/storage.pug
+        include ./chunk/footer.pug
