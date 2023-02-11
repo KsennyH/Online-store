@@ -1,4 +1,4 @@
-.subtitle, .comments__title, .add-comment__title, .comment__author, .characteristics__title, .product__price, .product__title, .feature-top__title, .filter-title, .title {
+.contacts__label, .subtitle, .comments__title, .add-comment__title, .comment__author, .characteristics__title, .product__price, .product__title, .feature-top__title, .filter-title, .title {
   font-family: "Scada", sans-serif;
   font-weight: 700;
 }
@@ -564,7 +564,6 @@ body {
 
 .social__list {
   display: flex;
-  justify-content: center;
 }
 .social__item:not(:last-child) {
   margin-right: 0.625rem;
@@ -1585,4 +1584,44 @@ body {
 }
 .motoservices__sorting {
   margin-bottom: 1.125rem;
+}
+
+.map__iframe {
+  width: 100%;
+  border: 0.3125rem solid #fff;
+  border-radius: 1.125rem;
+}
+
+.contacts {
+  padding-bottom: 2.8125rem;
+}
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__map {
+  flex: 0 1 54%;
+  margin-right: 1.875rem;
+}
+.contacts__content {
+  flex: 0 1 40%;
+}
+.contacts__title {
+  text-align: left;
+  margin-bottom: 1.5625rem;
+}
+.contacts__info {
+  margin-bottom: 1.875rem;
+}
+.contacts__info:last-child {
+  margin-bottom: 0;
+}
+.contacts__label {
+  font-size: 1.125rem;
+  margin-bottom: 0.625rem;
+}
+.contacts__text {
+  font-family: "Scada", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
 }

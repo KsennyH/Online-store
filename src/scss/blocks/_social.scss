@@ -1,7 +1,6 @@
 .social {
     &__list {
         display: flex;
-        justify-content: center;
     }
     &__item:not(:last-child) {
         margin-right: 0.625rem;
