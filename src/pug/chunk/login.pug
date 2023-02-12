@@ -1,0 +1,20 @@
+section(id="login").popup 
+    .popup__container 
+        .login
+            h4.login__title.title Регистрация
+            form(action="/").login__form
+                .login__label 
+                    span.login__subtitle Введите логин или e-mail:
+                    input(type="text", name="login", required).login__input
+                .login__label 
+                    span.login__subtitle Введите пароль:
+                    input(type="email", name="password", required).login__input
+                .login__help 
+                    label.checkbox
+                        input(type="checkbox", checked).checkbox__input
+                        span.checkbox__custom.custom-checkbox
+                        span.checkbox__name Запомнить меня
+                    a(href="#").login__restore Забыли пароль?
+                button(type="submit").login__btn.btn-modal Войти
+                button(type="submit").login__btn.btn-modal.btn-modal--red Зарегистрироваться 
+            a(href="#").login__close X
