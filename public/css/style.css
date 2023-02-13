@@ -892,7 +892,7 @@ body {
   box-shadow: 0 0 0 0.125rem #414141;
 }
 .checkbox__custom {
-  margin-top: 0.125rem;
+  margin-top: 1px;
 }
 .checkbox__name {
   margin-left: 1.875rem;
@@ -1667,7 +1667,7 @@ body {
   background-color: #555555;
   font-family: "Scada", sans-serif;
   border-radius: 20px;
-  padding: 30px;
+  padding: 50px;
 }
 .login__title {
   margin-bottom: 1.875rem;
@@ -1722,6 +1722,12 @@ body {
 .login__checkbox:focus + .custom-checkbox {
   box-shadow: 0 0 0 0.125rem #414141;
 }
+.login__restore {
+  text-decoration: underline;
+}
+.login__restore:hover {
+  color: #F30E0E;
+}
 .login__help {
   display: flex;
   justify-content: space-between;
@@ -1733,6 +1739,80 @@ body {
 }
 .login__close {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: -15px;
+  right: -15px;
+}
+
+.restore-password {
+  position: relative;
+  max-width: 500px;
+  background-color: #555555;
+  font-family: "Scada", sans-serif;
+  border-radius: 20px;
+  line-height: 1.5;
+  padding: 50px;
+}
+.restore-password__title {
+  margin-bottom: 1.875rem;
+}
+.restore-password__description {
+  text-align: center;
+  margin-bottom: 3.125rem;
+}
+.restore-password__label {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  padding-bottom: 3.125rem;
+}
+.restore-password__subtitle {
+  position: relative;
+  margin-bottom: 0.625rem;
+}
+.restore-password__subtitle::after {
+  content: "*";
+  position: relative;
+  color: #F30E0E;
+  top: -0.3125rem;
+}
+.restore-password__input {
+  height: 2.5rem;
+  padding: 0.3125rem 0.9375rem;
+  border-radius: 1.875rem;
+  background-color: #fff;
+  color: #414141;
+}
+.restore-password__input:hover, .restore-password__input:active, .restore-password__input:focus {
+  box-shadow: -0.0625rem 0px 0.5rem 0.0625rem #ffcbcb;
+}
+.restore-password__close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+
+.btn-close {
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.btn-close span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.btn-close span::before, .btn-close span::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #414141;
+}
+.btn-close span::before {
+  transform: rotate(45deg);
+}
+.btn-close span::after {
+  transform: rotate(-45deg);
 }

@@ -1,4 +1,4 @@
-section(id="login").popup 
+section.popup.js-login 
     .popup__container 
         .login
             h4.login__title.title Регистрация
@@ -17,4 +17,6 @@ section(id="login").popup
                     a(href="#").login__restore Забыли пароль?
                 button(type="submit").login__btn.btn-modal Войти
                 button(type="submit").login__btn.btn-modal.btn-modal--red Зарегистрироваться 
-            a(href="#").login__close X
+            .login__close
+                button.btn-close
+                    span
