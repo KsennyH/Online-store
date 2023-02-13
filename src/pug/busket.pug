@@ -1,0 +1,22 @@
+extends ./layout/app
+
+block variables
+    - const title = "Корзина";
+
+block content 
+    .wrapper
+        include ./chunk/header.pug
+
+        main.main 
+            .breadcrumbs 
+                .container 
+                    ul.breadcrumbs__list
+                        +breadcrumbs("breadcrumbs__link", "index.html", "Главная")
+                        li.breadcrumbs__item 
+                            span.breadcrumbs__link.breadcrumbs__link--active Корзина
+            section.busket 
+                .container 
+                    h2.busket__title.title К сожалению, Ваша корзина пуста
+                    p.busket__description Вы можете это исправить: выберите в каталоге интересующий товар и нажмите кнопку “В корзину”.
+                    a(href="mototechnics.html").btn.btn--small Перейти в каталог
+        include ./chunk/footer.pug

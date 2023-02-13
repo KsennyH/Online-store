@@ -1646,6 +1646,7 @@ body {
 }
 
 .popup {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -1877,4 +1878,17 @@ body {
   position: absolute;
   top: -15px;
   right: -15px;
+}
+
+.busket {
+  font-family: "Scada", sans-serif;
+  background-color: #555555;
+  padding: 1.875rem 0;
+  text-align: center;
+}
+.busket__title {
+  margin-bottom: 1.875rem;
+}
+.busket__description {
+  margin-bottom: 3.125rem;
 }

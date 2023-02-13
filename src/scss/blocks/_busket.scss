@@ -1,0 +1,12 @@
+.busket {
+    font-family: 'Scada', sans-serif;
+    background-color: $grey-bg;
+    padding: 1.875rem 0;
+    text-align: center;
+    &__title {
+        margin-bottom: 1.875rem;
+    }
+    &__description {
+        margin-bottom: 3.125rem;
+    }
+}

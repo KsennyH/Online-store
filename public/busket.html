@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="plagins/nouislider.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&amp;family=Scada:wght@400;700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;1,700&amp;display=swap"/>
+    <title>Корзина</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"> 
+        <div class="top-header"> 
+          <div class="container"> 
+            <div class="top-header__inner"> 
+              <div class="top-header__logo"> 
+                <div class="logo"> <a class="logo__link" href="#"><img class="logo__img" src="img/header-logo.png" alt="Logo"/></a></div>
+              </div>
+              <div class="top-header__actions"> 
+                <div class="top-header__form"> 
+                  <form class="search-form" action="/">
+                    <input class="search-form__input" type="text"/>
+                    <button class="search-form__button">
+                      <svg class="search-form__icon"> 
+                        <use xlink:href="img/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+                <div class="top-header__users-wrapper"> <a class="user" href="login.html" aria-label="Личный кабинет">
+                    <svg class="user__icon"> 
+                      <use xlink:href="img/sprite.svg#user-login"></use>
+                    </svg><span class="user__label">Личный кабинет</span></a><a class="user" href="busket.html" aria-label="Корзина">
+                    <svg class="user__icon"> 
+                      <use xlink:href="img/sprite.svg#user-busket"></use>
+                    </svg><span class="user__label">Корзина</span></a>
+                </div>
+              </div>
+              <div class="top-header__info"> 
+                <div class="address-information"> 
+                  <ul class="address-information__list address-information__list--mobile"> 
+                    <li class="address-information__item"> <a class="address-information__link" href="contacts.html">
+                        <svg class="address-information__icon"> 
+                          <use xlink:href="img/sprite.svg#placeholder"></use>
+                        </svg><span class="address-information__label">Иваново, ул. Сакко, 54</span></a></li>
+                    <li class="address-information__item"> <a class="address-information__link address-information__link--phone" href="tel:84932134581">
+                        <svg class="address-information__icon"> 
+                          <use xlink:href="img/sprite.svg#phone"></use>
+                        </svg><span class="address-information__label">Тел. 8 (4932) 134-581</span></a></li>
+                    <li class="address-information__item"> <a class="address-information__link" href="mailto:motomirIvanovo@email.com">
+                        <svg class="address-information__icon"> 
+                          <use xlink:href="img/sprite.svg#mail"></use>
+                        </svg><span class="address-information__label">motomirIvanovo@email.com</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-header"> 
+          <div class="container"> 
+            <div class="navigation"> 
+              <ul class="navigation__list"> 
+                <li class="navigation__item"> <a class="navigation__link navigation__link--active" href="#"> <span>Главная</span></a>
+                </li>
+                <li class="navigation__item"> <a class="navigation__link" href="mototechnics.html"> <span>Мототехника</span></a>
+                  <div class="dropdown"> 
+                    <nav class="dropdown__menu"> 
+                      <ul class="dropdown__list"> 
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Мотоциклы</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Мопеды</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Скутеры</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Квадроциклы</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Гидроциклы</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Снегоходы</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </li>
+                <li class="navigation__item"> <a class="navigation__link" href="outfit.html"> <span>Мотозапчасти</span></a>
+                  <div class="dropdown"> 
+                    <nav class="dropdown__menu"> 
+                      <ul class="dropdown__list"> 
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Мотохимия</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Шины</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Расходники</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Лобовые стекла</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Пластик</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </li>
+                <li class="navigation__item"> <a class="navigation__link" href="outfit.html"> <span>Экипировка</span></a>
+                  <div class="dropdown"> 
+                    <nav class="dropdown__menu"> 
+                      <ul class="dropdown__list"> 
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Шлемы</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Куртки</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Комбинезоны</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Перчатки</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Мотоботы</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Аксессуары</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </li>
+                <li class="navigation__item"> <a class="navigation__link" href="motoservices.html"> <span>Мотосервис</span></a>
+                </li>
+                <li class="navigation__item"> <a class="navigation__link" href="articles.html"> <span>Статьи</span></a>
+                </li>
+                <li class="navigation__item"> <a class="navigation__link" href="contacts.html"> <span>Контакты</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main"> 
+        <div class="breadcrumbs"> 
+          <div class="container"> 
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+              <li class="breadcrumbs__item"> <span class="breadcrumbs__link breadcrumbs__link--active">Корзина</span></li>
+            </ul>
+          </div>
+        </div>
+        <section class="busket"> 
+          <div class="container"> 
+            <h2 class="busket__title title">К сожалению, Ваша корзина пуста</h2>
+            <p class="busket__description">Вы можете это исправить: выберите в каталоге интересующий товар и нажмите кнопку “В корзину”.</p><a class="btn btn--small" href="mototechnics.html">Перейти в каталог</a>
+          </div>
+        </section>
+      </main>
+      <div class="footer"> 
+        <div class="footer__content"> 
+          <div class="container"> 
+            <div class="footer__inner"> 
+              <div class="footer__social-info"> 
+                <div class="logo"> <a class="logo__link" href="#"><img class="logo__img" src="img/header-logo.png" alt="Logo"/></a></div>
+                <div class="social"> 
+                  <ul class="social__list"> 
+                    <li class="social__item"> <a class="social__link" href="#">
+                        <svg class="social__link-icon"> 
+                          <use xlink:href="img/sprite.svg#facebook"></use>
+                        </svg></a>
+                    </li>
+                    <li class="social__item"> <a class="social__link" href="#">
+                        <svg class="social__link-icon"> 
+                          <use xlink:href="img/sprite.svg#telegram"></use>
+                        </svg></a>
+                    </li>
+                    <li class="social__item"> <a class="social__link" href="#">
+                        <svg class="social__link-icon"> 
+                          <use xlink:href="img/sprite.svg#vk"></use>
+                        </svg></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__info-content"> 
+                <div class="footer__contacts">
+                  <div class="address-information"> 
+                    <ul class="address-information__list address-information__list--mobile"> 
+                      <li class="address-information__item"> <a class="address-information__link" href="contacts.html">
+                          <svg class="address-information__icon"> 
+                            <use xlink:href="img/sprite.svg#placeholder"></use>
+                          </svg><span class="address-information__label">Иваново, ул. Сакко, 54</span></a></li>
+                      <li class="address-information__item"> <a class="address-information__link address-information__link--phone" href="tel:84932134581">
+                          <svg class="address-information__icon"> 
+                            <use xlink:href="img/sprite.svg#phone"></use>
+                          </svg><span class="address-information__label">Тел. 8 (4932) 134-581</span></a></li>
+                      <li class="address-information__item"> <a class="address-information__link" href="mailto:motomirIvanovo@email.com">
+                          <svg class="address-information__icon"> 
+                            <use xlink:href="img/sprite.svg#mail"></use>
+                          </svg><span class="address-information__label">motomirIvanovo@email.com</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="address-information__schedule">
+                    <div class="schedule"> 
+                      <h6 class="schedule__title">Режим работы:</h6>
+                      <p class="schedule__text">Пн-пт: 9.00 - 19.00</p>
+                      <p class="schedule__text">Сб: 9.00 - 17.00</p>
+                      <p class="schedule__text">Воскресение: выходной</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer__nav">
+                  <div class="footer-nav"> 
+                    <ul class="footer-nav__list">
+                      <h4 class="footer-nav__label">Мототехника</h4>
+                      <div class="footer-nav__content">
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоциклы</a>
+                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мопеды</a>
+                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Скутеры</a>
+                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Квадроциклы</a>
+                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Гидроциклы</a>
+                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Снегоходы</a>
+                        </li>
+                      </div>
+                    </ul>
+                    <ul class="footer-nav__list">
+                      <h4 class="footer-nav__label">Мотозапчасти</h4>
+                      <div class="footer-nav__content">
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотохимия</a>
+                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Шины</a>
+                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Расходники</a>
+                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Лобовые стекла</a>
+                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Пластик</a>
+                        </li>
+                      </div>
+                    </ul>
+                    <ul class="footer-nav__list">
+                      <h4 class="footer-nav__label">Экипировка</h4>
+                      <div class="footer-nav__content">
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотошлемы</a>
+                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотокуртки</a>
+                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотокомбинезоны</a>
+                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоперчатки</a>
+                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоботы</a>
+                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Аксессуары</a>
+                        </li>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="container"> 
+            <p>© Магазин мототехники в Иваново 2018 - 2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
