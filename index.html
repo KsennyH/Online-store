@@ -488,7 +488,7 @@
         </div>
       </div>
     </div>
-    <section class="popup" id="login"> 
+    <section class="popup js-login"> 
       <div class="popup__container"> 
         <div class="login">
           <h4 class="login__title title">Регистрация</h4>
@@ -506,7 +506,27 @@
             </div>
             <button class="login__btn btn-modal" type="submit">Войти</button>
             <button class="login__btn btn-modal btn-modal--red" type="submit">Зарегистрироваться </button>
-          </form><a class="login__close" href="#">X</a>
+          </form>
+          <div class="login__close">
+            <button class="btn-close"><span></span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="popup js-login"> 
+      <div class="popup__container">
+        <div class="restore-password"> 
+          <h4 class="restore-password__title title">Восстановление пароля</h4>
+          <p class="restore-password__description">Ваши данные, указанные при регистрации, а так же новый пароль будут высланы Вам по e-mail.</p>
+          <form class="restore-password__form" action="/">
+            <label class="restore-password__label"><span class="restore-password__subtitle">Введите логин или e-mail:</span>
+              <input class="restore-password__input" type="email" name="login" required="required"/>
+            </label>
+            <button class="btn-modal" type="submit">Восстановить пароль</button>
+          </form>
+          <div class="restore-password__close">
+            <button class="btn-close"><span></span></button>
+          </div>
         </div>
       </div>
     </section>
