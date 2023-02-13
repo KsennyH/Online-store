@@ -1816,3 +1816,65 @@ body {
 .btn-close span::after {
   transform: rotate(-45deg);
 }
+
+.registration {
+  position: relative;
+  max-width: 800px;
+  background-color: #555555;
+  font-family: "Scada", sans-serif;
+  border-radius: 20px;
+  padding: 25px 50px;
+}
+.registration__title {
+  margin-bottom: 1.875rem;
+}
+.registration__description {
+  text-align: center;
+  margin-bottom: 3.125rem;
+}
+.registration__label {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  margin-bottom: 1.125rem;
+}
+.registration__label:last-child {
+  margin-bottom: 0;
+}
+.registration__subtitle {
+  position: relative;
+  text-align: left;
+}
+.registration__subtitle::after {
+  content: "*";
+  position: relative;
+  color: #F30E0E;
+  top: -0.3125rem;
+}
+.registration__subtitle--norequired::after {
+  display: none;
+}
+.registration__input {
+  height: 2.5rem;
+  padding: 0.3125rem 0.9375rem;
+  margin-top: 0.625rem;
+  border: 0.0625rem solid #FFFFFF;
+  border-radius: 1.875rem;
+  background-color: #fff;
+  color: #414141;
+}
+.registration__input:hover, .registration__input:active, .registration__input:focus {
+  box-shadow: -0.0625rem 0px 0.5rem 0.0625rem #ffcbcb;
+}
+.registration__checkbox {
+  display: block;
+  padding: 1.875rem 0;
+}
+.registration__checkbox a {
+  text-decoration: underline;
+}
+.registration__close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}

@@ -530,6 +530,40 @@
         </div>
       </div>
     </section>
+    <section class="popup js-login"> 
+      <div class="popup__container">
+        <div class="registration"> 
+          <h4 class="registration__title title">Регистрация</h4>
+          <p class="registration__description">Зарегистрируйтесь для более удобной работы с сайтом.</p>
+          <form class="registration__form" action="/"> 
+            <label class="registration__label"><span class="registration__subtitle">Имя Фамилия:</span>
+              <input class="registration__input" type="text" name="name" required="required"/>
+            </label>
+            <label class="registration__label"><span class="registration__subtitle">E-mail:</span>
+              <input class="registration__input" type="email" name="email" required="required"/>
+            </label>
+            <label class="registration__label"><span class="registration__subtitle registration__subtitle--norequired">Номер телефона:</span>
+              <input class="registration__input" type="tel" name="phone"/>
+            </label>
+            <label class="registration__label"><span class="registration__subtitle">Пароль (длина пароля - не менее 6 символов):</span>
+              <input class="registration__input" type="password" name="password" required="required"/>
+            </label>
+            <label class="registration__label"><span class="registration__subtitle">Подтвердите пароль:</span>
+              <input class="registration__input" type="password" name="repeat-password" required="required"/>
+            </label>
+            <div class="registration__checkbox">
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" checked="checked"/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">Я согласен на <a href="#">обработку персональных данных </a></span>
+              </label>
+            </div>
+            <button class="btn-modal" type="submit">Зарегистрироваться</button>
+          </form>
+          <div class="registration__close">
+            <button class="btn-close"><span> </span></button>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="js/main.min.js"></script>
   </body>
 </html>
