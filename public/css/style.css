@@ -1,3 +1,4 @@
+@import "./../../node_modules/swiper/swiper-bundle.css";
 .contacts__label, .subtitle, .comments__title, .add-comment__title, .comment__author, .characteristics__title, .product__price, .product__title, .feature-top__title, .filter-title, .title {
   font-family: "Scada", sans-serif;
   font-weight: 700;
@@ -341,6 +342,8 @@ body {
 
 .popular-products__slider.swiper-container {
   padding: 2.5rem 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .popular-products__slider .swiper-button-prev,
