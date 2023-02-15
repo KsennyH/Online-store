@@ -1013,6 +1013,7 @@ body {
 .card-images__image img {
   height: 18.375rem;
   object-fit: contain;
+  display: none;
 }
 .card-images__image img.active {
   display: block;
@@ -1039,7 +1040,7 @@ body {
   margin-right: 0;
 }
 
-.btn-color.active .btn-color__tab, .btn-color:hover .btn-color__tab {
+.btn-color:hover .btn-color__tab, .btn-color.active .btn-color__tab {
   border-bottom: 0.1875rem solid #414141;
   box-shadow: -0.125rem 0.125rem 0.1875rem rgba(0, 0, 0, 0.4);
 }
