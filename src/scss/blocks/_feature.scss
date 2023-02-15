@@ -5,14 +5,16 @@
     &__bottom {
         font-size: 1.125rem;
         line-height: 1.3;
-        //display: none;
+        opacity: 0;
         background-color: $grey-bg;
         padding: 3.125rem 0;
-        position: relative;
+        position: absolute;
         left: 0;
         right: 0;
         &.active {
-            display: block;
+            position: relative;
+            opacity: 1;
+            transition: all 1s ease;
         }
     }
     &__inner {
