@@ -285,6 +285,36 @@ body {
   visibility: visible;
 }
 
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #555555;
+  padding: 3.75rem 1.875rem;
+}
+.mobile-nav.active {
+  display: flex;
+}
+.mobile-nav__item {
+  margin-bottom: 0.3125rem;
+}
+.mobile-nav__item:last-child {
+  margin-bottom: 0;
+}
+.mobile-nav__link {
+  width: 100%;
+  padding: 0.625rem 1.5625rem;
+}
+
 .motomir {
   padding: 2.1875rem 0;
 }
