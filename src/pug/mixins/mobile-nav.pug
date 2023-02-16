@@ -1,0 +1,6 @@
+mixin mobile-nav(classLink, list)
+    nav.mobile-nav
+        ul.mobile-nav__list
+            each item in list 
+                li.mobile-nav__item 
+                    +link(classLink, item.href, item.text)
