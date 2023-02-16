@@ -286,7 +286,7 @@ body {
 }
 
 .mobile-nav {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -313,6 +313,54 @@ body {
 .mobile-nav__link {
   width: 100%;
   padding: 0.625rem 1.5625rem;
+}
+
+.mobile-button {
+  position: relative;
+  z-index: 10;
+  width: 2.5rem;
+  height: 1.875rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-button__icon {
+  display: block;
+  width: 1.25rem;
+  height: 0.1875rem;
+  border-radius: 0.1875rem;
+  background-color: #fff;
+  position: relative;
+}
+.mobile-button__icon::after, .mobile-button__icon::before {
+  position: absolute;
+  content: "";
+  width: 1.875rem;
+  height: 0.1875rem;
+  border-radius: 0.1875rem;
+  background-color: #fff;
+  transition: transform 0.15s ease-in, top 0.15s ease-in;
+}
+.mobile-button__icon::before {
+  left: 0;
+  top: -0.625rem;
+}
+.mobile-button__icon::after {
+  left: 0;
+  top: 0.625rem;
+}
+.mobile-button__icon.active {
+  background-color: transparent;
+}
+.mobile-button__icon.active::before {
+  transform: rotate(45deg);
+  top: 0;
+  transition: top 0.15s linear, transform 0.15s ease-in 0.15;
+}
+.mobile-button__icon.active::after {
+  transform: rotate(-45deg);
+  top: 0;
+  transition: top 0.15s linear, transform 0.15s ease-in 0.15;
 }
 
 .motomir {
