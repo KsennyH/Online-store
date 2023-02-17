@@ -1,4 +1,30 @@
 @import "./../../node_modules/swiper/swiper-bundle.css";
+@media (max-width: 991.98px) {
+  .top-header {
+    order: 1;
+  }
+  .top-header__users-wrapper {
+    justify-content: center;
+  }
+  .navigation {
+    display: none;
+  }
+  .user {
+    margin-right: 1.125rem;
+  }
+  .user:last-child {
+    margin-right: 0;
+  }
+  .user__icon {
+    margin-right: 0;
+  }
+  .user__label {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+}
 .contacts__label, .subtitle, .comments__title, .add-comment__title, .comment__author, .characteristics__title, .product__price, .product__title, .feature-top__title, .filter-title, .title {
   font-family: "Scada", sans-serif;
   font-weight: 700;
@@ -129,8 +155,8 @@ body {
   justify-content: space-between;
 }
 .top-header__logo {
-  flex: 0 1 auto;
-  margin-right: 1.875rem;
+  flex: 0 0 auto;
+  margin-right: 2.5rem;
 }
 .top-header__form {
   margin-bottom: 1.5625rem;
@@ -138,6 +164,7 @@ body {
 .top-header__actions {
   margin-right: 2.5rem;
   flex: 0 1 40%;
+  min-width: 250px;
 }
 .top-header__users-wrapper {
   display: flex;
@@ -348,7 +375,7 @@ body {
 }
 
 .mobile-navigation {
-  position: fixed;
+  display: block;
   z-index: 15;
   top: 0;
   left: 0;
@@ -356,14 +383,8 @@ body {
   bottom: 0;
   background-color: #555555;
 }
-.mobile-navigation__buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem;
-}
 .mobile-navigation__list {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -371,6 +392,13 @@ body {
 }
 .mobile-navigation__logo {
   margin-bottom: 30px;
+}
+
+.mobile-menu {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
 .motomir {
