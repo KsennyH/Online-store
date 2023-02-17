@@ -6,8 +6,8 @@
         justify-content: space-between;
     }
     &__logo {
-        flex: 0 1 auto;
-        margin-right: 1.875rem;
+        flex: 0 0 auto;
+        margin-right: 2.5rem;
     }
     &__form {
         margin-bottom: 1.5625rem;
@@ -15,6 +15,7 @@
     &__actions {
         margin-right: 2.5rem;
         flex: 0 1 40%;
+        min-width: 250px;
     }
     &__users-wrapper {
         display: flex;
