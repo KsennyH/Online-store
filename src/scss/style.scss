@@ -1,5 +1,4 @@
 // base
-@import "./base/media";
 @import "./base/variables";
 @import "./base/reset";
 @import "./base/base";
@@ -17,7 +16,6 @@
 @import './blocks/header/dropdown';
 @import './blocks/header/mobile-nav';
 @import './blocks/header/mobile-button';
-@import './blocks/header/mobile-navigation';
 @import './blocks/header/mobile-menu';
 @import './blocks/motomir';
 @import './blocks/title';
@@ -84,3 +82,5 @@
 @import './blocks/btn-close';
 @import './blocks/registration';
 @import './blocks/busket';
+
+@import './base/media';

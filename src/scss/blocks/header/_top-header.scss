@@ -14,12 +14,12 @@
     }
     &__actions {
         margin-right: 2.5rem;
-        flex: 0 1 40%;
+        flex: 1 1 auto;
         min-width: 250px;
     }
     &__users-wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 }

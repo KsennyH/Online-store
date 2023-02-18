@@ -1,15 +1,13 @@
 .mobile-button {
-    position: relative;
-    z-index: 10;
-    width: 2.5rem;
-    height: 1.875rem;
-    display: inline-flex;
-    justify-content: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
     &__icon {
         display: block;
         width: 1.25rem;
-        height: 0.1875rem;
+        height: 2px;
         border-radius: 0.1875rem;
         background-color: $default;
         position: relative;
@@ -17,7 +15,7 @@
             position: absolute;
             content: "";
             width: 1.875rem;
-            height: 0.1875rem;
+            height: 2px;
             border-radius: 0.1875rem;
             background-color: $default;
             transition: transform 0.15s ease-in, top 0.15s ease-in;
