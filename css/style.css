@@ -379,7 +379,7 @@ body {
 
 .partners {
   background-color: #fff;
-  padding: 1.5625rem 0;
+  padding: 1.25rem 0;
 }
 .partners__list {
   display: flex;
@@ -387,8 +387,17 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.partners__item:not(:last-child) {
-  margin-right: 0.625rem;
+.partners__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 120px;
+  height: 60px;
+  padding: 20px;
+}
+.partners__item img {
+  width: 120px;
+  object-fit: cover;
 }
 
 .popular-products {
