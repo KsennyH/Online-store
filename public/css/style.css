@@ -113,6 +113,10 @@ body {
   overflow: hidden;
 }
 
+.spoiler {
+  display: block;
+}
+
 .header {
   font-family: "Scada", sans-serif;
   font-size: 1.125rem;
@@ -579,7 +583,7 @@ body {
 .news-card__link {
   margin-bottom: 0.9375rem;
 }
-.news-card__link:hover, .news-card__link:focus, .news-card__link:active {
+.news-card__link:hover {
   text-decoration: underline;
 }
 
@@ -594,7 +598,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 0.3125rem 5.375rem;
-  min-height: 3.125rem;
+  min-height: 2.5rem;
   border-radius: 1.875rem;
   color: #fff;
   background-color: #F30E0E;
@@ -721,7 +725,7 @@ body {
   width: 0.9375rem;
   height: 0.75rem;
   right: 0;
-  top: 0.375rem;
+  top: 4px;
   display: none;
 }
 .footer-nav__item + .footer-nav__item {
@@ -2011,6 +2015,19 @@ body {
     margin-right: 0;
   }
   .top-header .address-information__label {
+    display: none;
+  }
+  .footer-nav {
+    flex-direction: column;
+  }
+  .footer-nav__list {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .footer-nav__label::before {
+    display: block;
+  }
+  .spoiler {
     display: none;
   }
 }

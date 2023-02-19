@@ -24,6 +24,19 @@
             }
         }
     }
+    .footer-nav {
+        flex-direction: column;
+        &__list {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        &__label::before {
+            display: block;
+        }
+    }
+    .spoiler {
+        display: none;
+    }
 }
 
 @media (max-width: 767.98px) {

@@ -55,9 +55,7 @@
     }
     &__link {
         margin-bottom: 0.9375rem;
-        &:hover,
-        &:focus,
-        &:active {
+        &:hover {
             text-decoration: underline;
         }
     }

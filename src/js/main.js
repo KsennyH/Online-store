@@ -4,7 +4,15 @@ import features from "./modules/features.js";
 import mobileNavigation from "./modules/mobileNavigation.js";
 //tabs();
 //features();
-mobileNavigation();
+//mobileNavigation();
+
+const spoilers = document.querySelectorAll("[data-name='spoiler']");
+console.log(spoilers)
+spoilers.forEach(el => {
+    el.addEventListener('click', function() {
+        this.nextElementSibling.classList.toggle('spoiler');
+    });
+});
 
 
 
