@@ -1,10 +1,10 @@
 mixin news-card(image, altText, title, datetime, date, textLink="Подробнее", link="article.html")
     article.news-card 
-        .news-card__img 
+        a(href=link).news-card__img 
             img(src="img/" + image, alt=altText)
         .news-card__information 
             a(href=link).news-card__title-link 
-                h3.news-card__name.card-title #{title}
+                h3.card-title #{title}
             block
         .news-card__info 
             time(datetime=datetime).news-card__date #{date}

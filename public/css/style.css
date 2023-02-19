@@ -1,5 +1,5 @@
 @import "./../../node_modules/swiper/swiper-bundle.css";
-.contacts__label, .subtitle, .comments__title, .add-comment__title, .comment__author, .characteristics__title, .product__price, .product__title, .feature-top__title, .filter-title, .title {
+.contacts__label, .subtitle, .comments__title, .add-comment__title, .comment__author, .characteristics__title, .product__price, .product__title, .feature-top__title, .filter-title, .card-title, .title {
   font-family: "Scada", sans-serif;
   font-weight: 700;
 }
@@ -279,7 +279,7 @@ body {
   align-items: center;
   position: fixed;
   background: #414141;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   overflow: auto;
   top: -100%;
   left: 0;
@@ -391,12 +391,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 120px;
+  flex: 0 0 140px;
   height: 60px;
-  padding: 20px;
+  padding: 15px;
 }
 .partners__item img {
-  width: 120px;
+  width: 140px;
   object-fit: cover;
 }
 
@@ -527,40 +527,47 @@ body {
   position: relative;
   background: #FFFFFF;
   color: #000;
+  font-size: 0.875rem;
   border-radius: 1.125rem;
   padding: 0.9375rem;
+  transition: box-shadow 0.5s ease-in;
+}
+.news-card:hover {
+  cursor: pointer;
+  box-shadow: -0.0625rem 0 0.5rem 0.0625rem #d9c0c0;
+}
+.news-card:hover .news-card__img {
+  scale: 1;
+}
+.news-card:hover .news-card__title-link {
+  color: #F30E0E;
 }
 .news-card__img {
   display: flex;
   justify-content: center;
   margin-bottom: 1.5625rem;
+  scale: 0.9;
+  transition: scale 0.5s ease-in;
 }
 .news-card__img img {
-  height: 12.8125rem;
+  height: 150px;
   object-fit: contain;
-}
-.news-card__title-link::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 12.5rem;
-  left: 0;
 }
 .news-card__information {
   flex: 1 0 auto;
 }
-.news-card__name {
+.news-card__title-link {
   margin-bottom: 0.9375rem;
-}
-.news-card__name:hover {
-  color: #F30E0E;
+  display: block;
+  text-align: center;
+  transition: color 0.5s ease-in;
 }
 .news-card__preview {
   max-height: 9.5rem;
   overflow: hidden;
   margin-bottom: 0.625rem;
   line-height: 1.2;
+  text-align: justify;
 }
 .news-card__info {
   flex: 0 0 auto;
@@ -568,13 +575,17 @@ body {
   justify-content: space-between;
   align-items: center;
   font-weight: 300;
-  font-size: 0.875rem;
 }
 .news-card__link {
-  text-decoration: underline;
+  margin-bottom: 0.9375rem;
 }
 .news-card__link:hover, .news-card__link:focus, .news-card__link:active {
-  color: #F30E0E;
+  text-decoration: underline;
+}
+
+.card-title {
+  font-size: 1rem;
+  text-decoration: underline;
 }
 
 .btn {
@@ -2015,5 +2026,13 @@ body {
   }
   .mobile-menu {
     display: flex;
+  }
+  .title {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .title {
+    font-size: 1rem;
   }
 }
