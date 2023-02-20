@@ -1,4 +1,7 @@
 .address-information {
+    &__item {
+        display: flex;
+    }
     &__item + &__item {
         margin-top: 0.625rem;
     }
