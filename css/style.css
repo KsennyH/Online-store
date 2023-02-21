@@ -943,6 +943,9 @@ body {
 .toggle-block__label {
   margin-bottom: 0.3125rem;
 }
+.toggle-block__label:first-child {
+  margin-right: 20px;
+}
 .toggle-block__input {
   width: 6.25rem;
   height: 1.875rem;
@@ -1053,6 +1056,9 @@ body {
 .toggle-block__label {
   margin-bottom: 0.3125rem;
 }
+.toggle-block__label:first-child {
+  margin-right: 20px;
+}
 .toggle-block__input {
   width: 6.25rem;
   height: 1.875rem;
@@ -1083,6 +1089,8 @@ body {
 }
 .catalog__filter-btn {
   display: none;
+  align-self: flex-end;
+  margin-bottom: 1.125rem;
 }
 
 .products-block__list {
@@ -2055,6 +2063,39 @@ body {
   }
   .title {
     font-size: 1.125rem;
+  }
+  .breadcrumbs {
+    font-size: 1rem;
+    padding: 0.9375rem 0;
+  }
+  .sorting {
+    font-size: 1rem;
+  }
+  .catalog__inner {
+    flex-direction: column;
+  }
+  .catalog__filter {
+    margin-right: 0;
+  }
+  .catalog__filter-btn {
+    display: block;
+  }
+  .filter {
+    background-color: #414141;
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    overflow: auto;
+    display: none;
+  }
+  .filter.active {
+    display: block;
+  }
+  .toggle-block__inputs {
+    justify-content: flex-start;
   }
 }
 @media (max-width: 575.98px) {
