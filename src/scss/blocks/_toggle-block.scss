@@ -11,6 +11,9 @@
     &__label {
         margin-bottom: 0.3125rem;
     }
+    &__label:first-child {
+        margin-right: 20px;
+    }
     &__input {
         width: 6.25rem;
         height: 1.875rem;

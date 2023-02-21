@@ -63,6 +63,44 @@
     .title {
         font-size: 1.125rem;
     }
+    .breadcrumbs {
+        font-size: 1rem;
+        padding: 0.9375rem 0;
+    }
+    .sorting {
+        font-size: 1rem;
+    }
+    .catalog {
+        &__inner {
+            flex-direction: column;
+        }
+        &__filter {
+            margin-right: 0;
+        }
+        &__filter-btn {
+            display: block;
+        }
+    }
+    .filter {
+        background-color: $dark-bg;
+        padding: 40px;
+        border-radius: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        overflow: auto;
+        display: none;
+        &.active {
+            display: block;
+        }
+
+    }
+    .toggle-block {
+        &__inputs {
+            justify-content: flex-start;
+        }
+    }
 }
 
 @media (max-width: 575.98px) {
