@@ -17,10 +17,10 @@ block content
             .catalog
                 .container
                     .catalog__inner
-                        button(type="button").catalog__filter-btn.js-filter
+                        button(type="button").catalog__filter-btn.js-filter-btn
                             img(src="@img/filter.svg", alt="Фильтр")
                         aside.catalog__filter
-                            form(action="/").filter
+                            form(action="/").filter.js-filter
                                 .filter__price-block
                                     include ./chunk/price-block.pug
                                 .filter__technics-block
