@@ -45,6 +45,12 @@
     .spoiler {
         display: none;
     }
+    .characteristics {
+        font-size: 0.875rem;
+        &__title {
+            font-size: 1rem;
+        }
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -106,6 +112,21 @@
             gap: 20px;
         }
     }
+    .product {
+        flex-direction: column;
+        &__images {
+            margin: 0 0 20px 0;
+        }
+        &__content {
+            width: 100%;
+        }
+        &__title {
+            font-size: 1.75rem;
+        }
+    }
+    .color-block {
+        justify-content: space-between;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -135,6 +156,17 @@
     .address-information {
         &__item {
             justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .product {
+        &__buttons {
+            flex-direction: column;
+        }
+        &__btn {
+            margin: 0 0 15px 0;
         }
     }
 }
