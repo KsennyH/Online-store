@@ -768,7 +768,7 @@ body {
   transform: translateY(-50%);
 }
 .breadcrumbs__link {
-  padding: 0.3125rem;
+  padding: 10px 0.3125rem;
 }
 .breadcrumbs__link--active {
   font-weight: 700;
@@ -1118,7 +1118,6 @@ body {
 
 .color-block {
   display: flex;
-  justify-content: space-between;
   font-family: "Scada", sans-serif;
 }
 .color-block__label {
@@ -1223,8 +1222,6 @@ body {
   margin-bottom: 2.1875rem;
 }
 .product__color {
-  display: flex;
-  justify-content: space-between;
   font-family: "Scada", sans-serif;
   margin-bottom: 2.1875rem;
 }
@@ -1284,10 +1281,10 @@ body {
 
 .card-block {
   font-family: "Scada", sans-serif;
-  margin-top: 3.75rem;
+  margin-top: 1.5rem;
 }
 .card-block__info {
-  margin-bottom: 3.75rem;
+  margin-bottom: 3rem;
 }
 .card-block__text {
   font-family: "Roboto Slab", serif;
@@ -2048,6 +2045,12 @@ body {
   .spoiler {
     display: none;
   }
+  .characteristics {
+    font-size: 0.875rem;
+  }
+  .characteristics__title {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 767.98px) {
   .top-header {
@@ -2101,6 +2104,21 @@ body {
   .products-block__list {
     gap: 20px;
   }
+  .product {
+    flex-direction: column;
+  }
+  .product__images {
+    margin: 0 0 20px 0;
+  }
+  .product__content {
+    width: 100%;
+  }
+  .product__title {
+    font-size: 1.75rem;
+  }
+  .color-block {
+    justify-content: space-between;
+  }
 }
 @media (max-width: 575.98px) {
   .title {
@@ -2126,5 +2144,13 @@ body {
   }
   .address-information__item {
     justify-content: center;
+  }
+}
+@media (max-width: 450px) {
+  .product__buttons {
+    flex-direction: column;
+  }
+  .product__btn {
+    margin: 0 0 15px 0;
   }
 }
