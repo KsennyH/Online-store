@@ -1,5 +1,4 @@
 .characteristics {
-    flex: 0 0 30%;
     p {
         font-weight: 300;
     }
@@ -10,5 +9,18 @@
         @extend %title-font;
         font-size: 1.125rem;
         margin-bottom: 0.9375rem;
+        position: relative;
+        display: inline-block;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url(../img/dropdown-icon.svg);
+            background-repeat: no-repeat;
+            width: 0.9375rem;
+            height: 0.75rem;
+            right: 0;
+            top: 6px;
+            display: none;
+        }
     }
 }

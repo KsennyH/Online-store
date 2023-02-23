@@ -1,6 +1,6 @@
 mixin characteristics(title, list)
     .characteristics 
-        h5.characteristics__title #{title}
-        .characteristics__wrapper 
+        h5(data-name="spoiler-feature").characteristics__title #{title}
+        .characteristics__wrapper.spoiler-feature 
             each item in list
                 p #{item.paragraph}

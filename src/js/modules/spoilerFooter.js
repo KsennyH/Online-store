@@ -1,6 +1,6 @@
 const spoilers = document.querySelectorAll("[data-name='spoiler']");
 
-const spoiler = () => {
+const spoilerFooter = () => {
     spoilers.forEach(el => {
         el.addEventListener('click', function() {
             this.nextElementSibling.classList.toggle('spoiler');
@@ -8,4 +8,4 @@ const spoiler = () => {
     });
 }
 
-export default spoiler;
+export default spoilerFooter;

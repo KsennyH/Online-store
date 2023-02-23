@@ -49,6 +49,7 @@
         font-size: 0.875rem;
         &__title {
             font-size: 1rem;
+            margin-bottom: 10px;
         }
     }
 }
@@ -126,6 +127,29 @@
     }
     .color-block {
         justify-content: space-between;
+    }
+    .feature {
+        &__inner {
+            flex-direction: column;
+        }
+        &__characteristics {
+            margin: 0 0 20px 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .characteristics{
+        &__title {
+            padding-right: 1.56rem;
+            cursor: pointer;
+        }
+        &__title::before {
+            display: block;
+        }
+    }
+    .spoiler-feature {
+        display: none;
     }
 }
 
