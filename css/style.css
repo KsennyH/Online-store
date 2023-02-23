@@ -1651,6 +1651,7 @@ body {
 }
 
 .motoservices-tab {
+  display: none;
   background-color: #555555;
   padding: 1.875rem;
   border-radius: 1.125rem;
@@ -1670,12 +1671,13 @@ body {
 .motoservices-tab__content {
   font-weight: 300;
   line-height: 1.8;
+  text-align: justify;
 }
 .motoservices-tab__content p + p {
   margin-top: 0.625rem;
 }
 .motoservices-tab ul {
-  padding: 0.3125rem 0 0.625rem 2.5rem;
+  padding: 0 0 15px 0;
 }
 .motoservices-tab ul li {
   padding-left: 1.5625rem;
@@ -1709,6 +1711,7 @@ body {
   font-weight: 300;
   line-height: 1.8;
   margin-bottom: 1.125rem;
+  text-align: justify;
 }
 .motoservices__text p + p {
   margin-top: 0.625rem;
@@ -2223,6 +2226,9 @@ body {
   }
   .address-information__item {
     justify-content: center;
+  }
+  .motoservices-tab {
+    padding: 25px 15px;
   }
 }
 @media (max-width: 450px) {
