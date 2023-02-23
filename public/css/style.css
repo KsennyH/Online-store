@@ -150,7 +150,7 @@ body {
 }
 .top-header__users-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -166,16 +166,21 @@ body {
   background-color: transparent;
   color: #fff;
   border-radius: 1.875rem;
-  height: 2.5rem;
+  height: 2.25rem;
   padding: 0.5rem 0.9375rem;
 }
 .search-form__input:hover, .search-form__input:active, .search-form__input:focus {
   box-shadow: -0.0625rem 0px 0.5rem 0.0625rem #ffcbcb;
 }
 .search-form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
   position: absolute;
-  top: 0.625rem;
-  right: 0.9375rem;
+  top: 7px;
+  right: 10px;
 }
 .search-form__icon {
   width: 19px;
@@ -1088,6 +1093,7 @@ body {
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   line-height: 1.8;
+  text-align: justify;
 }
 .catalog__text p + p {
   margin-top: 0.9375rem;
@@ -1277,7 +1283,7 @@ body {
   line-height: 1.3;
   opacity: 0;
   background-color: #555555;
-  padding: 3.125rem 0;
+  padding: 2rem 1rem;
   position: absolute;
   left: 0;
   right: 0;
@@ -1303,6 +1309,9 @@ body {
   font-family: "Scada", sans-serif;
   margin-top: 1.5rem;
 }
+.card-block__feature {
+  margin-bottom: 20px;
+}
 .card-block__info {
   margin-bottom: 3rem;
 }
@@ -1310,7 +1319,8 @@ body {
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   line-height: 1.8;
-  margin-bottom: 2.5rem;
+  margin-bottom: 30px;
+  text-align: justify;
 }
 .card-block__text p + p {
   margin-top: 0.625rem;
@@ -2075,10 +2085,34 @@ body {
 }
 @media (max-width: 767.98px) {
   .top-header {
+    padding: 20px 0;
     order: 1;
   }
   .top-header__logo {
     display: none;
+  }
+  .top-header__inner {
+    flex-direction: column;
+  }
+  .top-header__actions {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .top-header__form {
+    order: 1;
+    margin-bottom: 20px;
+  }
+  .top-header__users-wrapper {
+    margin-bottom: 20px;
+  }
+  .top-header .address-information__list {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+  }
+  .top-header .address-information__item {
+    margin-top: 0;
   }
   .navigation {
     display: none;
@@ -2140,6 +2174,8 @@ body {
   .color-block {
     justify-content: space-between;
   }
+}
+@media (max-width: 600px) {
   .feature__inner {
     flex-direction: column;
   }
@@ -2148,6 +2184,9 @@ body {
   }
   .feature__characteristics:last-child {
     margin-bottom: 0;
+  }
+  .feature-top__title {
+    font-size: 1rem;
   }
   .characteristics__title {
     padding-right: 1.56rem;

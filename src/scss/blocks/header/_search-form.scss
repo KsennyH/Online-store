@@ -9,7 +9,7 @@
         background-color: transparent;
         color: $default;
         border-radius: 1.875rem;
-        height: 2.5rem;
+        height: 2.25rem;
         padding: 0.5rem 0.9375rem;
         &:hover,
         &:active,
@@ -18,9 +18,14 @@
         }
     }
     &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
         position: absolute;
-        top: 0.625rem;
-        right: 0.9375rem;
+        top: 7px;
+        right: 10px;
     }
     &__icon {
         width: 19px;

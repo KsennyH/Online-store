@@ -56,9 +56,33 @@
 
 @media (max-width: 767.98px) {
     .top-header {
+        padding: 20px 0;
         order: 1;
         &__logo {
             display: none;
+        }
+        &__inner {
+            flex-direction: column;
+        }
+        &__actions {
+            display: flex;
+            flex-direction: column;
+            margin-right: 0;
+        }
+        &__form {
+            order: 1;
+            margin-bottom: 20px;
+        }
+        &__users-wrapper {
+            margin-bottom: 20px;
+        }
+        .address-information__list {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-evenly;
+        } 
+        .address-information__item {
+            margin-top: 0;
         }
     }
     .navigation {
@@ -128,6 +152,10 @@
     .color-block {
         justify-content: space-between;
     }
+    
+}
+
+@media (max-width: 600px) {
     .feature {
         &__inner {
             flex-direction: column;
@@ -137,6 +165,11 @@
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+    }
+    .feature-top {
+        &__title {
+            font-size: 1rem;
         }
     }
     .characteristics{

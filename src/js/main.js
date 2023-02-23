@@ -7,7 +7,7 @@ import spoilerFeature from "./modules/spoilerFeature.js";
 import mobileFilter from "./modules/mobileFilter.js";
 tabs();
 features();
-//mobileNavigation();
+mobileNavigation();
 spoilerFeature();
 spoilerFooter();
 mobileFilter();
