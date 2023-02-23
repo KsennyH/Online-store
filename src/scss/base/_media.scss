@@ -177,6 +177,23 @@
             padding: 1.25rem;
         }
     }
+    .contacts {
+        &__wrapper {
+            flex-direction: column-reverse;
+            align-items: unset;
+        }
+        &__content {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__network {
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
 
 @media (max-width: 600px) {
@@ -253,6 +270,11 @@
     .blog-page {
         &__article {
             margin: 10px -20px 0;
+        }
+    }
+    .contacts {
+        &__label {
+            font-size: 1rem;
         }
     }
 }

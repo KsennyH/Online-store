@@ -1729,15 +1729,17 @@ body {
 }
 
 .contacts {
+  font-size: 1rem;
   padding-bottom: 2.8125rem;
+  font-family: "Scada", sans-serif;
 }
-.contacts__inner {
+.contacts__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .contacts__map {
   flex: 0 1 54%;
-  margin-right: 1.875rem;
 }
 .contacts__content {
   flex: 0 1 40%;
@@ -1757,8 +1759,6 @@ body {
   margin-bottom: 0.625rem;
 }
 .contacts__text {
-  font-family: "Scada", sans-serif;
-  font-size: 1.125rem;
   line-height: 1.5;
 }
 
@@ -2198,6 +2198,21 @@ body {
   .full-article__content {
     padding: 1.25rem;
   }
+  .contacts__wrapper {
+    flex-direction: column-reverse;
+    align-items: unset;
+  }
+  .contacts__content {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .contacts__title {
+    text-align: center;
+  }
+  .contacts__network {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (max-width: 600px) {
   .feature__inner {
@@ -2259,6 +2274,9 @@ body {
   }
   .blog-page__article {
     margin: 10px -20px 0;
+  }
+  .contacts__label {
+    font-size: 1rem;
   }
 }
 @media (max-width: 450px) {
