@@ -1,10 +1,12 @@
 .full-article {
+    text-align: justify;
     &__image {
         display: flex;
         justify-content: center;
+        align-items: center;
         background-color: #fff;
         img {
-            height: 23.75rem;
+            max-height: 300px;
             object-fit: contain;
         }
     }
@@ -22,16 +24,21 @@
     }
     &__text {
         font-weight: 300;
-        margin-bottom: 1.5625rem;
+        margin-bottom: 1.25rem;
         p + p {
             margin-top: 0.9375rem;
         }
     }
     &__info {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         font-family: 'Scada', sans-serif;
-        font-size: 1rem;
+        font-size: 0.875rem;
+        margin-right: 0 -5px;
+        span {
+            padding: 5px;
+        }
     }
 }

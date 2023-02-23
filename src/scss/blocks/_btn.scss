@@ -4,16 +4,16 @@
     align-items: center;
     text-align: center;
     padding: 0.3125rem 5.375rem;
-    min-height: 2.5rem;
+    min-height: 2rem;
     border-radius: 1.875rem;
     color: $default;
     background-color: $red;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-family: 'Scada', sans-serif;
     transition: background-color 0.5s ease;
     &--small {
         padding: 0.3125rem 5rem;
-        min-height: 2.5rem;
+        min-height: 2rem;
     }
     &--price {
         display: flex;
