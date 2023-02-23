@@ -152,7 +152,22 @@
     .color-block {
         justify-content: space-between;
     }
-    
+    .articles {
+        &__wrapper {
+            flex-direction: column-reverse;
+        }
+        &__news {
+            margin-right: 0;
+        }
+    }
+    .article-aside {
+        padding: 0 0 15px 0;
+    }
+    .article {
+        &__content {
+            padding: 1.25rem;
+        }
+    }
 }
 
 @media (max-width: 600px) {
@@ -217,6 +232,11 @@
     }
     .motoservices-tab {
         padding: 25px 15px;
+    }
+    .news {
+        &__item {
+            margin: 20px -20px;
+        }
     }
 }
 

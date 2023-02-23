@@ -1,6 +1,6 @@
 mixin article(img, alt, title, date, author, href="article.html")
     article.article 
-        .article__image
+        a(href="article.html").article__image
             img(src="@img/" + img, alt=alt)
         .article__content
             a(href=href).article__link 
