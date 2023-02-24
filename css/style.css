@@ -417,7 +417,7 @@ body {
 }
 
 .popular-products {
-  padding: 4.0625rem 0;
+  padding: 40px 0;
   font-family: "Scada", sans-serif;
   font-size: 1.125rem;
 }
@@ -438,7 +438,7 @@ body {
 }
 
 .popular-products__slider.swiper-container {
-  padding: 2.5rem 0;
+  padding: 2.5rem 0 0 0;
   position: relative;
   overflow: hidden;
 }
@@ -524,13 +524,13 @@ body {
   padding: 0 0 1.875rem 0;
 }
 .moto-news__title {
-  margin-bottom: 3.125rem;
+  margin-bottom: 20px;
 }
 .moto-news__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
-  gap: 1.875rem;
-  margin-bottom: 3.125rem;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 .moto-news__btn {
   text-align: center;
@@ -609,8 +609,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0.3125rem 5.375rem;
+  padding: 5px 20px;
   min-height: 2rem;
+  min-width: 200px;
   border-radius: 1.875rem;
   color: #fff;
   background-color: #F30E0E;
@@ -618,58 +619,24 @@ body {
   font-family: "Scada", sans-serif;
   transition: background-color 0.5s ease;
 }
-.btn--small {
-  padding: 0.3125rem 5rem;
-  min-height: 2rem;
+.btn__icon {
+  margin-right: 0.625rem;
 }
 .btn--price {
   display: flex;
   min-height: 1.875rem;
-  font-size: 1rem;
-  padding: 0.3125rem 1.25rem;
+  min-width: 160px;
+}
+.btn--link {
+  display: flex;
+  min-width: 160px;
+}
+.btn--busket {
+  display: flex;
+  min-width: 160px;
+  background-color: #0B9D1A;
 }
 .btn:hover, .btn:focus, .btn:active {
-  background-color: #414141;
-}
-
-.btn-busket {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  min-height: 2.5rem;
-  background-color: #0B9D1A;
-  color: #fff;
-  padding: 0.3125rem;
-  min-width: 11.25rem;
-  font-family: "Scada", sans-serif;
-  font-size: 1.125rem;
-  border-radius: 1.875rem;
-  transition: background-color 0.5s;
-}
-.btn-busket:hover {
-  background-color: #16b426;
-}
-.btn-busket__icon {
-  margin-right: 0.625rem;
-}
-
-.link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  min-height: 2.5rem;
-  font-family: "Scada", sans-serif;
-  font-size: 1.125rem;
-  color: #fff;
-  background-color: #F30E0E;
-  padding: 0.3125rem;
-  min-width: 11.25rem;
-  border-radius: 1.875rem;
-  transition: background-color 0.5s;
-}
-.link:hover, .link:focus, .link:active {
   background-color: #414141;
 }
 
@@ -2026,7 +1993,7 @@ body {
   margin-bottom: 1.875rem;
 }
 .busket__description {
-  margin-bottom: 3.125rem;
+  margin-bottom: 1.875rem;
 }
 
 .social-network__list {
