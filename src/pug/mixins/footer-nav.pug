@@ -1,7 +1,7 @@
 mixin footerNav(navlist, title)
-    ul.footer-nav__list
+    div.footer-nav__list
         h4(data-name="spoiler").footer-nav__label #{title}
-        .footer-nav__content.spoiler
+        ul.footer-nav__content.spoiler
             each item in navlist 
                 li.footer-nav__item
                     +link(item.class, item.href, item.text)
