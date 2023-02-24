@@ -1,5 +1,5 @@
 .popular-products {
-    padding: 4.0625rem 0;
+    padding: 40px 0;
     font-family: 'Scada', sans-serif;
     font-size: 1.125rem;
     &__title {
@@ -20,7 +20,7 @@
 }
 
 .popular-products__slider.swiper-container {
-    padding: 2.5rem 0;
+    padding: 2.5rem 0 0 0;
     position: relative;
     overflow: hidden;
 }

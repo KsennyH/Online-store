@@ -3,23 +3,31 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0.3125rem 5.375rem;
+    padding: 5px 20px;
     min-height: 2rem;
+    min-width: 200px;
     border-radius: 1.875rem;
     color: $default;
     background-color: $red;
     font-size: 1rem;
     font-family: 'Scada', sans-serif;
     transition: background-color 0.5s ease;
-    &--small {
-        padding: 0.3125rem 5rem;
-        min-height: 2rem;
+    &__icon {
+        margin-right: 0.625rem;
     }
     &--price {
         display: flex;
         min-height: 1.875rem;
-        font-size: 1rem;
-        padding: 0.3125rem 1.25rem;
+        min-width: 160px;
+    }
+    &--link {
+        display: flex;
+        min-width: 160px;
+    }
+    &--busket {
+        display: flex;
+        min-width: 160px;
+        background-color: #0B9D1A;
     }
     &:hover,
     &:focus,
