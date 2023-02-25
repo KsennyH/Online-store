@@ -1749,13 +1749,17 @@ body {
 }
 
 .popup {
-  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
   background-color: rgb(169, 164, 164);
   top: 0;
   left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
 }
 .popup__container {
   min-height: 100%;
@@ -1764,6 +1768,10 @@ body {
   align-items: center;
   padding: 30px 15px;
 }
+.popup.active {
+  opacity: 1;
+  visibility: visible;
+}
 
 .login {
   position: relative;
@@ -1771,7 +1779,13 @@ body {
   background-color: #555555;
   font-family: "Scada", sans-serif;
   border-radius: 20px;
-  padding: 50px;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+}
+.login.active {
+  opacity: 1;
+  visibility: visible;
 }
 .login__title {
   margin-bottom: 1.875rem;
@@ -1779,7 +1793,6 @@ body {
 .login__label {
   display: flex;
   flex-direction: column;
-  min-width: 300px;
 }
 .login__label + .login__label {
   margin-top: 25px;
@@ -1795,7 +1808,7 @@ body {
   top: -0.3125rem;
 }
 .login__input {
-  height: 2.5rem;
+  height: 2rem;
   padding: 0.3125rem 0.9375rem;
   border-radius: 1.875rem;
   background-color: #fff;
@@ -1827,6 +1840,7 @@ body {
   box-shadow: 0 0 0 0.125rem #414141;
 }
 .login__restore {
+  margin-left: 15px;
   text-decoration: underline;
 }
 .login__restore:hover {
@@ -1838,13 +1852,16 @@ body {
   align-items: center;
   padding: 30px 0;
 }
+.login__btn {
+  width: 100%;
+}
 .login__btn + .login__btn {
   margin-top: 15px;
 }
 .login__close {
   position: absolute;
-  top: -15px;
-  right: -15px;
+  top: 5px;
+  right: 5px;
 }
 
 .restore-password {
@@ -1854,20 +1871,25 @@ body {
   font-family: "Scada", sans-serif;
   border-radius: 20px;
   line-height: 1.5;
-  padding: 50px;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+}
+.restore-password.active {
+  opacity: 1;
+  visibility: visible;
 }
 .restore-password__title {
   margin-bottom: 1.875rem;
 }
 .restore-password__description {
   text-align: center;
-  margin-bottom: 3.125rem;
+  margin-bottom: 2.25rem;
 }
 .restore-password__label {
   display: flex;
   flex-direction: column;
-  min-width: 300px;
-  padding-bottom: 3.125rem;
+  margin-bottom: 1.5rem;
 }
 .restore-password__subtitle {
   position: relative;
@@ -1880,7 +1902,7 @@ body {
   top: -0.3125rem;
 }
 .restore-password__input {
-  height: 2.5rem;
+  height: 2rem;
   padding: 0.3125rem 0.9375rem;
   border-radius: 1.875rem;
   background-color: #fff;
@@ -1889,17 +1911,20 @@ body {
 .restore-password__input:hover, .restore-password__input:active, .restore-password__input:focus {
   box-shadow: -0.0625rem 0px 0.5rem 0.0625rem #ffcbcb;
 }
+.restore-password__btn {
+  width: 100%;
+}
 .restore-password__close {
   position: absolute;
-  top: -15px;
-  right: -15px;
+  top: 5px;
+  right: 5px;
 }
 
 .btn-close {
   background-color: white;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 .btn-close span {
   display: flex;
@@ -1927,19 +1952,25 @@ body {
   background-color: #555555;
   font-family: "Scada", sans-serif;
   border-radius: 20px;
-  padding: 25px 50px;
+  padding: 20px;
+  line-height: 1.5;
+  opacity: 0;
+  visibility: hidden;
+}
+.registration.active {
+  opacity: 1;
+  visibility: visible;
 }
 .registration__title {
   margin-bottom: 1.875rem;
 }
 .registration__description {
   text-align: center;
-  margin-bottom: 3.125rem;
+  margin-bottom: 2.25rem;
 }
 .registration__label {
   display: flex;
   flex-direction: column;
-  min-width: 300px;
   margin-bottom: 1.125rem;
 }
 .registration__label:last-child {
@@ -1959,7 +1990,7 @@ body {
   display: none;
 }
 .registration__input {
-  height: 2.5rem;
+  height: 2rem;
   padding: 0.3125rem 0.9375rem;
   margin-top: 0.625rem;
   border: 0.0625rem solid #FFFFFF;
@@ -1979,8 +2010,11 @@ body {
 }
 .registration__close {
   position: absolute;
-  top: -15px;
-  right: -15px;
+  top: 5px;
+  right: 5px;
+}
+.registration__btn {
+  width: 100%;
 }
 
 .busket {

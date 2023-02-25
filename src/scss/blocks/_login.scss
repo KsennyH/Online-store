@@ -4,14 +4,19 @@
     background-color: $grey-bg;
     font-family: 'Scada', sans-serif;
     border-radius: 20px;
-    padding: 50px;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
     &__title {
         margin-bottom: 1.875rem;
     }
     &__label {
         display: flex;
         flex-direction: column;
-        min-width: 300px;
     }
     &__label + &__label {
         margin-top: 25px;
@@ -27,7 +32,7 @@
         }
     }
     &__input {
-        height: 2.5rem;
+        height: 2rem;
         padding: 0.3125rem 0.9375rem;
         border-radius: 1.875rem;
         background-color: #fff;
@@ -61,6 +66,7 @@
         }
     }
     &__restore {
+        margin-left: 15px;
         text-decoration: underline;
         &:hover {
             color: $red;
@@ -72,12 +78,15 @@
         align-items: center;
         padding: 30px 0;
     }
+    &__btn {
+        width: 100%;
+    }
     &__btn + &__btn {
         margin-top: 15px;
     }
     &__close {
         position: absolute;
-        top: -15px;
-        right: -15px;
+        top: 5px;
+        right: 5px;
     }
 }

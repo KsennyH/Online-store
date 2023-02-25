@@ -4,18 +4,24 @@
     background-color: $grey-bg;
     font-family: 'Scada', sans-serif;
     border-radius: 20px;
-    padding: 25px 50px;
+    padding: 20px;
+    line-height: 1.5;
+    opacity: 0;
+    visibility: hidden;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
     &__title {
         margin-bottom: 1.875rem;
     }
     &__description {
         text-align: center;
-        margin-bottom: 3.125rem;
+        margin-bottom: 2.25rem;
     }
     &__label {
         display: flex;
         flex-direction: column;
-        min-width: 300px;
         margin-bottom: 1.125rem;
         &:last-child {
             margin-bottom: 0;
@@ -35,7 +41,7 @@
         }
     }
     &__input {
-        height: 2.5rem;
+        height: 2rem;
         padding: 0.3125rem 0.9375rem;
         margin-top: 0.625rem;
         border: 0.0625rem solid #FFFFFF;
@@ -57,7 +63,10 @@
     }
     &__close {
         position: absolute;
-        top: -15px;
-        right: -15px;
+        top: 5px;
+        right: 5px;
+    }
+    &__btn {
+        width: 100%;
     }
 }

@@ -30,7 +30,7 @@
                     </button>
                   </form>
                 </div>
-                <div class="top-header__users-wrapper"> <a class="user" href="login.html" aria-label="Личный кабинет">
+                <div class="top-header__users-wrapper"> <a class="user js-login" href="#" aria-label="Личный кабинет">
                     <svg class="user__icon"> 
                       <use xlink:href="img/sprite.svg#user-login"></use>
                     </svg><span class="user__label">Личный кабинет</span></a><a class="user" href="busket.html" aria-label="Корзина">
@@ -561,8 +561,8 @@
                 <input class="checkbox__input" type="checkbox" checked="checked"/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">Запомнить меня</span>
               </label><a class="login__restore" href="#">Забыли пароль?</a>
             </div>
-            <button class="login__btn btn-modal" type="submit">Войти</button>
-            <button class="login__btn btn-modal btn-modal--red" type="submit">Зарегистрироваться </button>
+            <button class="login__btn btn btn--busket" type="submit">Войти</button>
+            <button class="login__btn btn btn--link" type="submit">Зарегистрироваться </button>
           </form>
           <div class="login__close">
             <button class="btn-close"><span></span></button>
@@ -570,7 +570,7 @@
         </div>
       </div>
     </section>
-    <section class="popup js-login"> 
+    <section class="popup js-password">
       <div class="popup__container">
         <div class="restore-password"> 
           <h4 class="restore-password__title title">Восстановление пароля</h4>
@@ -579,7 +579,7 @@
             <label class="restore-password__label"><span class="restore-password__subtitle">Введите логин или e-mail:</span>
               <input class="restore-password__input" type="email" name="login" required="required"/>
             </label>
-            <button class="btn-modal" type="submit">Восстановить пароль</button>
+            <button class="restore-password__btn btn btn--busket" type="submit">Восстановить пароль</button>
           </form>
           <div class="restore-password__close">
             <button class="btn-close"><span></span></button>
@@ -587,7 +587,7 @@
         </div>
       </div>
     </section>
-    <section class="popup js-login"> 
+    <section class="popup js-registration">
       <div class="popup__container">
         <div class="registration"> 
           <h4 class="registration__title title">Регистрация</h4>
@@ -613,7 +613,7 @@
                 <input class="checkbox__input" type="checkbox" checked="checked"/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">Я согласен на <a href="#">обработку персональных данных </a></span>
               </label>
             </div>
-            <button class="btn-modal" type="submit">Зарегистрироваться</button>
+            <button class="registration__btn btn btn--busket" type="submit">Зарегистрироваться</button>
           </form>
           <div class="registration__close">
             <button class="btn-close"><span> </span></button>

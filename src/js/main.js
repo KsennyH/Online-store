@@ -4,6 +4,15 @@ import spoilerFooter from "./modules/spoilerFooter.js";
 mobileNavigation();
 spoilerFooter();
 
+const loginBtn = document.querySelector('.js-login');
+
+loginBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    
+})
+
+
+
 
 
 

@@ -1,4 +1,4 @@
-mixin user(link, aria, title)
-    a(href=link, aria-label=aria).user
+mixin user(link, aria, title, className)
+    a(class="" + className, href=link, aria-label=aria)
         block
         span.user__label #{title}
