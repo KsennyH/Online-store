@@ -1760,6 +1760,7 @@ body {
   z-index: 50;
   opacity: 0;
   visibility: hidden;
+  transition: all 0.5s ease-in;
 }
 .popup__container {
   min-height: 100%;
@@ -1780,12 +1781,6 @@ body {
   font-family: "Scada", sans-serif;
   border-radius: 20px;
   padding: 20px;
-  opacity: 0;
-  visibility: hidden;
-}
-.login.active {
-  opacity: 1;
-  visibility: visible;
 }
 .login__title {
   margin-bottom: 1.875rem;

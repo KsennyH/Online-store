@@ -5,12 +5,6 @@
     font-family: 'Scada', sans-serif;
     border-radius: 20px;
     padding: 20px;
-    opacity: 0;
-    visibility: hidden;
-    &.active {
-        opacity: 1;
-        visibility: visible;
-    }
     &__title {
         margin-bottom: 1.875rem;
     }
