@@ -1,0 +1,48 @@
+extends ./layout/app
+
+block variables
+    - const title = "Регистрация";
+
+block content
+    .wrapper
+        include ./chunk/header.pug
+
+        main.main
+            .breadcrumbs 
+                .container 
+                    ul.breadcrumbs__list
+                        +breadcrumbs("breadcrumbs__link", "index.html", "Главная")
+                        li.breadcrumbs__item 
+                            span.breadcrumbs__link.breadcrumbs__link--active Регистрация
+
+            .registration
+                .container
+                    .registration__inner
+                        h4.registration__title.title Регистрация
+                        p.registration__description Зарегистрируйтесь для более удобной работы с сайтом.
+                        form(action="/").registration__form 
+                            label.registration__label
+                                span.registration__subtitle Имя Фамилия:
+                                input(type="text", name="name", required).registration__input
+                            label.registration__label
+                                span.registration__subtitle E-mail:
+                                input(type="email", name="email", required).registration__input
+                            label.registration__label
+                                span.registration__subtitle.registration__subtitle--norequired Номер телефона:
+                                input(type="tel", name="phone").registration__input
+                            label.registration__label
+                                span.registration__subtitle Пароль (длина пароля - не менее 6 символов):
+                                input(type="password", name="password", required).registration__input
+                            label.registration__label
+                                span.registration__subtitle Подтвердите пароль:
+                                input(type="password", name="repeat-password", required).registration__input
+                            .registration__checkbox
+                                label.checkbox
+                                    input(type="checkbox", checked).checkbox__input
+                                    span.checkbox__custom.custom-checkbox
+                                    span.checkbox__name Я согласен на 
+                                        a(href="#") обработку персональных данных 
+                            button(type="submit").registration__btn.btn.btn--busket Зарегистрироваться
+
+        include ./chunk/footer.pug
+    include ./chunk/login.pug

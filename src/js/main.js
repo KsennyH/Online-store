@@ -5,18 +5,33 @@ mobileNavigation();
 spoilerFooter();
 
 const loginBtn = document.querySelector('.js-login');
-const loginPopup = document.querySelector('.js-login-popup');
+const popup = document.querySelector('.js-popup');
+const login = document.querySelector('.js-login-popup');
 const loginClose = document.querySelector('.login__close');
 
 loginBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    loginPopup.classList.add('active');
+    popup.classList.add('active');
+    login.classList.add('active');
 })
 
 loginClose.addEventListener('click', (e) => {
     e.preventDefault();
-    loginPopup.classList.remove('active');
+    popup.classList.remove('active');
+    login.classList.remove('active');
 })
+
+document.addEventListener('click', (e) => {
+    if(e.target === popup) {
+        login.classList.remove('active');
+        popup.classList.remove('active');
+    }
+})
+
+
+
+
+
 
 
 

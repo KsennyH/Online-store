@@ -545,9 +545,9 @@
         </div>
       </div>
     </div>
-    <section class="popup js-login-popup"> 
+    <section class="popup js-popup"> 
       <div class="popup__container"> 
-        <div class="login">
+        <div class="login js-login-popup">
           <h4 class="login__title title">Регистрация</h4>
           <form class="login__form" action="/">
             <div class="login__label"> <span class="login__subtitle">Введите логин или e-mail:</span>
@@ -559,64 +559,12 @@
             <div class="login__help"> 
               <label class="checkbox">
                 <input class="checkbox__input" type="checkbox" checked="checked"/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">Запомнить меня</span>
-              </label><a class="login__restore" href="#">Забыли пароль?</a>
+              </label><a class="login__restore" href="password.html">Забыли пароль?</a>
             </div>
-            <button class="login__btn btn btn--busket" type="submit">Войти</button>
-            <button class="login__btn btn btn--link" type="submit">Зарегистрироваться </button>
+            <button class="login__btn btn btn--busket" type="submit">Войти</button><a class="login__btn btn btn--link" href="registration.html">Зарегистрироваться </a>
           </form>
           <div class="login__close">
             <button class="btn-close"><span></span></button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="popup js-password">
-      <div class="popup__container">
-        <div class="restore-password"> 
-          <h4 class="restore-password__title title">Восстановление пароля</h4>
-          <p class="restore-password__description">Ваши данные, указанные при регистрации, а так же новый пароль будут высланы Вам по e-mail.</p>
-          <form class="restore-password__form" action="/">
-            <label class="restore-password__label"><span class="restore-password__subtitle">Введите логин или e-mail:</span>
-              <input class="restore-password__input" type="email" name="login" required="required"/>
-            </label>
-            <button class="restore-password__btn btn btn--busket" type="submit">Восстановить пароль</button>
-          </form>
-          <div class="restore-password__close">
-            <button class="btn-close"><span></span></button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="popup js-registration">
-      <div class="popup__container">
-        <div class="registration"> 
-          <h4 class="registration__title title">Регистрация</h4>
-          <p class="registration__description">Зарегистрируйтесь для более удобной работы с сайтом.</p>
-          <form class="registration__form" action="/"> 
-            <label class="registration__label"><span class="registration__subtitle">Имя Фамилия:</span>
-              <input class="registration__input" type="text" name="name" required="required"/>
-            </label>
-            <label class="registration__label"><span class="registration__subtitle">E-mail:</span>
-              <input class="registration__input" type="email" name="email" required="required"/>
-            </label>
-            <label class="registration__label"><span class="registration__subtitle registration__subtitle--norequired">Номер телефона:</span>
-              <input class="registration__input" type="tel" name="phone"/>
-            </label>
-            <label class="registration__label"><span class="registration__subtitle">Пароль (длина пароля - не менее 6 символов):</span>
-              <input class="registration__input" type="password" name="password" required="required"/>
-            </label>
-            <label class="registration__label"><span class="registration__subtitle">Подтвердите пароль:</span>
-              <input class="registration__input" type="password" name="repeat-password" required="required"/>
-            </label>
-            <div class="registration__checkbox">
-              <label class="checkbox">
-                <input class="checkbox__input" type="checkbox" checked="checked"/><span class="checkbox__custom custom-checkbox"></span><span class="checkbox__name">Я согласен на <a href="#">обработку персональных данных </a></span>
-              </label>
-            </div>
-            <button class="registration__btn btn btn--busket" type="submit">Зарегистрироваться</button>
-          </form>
-          <div class="registration__close">
-            <button class="btn-close"><span> </span></button>
           </div>
         </div>
       </div>

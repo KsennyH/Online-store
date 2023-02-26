@@ -1,6 +1,6 @@
-section.popup.js-login-popup 
+section.popup.js-popup 
     .popup__container 
-        .login
+        .login.js-login-popup
             h4.login__title.title Регистрация
             form(action="/").login__form
                 .login__label 
@@ -14,9 +14,9 @@ section.popup.js-login-popup
                         input(type="checkbox", checked).checkbox__input
                         span.checkbox__custom.custom-checkbox
                         span.checkbox__name Запомнить меня
-                    a(href="#").login__restore Забыли пароль?
+                    a(href="password.html").login__restore Забыли пароль?
                 button(type="submit").login__btn.btn.btn--busket Войти
-                button(type="submit").login__btn.btn.btn--link Зарегистрироваться 
+                a(href="registration.html").login__btn.btn.btn--link Зарегистрироваться 
             .login__close
                 button.btn-close
                     span
