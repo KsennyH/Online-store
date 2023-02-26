@@ -1729,30 +1729,11 @@ body {
   line-height: 1.5;
 }
 
-.btn-modal {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  min-height: 2.5rem;
-  background-color: #0B9D1A;
-  color: #fff;
-  padding: 0.3125rem;
-  font-family: "Scada", sans-serif;
-  font-size: 1.125rem;
-  border-radius: 1.875rem;
-  transition: background-color 0.5s;
-}
-.btn-modal--red {
-  background-color: #f30e0e;
-}
-
 .popup {
   position: fixed;
   width: 100%;
-  height: 100%;
-  background-color: rgb(169, 164, 164);
+  height: 100vh;
+  background-color: rgba(169, 164, 164, 0.8);
   top: 0;
   left: 0;
   overflow-y: auto;
@@ -1775,12 +1756,18 @@ body {
 }
 
 .login {
-  position: relative;
-  max-width: 800px;
+  position: absolute;
+  max-width: 600px;
   background-color: #555555;
   font-family: "Scada", sans-serif;
   border-radius: 20px;
   padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+}
+.login.active {
+  opacity: 1;
+  visibility: visible;
 }
 .login__title {
   margin-bottom: 1.875rem;
@@ -1860,19 +1847,16 @@ body {
 }
 
 .restore-password {
-  position: relative;
   max-width: 500px;
-  background-color: #555555;
   font-family: "Scada", sans-serif;
-  border-radius: 20px;
   line-height: 1.5;
-  padding: 20px;
-  opacity: 0;
-  visibility: hidden;
+  margin: 0 auto;
+  padding: 15px 0 30px 0;
 }
-.restore-password.active {
-  opacity: 1;
-  visibility: visible;
+.restore-password__inner {
+  background-color: #555555;
+  border-radius: 20px;
+  padding: 20px;
 }
 .restore-password__title {
   margin-bottom: 1.875rem;
@@ -1909,11 +1893,6 @@ body {
 .restore-password__btn {
   width: 100%;
 }
-.restore-password__close {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
 
 .btn-close {
   background-color: white;
@@ -1942,19 +1921,16 @@ body {
 }
 
 .registration {
-  position: relative;
-  max-width: 800px;
-  background-color: #555555;
+  max-width: 500px;
   font-family: "Scada", sans-serif;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 15px 0 30px 0;
+}
+.registration__inner {
+  background-color: #555555;
   border-radius: 20px;
   padding: 20px;
-  line-height: 1.5;
-  opacity: 0;
-  visibility: hidden;
-}
-.registration.active {
-  opacity: 1;
-  visibility: visible;
 }
 .registration__title {
   margin-bottom: 1.875rem;
@@ -2002,11 +1978,6 @@ body {
 }
 .registration__checkbox a {
   text-decoration: underline;
-}
-.registration__close {
-  position: absolute;
-  top: 5px;
-  right: 5px;
 }
 .registration__btn {
   width: 100%;
