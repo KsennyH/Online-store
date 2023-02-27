@@ -1,0 +1,26 @@
+extends ./layout/app
+
+block variables
+    - const title = "Корзина";
+
+block content 
+    .wrapper
+        include ./chunk/header.pug
+
+        main.main 
+            .breadcrumbs 
+                .container 
+                    ul.breadcrumbs__list
+                        +breadcrumbs("breadcrumbs__link", "index.html", "Главная")
+                        li.breadcrumbs__item 
+                            span.breadcrumbs__link.breadcrumbs__link--active Корзина
+            section.cart
+                .container 
+                    h1.cart__title.title Корзина товаров
+                    .cart-header
+                        .card-header__name Название
+                        .card-header__count Количество
+                        .card-header__price Цена
+                    .cart-products 
+                        +cart-product("outfit-1.jpeg", "Перчатки", "MCP Мотоперчатки классические Wicklow", "7000")
+                    .cart-footer

@@ -2007,6 +2007,80 @@ body {
   height: 42px;
 }
 
+.cart-header {
+  background-color: #555555;
+  font-family: "Scada", sans-serif;
+  font-size: 1.125rem;
+  display: grid;
+  grid-template-columns: 5fr 3fr 2fr;
+  border-radius: 10px;
+  padding: 20px;
+}
+.cart-header__name {
+  justify-self: center;
+}
+.cart-header__count {
+  justify-self: start;
+}
+.cart-header__price {
+  justify-self: end;
+}
+
+.cart-product {
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr 1fr 1fr;
+  column-gap: 30px;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding: 20px;
+}
+.cart-product__title {
+  font-family: "Scada,sans-serif";
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.cart-product__img {
+  max-width: 120px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.cart-product__img img {
+  max-width: 120px;
+  object-fit: contain;
+}
+.cart-product__price {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.cart-product__deleate {
+  justify-self: end;
+}
+
+.counter {
+  display: flex;
+  column-gap: 5px;
+  font-size: 1.125rem;
+}
+.counter__input {
+  width: 100px;
+  height: 30px;
+  padding: 5px 10px;
+}
+.counter__input::-webkit-inner-spin-button, .counter__input::-webkit-outer-spin-button {
+  appearance: none;
+}
+.counter__btn {
+  width: 30px;
+  height: 30px;
+  background: #414141;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
 @media (max-width: 991.98px) {
   body {
     font-size: 0.875rem;
