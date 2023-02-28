@@ -22,5 +22,12 @@ block content
                         .card-header__count Количество
                         .card-header__price Цена
                     .cart-products 
-                        +cart-product("outfit-1.jpeg", "Перчатки", "MCP Мотоперчатки классические Wicklow", "7000")
+                        +cart-product("outfit-1.jpeg", "Перчатки", "MCP Мотоперчатки классические Wicklow", "2 500")
+                        +cart-product("3.jpg", "Мотоцикл", "IRBIS TTR 110", "36 500")
+                        +cart-product("outfit-9.jpeg", "Шлем", "SHOEI Мотошлем NEOTECH EXCURSION", "50 000")
                     .cart-footer
+                        .cart-footer__total 
+                            span Всего:
+                            span 89 000 руб.
+        include ./chunk/footer.pug
+    include ./chunk/login.pug

@@ -12,17 +12,18 @@
         font-weight: 700;
     }
     &__img {
-        max-width: 120px;
-        overflow: hidden;
-        border-radius: 10px;
+        min-width: 120px;
         img {
-            max-width: 120px;
+            width: 120px;
+            height: 120px;
+            border-radius: 5px;
             object-fit: contain;
         }
     }
     &__price {
         font-size: 1.125rem;
         font-weight: 600;
+        justify-self: center;
     }
     &__deleate {
         justify-self: end;

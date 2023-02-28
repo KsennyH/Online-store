@@ -1,0 +1,9 @@
+.cart-footer {
+    padding: 20px;
+    &__total {
+        display: flex;
+        justify-content: end;
+        column-gap: 15px;
+        margin-left: auto;
+    }
+}
