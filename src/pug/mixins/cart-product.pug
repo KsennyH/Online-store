@@ -3,10 +3,11 @@ mixin cart-product(img, alt, title, price)
         .cart-product__img 
             img(src="@img/" + img, alt=alt)
         .cart-product__title #{title}
-        .counter 
-            button(type="button").counter__btn.counter__btn--up +
-            input(type="number", min="1", max="100", value="1").counter__input
-            button(type="button").counter__btn.counter__btn--down -
+        .cart-product__counter
+            .counter 
+                button(type="button").counter__btn.counter__btn--up +
+                input(type="number", min="1", max="100", value="1").counter__input
+                button(type="button").counter__btn.counter__btn--down -
         .cart-product__price 
             p #{price}
         button(type="button").cart-product__deleate.btn-close
