@@ -28,6 +28,7 @@ document.addEventListener('click', (e) => {
     }
 })
 
+//Счетчик
 window.addEventListener('click', (e) => {
 
     let inputCounter;
@@ -38,7 +39,7 @@ window.addEventListener('click', (e) => {
     }
 
     if( e.target.dataset.button === "up" ) {
-        inputCounter.value = ++inputCounter.value;
+        inputCounter = inputCounter.value++;
     }
 
     if( e.target.dataset.button === "down" ) {
@@ -48,6 +49,19 @@ window.addEventListener('click', (e) => {
     }
 });
 
+//Добавление в корзину
+window.addEventListener('click', (e) => {
+    if(e.target.hasAttribute('data-cart')) {
+        const card = e.target.closest('.product-card');
+        
+        const dataProduct = {
+            imgSrc: card.querySelector('.js-img-card').getAttribute('src'),
+            title: card.querySelector('.product-card__title').innerText,
+            price: card.querySelector('.product-card__price').innerText
+        }
+        console.log(dataProduct);
+    }
+})
 
 
 

@@ -6,7 +6,7 @@ mixin cart-product(img, alt, title, price)
         .cart-product__counter
             .counter 
                 button(type="button", data-button="down").counter__btn.counter__btn--down -
-                input(type="number", data-counter, min="1", max="100", value="1").counter__input
+                input(type="number", data-counter, value="1").counter__input
                 button(type="button", data-button="up").counter__btn.counter__btn--up +
         .cart-product__price 
             p #{price}
