@@ -28,6 +28,25 @@ document.addEventListener('click', (e) => {
     }
 })
 
+// Количество товаров в корзине
+function cartStatus () {
+    const products = document.querySelector('.cart-products');
+    const cartEmpty = document.querySelector('.busket');
+    const cartHeader = document.querySelector('.cart__info');
+    const cartTotal = document.querySelector('.cart__total');
+
+    if(products.children.length > 0) {
+        cartEmpty.classList.add('none');
+        cartHeader.classList.remove('none');
+        cartTotal.classList.remove('none');
+    } else {
+        cartEmpty.classList.remove('none');
+        cartHeader.classList.add('none');
+        cartTotal.classList.add('none');
+    }
+}
+
+
 //Счетчик
 window.addEventListener('click', (e) => {
 
@@ -87,6 +106,7 @@ window.addEventListener('click', (e) => {
 
             cartProducts.insertAdjacentHTML('beforeend', cardTemplate);
         }
+        cartStatus();
     }
 });
 
@@ -95,6 +115,7 @@ window.addEventListener('click', (e) => {
     if( e.target.dataset.deleate === "deleate") {
         const cardForDeleate = e.target.closest('.cart-product');
         cardForDeleate.remove();
+        cartStatus();
     }
 });
 

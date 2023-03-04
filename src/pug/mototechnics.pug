@@ -50,15 +50,20 @@ block content
             section.cart
                 .container 
                     h1.cart__title.title Корзина товаров
-                    .cart-header
-                        .card-header__name Название
-                        .card-header__count Количество
-                        .card-header__price Цена
-                    .cart-products 
-                    .cart-footer
-                        .cart-footer__total 
-                            span Всего:
-                            span 89 000 руб.
+                    .cart__info.none
+                        .cart-header
+                            .card-header__name Название
+                            .card-header__count Количество
+                            .card-header__price Цена
+                    .cart-products
+                    .cart__total.none 
+                        .cart-footer
+                            .cart-footer__total 
+                                span Всего:
+                                span 89 000 руб.
+                    .busket 
+                        h2.busket__title.title К сожалению, Ваша корзина пуста
+                        p.busket__description Вы можете это исправить: выберите в каталоге интересующий товар и нажмите кнопку “В корзину”.
         include ./chunk/footer.pug
     include ./chunk/login.pug
 block scripts 
