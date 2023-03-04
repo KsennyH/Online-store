@@ -3,4 +3,4 @@ mixin cards(cardslist)
         ul.products-block__list 
             each item in cardslist 
                 li.products-block__item 
-                    +product-card(item.image, item.title, item.title, item.price, item.link, item.text)
+                    +product-card(item.id, item.image, item.title, item.title, item.price, item.link, item.text)

@@ -1,4 +1,4 @@
-mixin product-card(image, altText, title, price, link="product-card.html", text="В наличии", article="Артикул: 17931", year="2021", linkText="Подробнее", busket="В корзину")
+mixin product-card(id, image, altText, title, price, link="product-card.html", text="В наличии", article="Артикул: 17931", year="2021", linkText="Подробнее", busket="В корзину")
     article(data-id=id).product-card
         .product-card__img 
             img(src="img/" + image, alt=altText).js-img-card

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link rel="stylesheet" href="css/style.min.css"/>
-    <link rel="stylesheet" href="plagins/nouislider.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&amp;family=Scada:wght@400;700&amp;display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;1,700&amp;display=swap"/>
     <title>Мототехника</title>
@@ -355,7 +354,7 @@
                   <div class="products-block">
                     <ul class="products-block__list"> 
                       <li class="products-block__item"> 
-                        <article class="product-card">
+                        <article class="product-card" data-id="01">
                           <div class="product-card__img"> <img class="js-img-card" src="img/1.jpg" alt="IRBIS VIRAGO"/></div>
                           <div class="product-card__info"> 
                             <h3 class="product-card__title card-title">IRBIS VIRAGO</h3>
@@ -373,7 +372,7 @@
                         </article>
                       </li>
                       <li class="products-block__item"> 
-                        <article class="product-card">
+                        <article class="product-card" data-id="02">
                           <div class="product-card__img"> <img class="js-img-card" src="img/2.jpg" alt="Racer VIPER"/></div>
                           <div class="product-card__info"> 
                             <h3 class="product-card__title card-title">Racer VIPER</h3>
@@ -391,7 +390,7 @@
                         </article>
                       </li>
                       <li class="products-block__item"> 
-                        <article class="product-card">
+                        <article class="product-card" data-id="03">
                           <div class="product-card__img"> <img class="js-img-card" src="img/3.jpg" alt="IRBIS TTR 110"/></div>
                           <div class="product-card__info"> 
                             <h3 class="product-card__title card-title">IRBIS TTR 110</h3>
@@ -409,7 +408,7 @@
                         </article>
                       </li>
                       <li class="products-block__item"> 
-                        <article class="product-card">
+                        <article class="product-card" data-id="04">
                           <div class="product-card__img"> <img class="js-img-card" src="img/4.jpg" alt="Motoland CRF 10"/></div>
                           <div class="product-card__info"> 
                             <h3 class="product-card__title card-title">Motoland CRF 10</h3>
@@ -427,7 +426,7 @@
                         </article>
                       </li>
                       <li class="products-block__item"> 
-                        <article class="product-card">
+                        <article class="product-card" data-id="05">
                           <div class="product-card__img"> <img class="js-img-card" src="img/5.jpg" alt="Racer SKYWAY"/></div>
                           <div class="product-card__info"> 
                             <h3 class="product-card__title card-title">Racer SKYWAY</h3>
@@ -445,7 +444,7 @@
                         </article>
                       </li>
                       <li class="products-block__item"> 
-                        <article class="product-card">
+                        <article class="product-card" data-id="06">
                           <div class="product-card__img"> <img class="js-img-card" src="img/6.jpg" alt="Irbis ttr 125"/></div>
                           <div class="product-card__info"> 
                             <h3 class="product-card__title card-title">Irbis ttr 125</h3>
@@ -463,7 +462,7 @@
                         </article>
                       </li>
                       <li class="products-block__item"> 
-                        <article class="product-card">
+                        <article class="product-card" data-id="07">
                           <div class="product-card__img"> <img class="js-img-card" src="img/7.jpg" alt="Stels Delta 200"/></div>
                           <div class="product-card__info"> 
                             <h3 class="product-card__title card-title">Stels Delta 200</h3>
@@ -481,7 +480,7 @@
                         </article>
                       </li>
                       <li class="products-block__item"> 
-                        <article class="product-card">
+                        <article class="product-card" data-id="08">
                           <div class="product-card__img"> <img class="js-img-card" src="img/8.jpg" alt="IRBIS VR1 200сс"/></div>
                           <div class="product-card__info"> 
                             <h3 class="product-card__title card-title">IRBIS VR1 200сс</h3>
@@ -499,7 +498,7 @@
                         </article>
                       </li>
                       <li class="products-block__item"> 
-                        <article class="product-card">
+                        <article class="product-card" data-id="09">
                           <div class="product-card__img"> <img class="js-img-card" src="img/9.jpg" alt="IRBIS GR 250сс"/></div>
                           <div class="product-card__info"> 
                             <h3 class="product-card__title card-title">IRBIS GR 250сс</h3>
@@ -547,6 +546,20 @@
             </div>
           </div>
         </div>
+        <section class="cart">
+          <div class="container"> 
+            <h1 class="cart__title title">Корзина товаров</h1>
+            <div class="cart-header">
+              <div class="card-header__name">Название</div>
+              <div class="card-header__count">Количество</div>
+              <div class="card-header__price">Цена</div>
+            </div>
+            <div class="cart-products"> </div>
+            <div class="cart-footer">
+              <div class="cart-footer__total"> <span>Всего:</span><span>89 000 руб.</span></div>
+            </div>
+          </div>
+        </section>
       </main>
       <div class="footer"> 
         <div class="footer__content"> 
