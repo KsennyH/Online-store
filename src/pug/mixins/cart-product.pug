@@ -8,7 +8,6 @@ mixin cart-product(img, alt, title, price)
                 button(type="button", data-button="down").counter__btn.counter__btn--down -
                 input(type="number", data-counter, value="1").counter__input
                 button(type="button", data-button="up").counter__btn.counter__btn--up +
-        .cart-product__price 
-            p #{price}
+        .cart-product__price #{price}
         button(type="button").cart-product__deleate.btn-close
             span 

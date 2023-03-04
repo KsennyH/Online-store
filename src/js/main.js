@@ -28,6 +28,20 @@ document.addEventListener('click', (e) => {
     }
 })
 
+// Цена для счетчика
+function cartPrice () {
+    const cartElements = document.querySelectorAll('.cart-product');
+    let totalPrice = 0;
+
+    cartElements.forEach(el => {
+        const elementCount = el.querySelector('[data-counter]');
+        const elementPrice = el.querySelector('.cart-product__price');
+        const currentPriceElement = elementCount.value * parseInt(elementPrice.innerText.replace(" ", ""));
+        totalPrice += currentPriceElement;
+        console.log(totalPrice);
+    });
+}
+
 // Количество товаров в корзине
 function cartStatus () {
     const products = document.querySelector('.cart-products');
@@ -44,7 +58,7 @@ function cartStatus () {
         cartHeader.classList.add('none');
         cartTotal.classList.add('none');
     }
-}
+};
 
 
 //Счетчик
@@ -99,7 +113,7 @@ window.addEventListener('click', (e) => {
             </div>
             </div>
             <div class="cart-product__price"> 
-            <p>${dataProduct.price}</p>
+                ${dataProduct.price}
             </div>
             <button class="cart-product__deleate btn-close" type="button" data-deleate="deleate"><span> </span></button>
                 </div>`
@@ -107,6 +121,7 @@ window.addEventListener('click', (e) => {
             cartProducts.insertAdjacentHTML('beforeend', cardTemplate);
         }
         cartStatus();
+        cartPrice();
     }
 });
 
