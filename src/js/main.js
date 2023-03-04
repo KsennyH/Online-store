@@ -47,6 +47,7 @@ window.addEventListener('click', (e) => {
             inputCounter.value = --inputCounter.value;
         }
     }
+
 });
 
 //Добавление в корзину
@@ -62,7 +63,13 @@ window.addEventListener('click', (e) => {
             price: card.querySelector('.product-card__price').innerText
         };
 
-        const cardTemplate = `<div class="cart-product" data-id="${dataProduct.id}"> 
+        const productInCart = cartProducts.querySelector(`[data-id='${dataProduct.id}']`);
+       
+        if (productInCart) {
+            const counterInCart = productInCart.querySelector('[data-counter]');
+            counterInCart.value = ++counterInCart.value;
+        } else {
+            const cardTemplate = `<div class="cart-product" data-id="${dataProduct.id}"> 
             <div class="cart-product__img"> <img src="${dataProduct.imgSrc}" alt="${dataProduct.title}"/></div>
             <div class="cart-product__title">${dataProduct.title}</div>
             <div class="cart-product__counter">
@@ -75,12 +82,22 @@ window.addEventListener('click', (e) => {
             <div class="cart-product__price"> 
             <p>${dataProduct.price}</p>
             </div>
-            <button class="cart-product__deleate btn-close" type="button"><span> </span></button>
-        </div>`
+            <button class="cart-product__deleate btn-close" type="button" data-deleate="deleate"><span> </span></button>
+                </div>`
 
-        cartProducts.insertAdjacentHTML('beforeend', cardTemplate);
+            cartProducts.insertAdjacentHTML('beforeend', cardTemplate);
+        }
     }
-})
+});
+
+//Удаление из корзины
+window.addEventListener('click', (e) => {
+    if( e.target.dataset.deleate === "deleate") {
+        const cardForDeleate = e.target.closest('.cart-product');
+        cardForDeleate.remove();
+    }
+});
+
 
 
 
