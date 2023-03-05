@@ -31,6 +31,7 @@ document.addEventListener('click', (e) => {
 // Цена для счетчика
 function cartPrice () {
     const cartElements = document.querySelectorAll('.cart-product');
+    const totalPriceElement = document.querySelector('[data-total]');
     let totalPrice = 0;
 
     cartElements.forEach(el => {
@@ -38,7 +39,7 @@ function cartPrice () {
         const elementPrice = el.querySelector('.cart-product__price');
         const currentPriceElement = elementCount.value * parseInt(elementPrice.innerText.replace(" ", ""));
         totalPrice += currentPriceElement;
-        console.log(totalPrice);
+        totalPriceElement.innerText = totalPrice;
     });
 }
 
@@ -66,7 +67,7 @@ window.addEventListener('click', (e) => {
 
     let inputCounter;
 
-    if(e.target.dataset.button === "up" || e.target.dataset.button === "down" ) {
+    if( e.target.dataset.button === "up" || e.target.dataset.button === "down" ) {
         const counter = e.target.closest('.counter');
         inputCounter = counter.querySelector('[data-counter]');
     }
@@ -81,6 +82,19 @@ window.addEventListener('click', (e) => {
         }
     }
 
+    if( e.target.dataset.button === "up" || e.target.dataset.button === "down" ) {
+        cartPrice();
+    }
+});
+
+//Удаление из корзины
+window.addEventListener('click', (e) => {
+    if( e.target.dataset.deleate === "deleate") {
+        const cardForDeleate = e.target.closest('.cart-product');
+        cardForDeleate.remove();
+        cartStatus();
+        cartPrice();
+    }
 });
 
 //Добавление в корзину
@@ -125,14 +139,6 @@ window.addEventListener('click', (e) => {
     }
 });
 
-//Удаление из корзины
-window.addEventListener('click', (e) => {
-    if( e.target.dataset.deleate === "deleate") {
-        const cardForDeleate = e.target.closest('.cart-product');
-        cardForDeleate.remove();
-        cartStatus();
-    }
-});
 
 
 

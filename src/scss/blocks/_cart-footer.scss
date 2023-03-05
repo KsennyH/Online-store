@@ -3,7 +3,12 @@
     &__total {
         display: flex;
         justify-content: end;
-        column-gap: 15px;
         margin-left: auto;
+        span:first-child {
+            margin-right: 15px;
+        }
+        span[data-total] {
+            margin-right: 5px;
+        }
     }
 }
