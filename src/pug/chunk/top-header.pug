@@ -7,9 +7,11 @@
                 .top-header__form 
                     include ./search-form.pug
                 .top-header__users-wrapper 
-                    +user("#", "Личный кабинет", "Личный кабинет", "user js-login")
-                        +svg("user__icon", "user-login")
-                    +user("cart.html", "Корзина", "Корзина", "user")
-                        +svg("user__icon", "user-busket")
+                    +user("#", "Личный кабинет", "Личный кабинет", "user js-login", "user-login")
+                        block svg
+                            +svg("user__icon", "user-login")
+                    +user("cart.html", "Корзина", "Корзина", "user", "user-cart")
+                        block svg
+                            +svg("user__icon", "user-busket")
             .top-header__info 
                 include ./address-information

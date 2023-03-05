@@ -1,4 +1,4 @@
-mixin user(link, aria, title, className)
-    a(class="" + className, href=link, aria-label=aria)
-        block
+mixin user(link, aria, title, className, data)
+    a(class="" + className, href=link, aria-label=aria, data-user=data)
+        block svg
         span.user__label #{title}

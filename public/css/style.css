@@ -1044,7 +1044,7 @@ body {
 }
 
 .catalog {
-  padding-bottom: 3.75rem;
+  padding-bottom: 2rem;
 }
 .catalog__inner {
   display: flex;
@@ -1770,7 +1770,7 @@ body {
   visibility: visible;
 }
 .login__title {
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.5rem;
 }
 .login__label {
   display: flex;

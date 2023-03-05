@@ -1,8 +1,8 @@
 section.popup.js-popup 
     .popup__container 
-        .login.js-login-popup
-            h4.login__title.title Регистрация
+        .login.js-login-popup(data-login)
             form(action="/").login__form
+                h4.login__title.title Регистрация
                 .login__label 
                     span.login__subtitle Введите логин или e-mail:
                     input(type="text", name="login", required).login__input
