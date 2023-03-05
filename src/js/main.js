@@ -1,15 +1,28 @@
 import swiper from "./modules/swiper.js";
 import mobileNavigation from "./modules/mobileNavigation.js";
 import spoilerFooter from "./modules/spoilerFooter.js";
+import counter from "./modules/counter.js";
+import deleateFromCart from "./modules/deleateFromCart.js";
+import addToCart from "./modules/addToCart.js";
+deleateFromCart();
+counter();
+addToCart();
 mobileNavigation();
 spoilerFooter();
+
+
+window.addEventListener('click', (e) => {
+    if(e.target.contains('.js-login')) {
+        const loginBtn = document.querySelector('.js-login');
+    }
+})
 
 const loginBtn = document.querySelector('.js-login');
 const popup = document.querySelector('.js-popup');
 const login = document.querySelector('.js-login-popup');
 const loginClose = document.querySelector('.login__close');
 
-loginBtn.addEventListener('click', (e) => {
+/*loginBtn.addEventListener('click', (e) => {
     e.preventDefault();
     popup.classList.add('active');
     login.classList.add('active');
@@ -26,118 +39,8 @@ document.addEventListener('click', (e) => {
         login.classList.remove('active');
         popup.classList.remove('active');
     }
-})
+})*/
 
-// Цена для счетчика
-function cartPrice () {
-    const cartElements = document.querySelectorAll('.cart-product');
-    const totalPriceElement = document.querySelector('[data-total]');
-    let totalPrice = 0;
-
-    cartElements.forEach(el => {
-        const elementCount = el.querySelector('[data-counter]');
-        const elementPrice = el.querySelector('.cart-product__price');
-        const currentPriceElement = elementCount.value * parseInt(elementPrice.innerText.replace(" ", ""));
-        totalPrice += currentPriceElement;
-        totalPriceElement.innerText = totalPrice;
-    });
-}
-
-// Количество товаров в корзине
-function cartStatus () {
-    const products = document.querySelector('.cart-products');
-    const cartEmpty = document.querySelector('.busket');
-    const cartHeader = document.querySelector('.cart__info');
-    const cartTotal = document.querySelector('.cart__total');
-
-    if(products.children.length > 0) {
-        cartEmpty.classList.add('none');
-        cartHeader.classList.remove('none');
-        cartTotal.classList.remove('none');
-    } else {
-        cartEmpty.classList.remove('none');
-        cartHeader.classList.add('none');
-        cartTotal.classList.add('none');
-    }
-};
-
-
-//Счетчик
-window.addEventListener('click', (e) => {
-
-    let inputCounter;
-
-    if( e.target.dataset.button === "up" || e.target.dataset.button === "down" ) {
-        const counter = e.target.closest('.counter');
-        inputCounter = counter.querySelector('[data-counter]');
-    }
-
-    if( e.target.dataset.button === "up" ) {
-        inputCounter = inputCounter.value++;
-    }
-
-    if( e.target.dataset.button === "down" ) {
-        if( inputCounter.value > 1 ) {
-            inputCounter.value = --inputCounter.value;
-        }
-    }
-
-    if( e.target.dataset.button === "up" || e.target.dataset.button === "down" ) {
-        cartPrice();
-    }
-});
-
-//Удаление из корзины
-window.addEventListener('click', (e) => {
-    if( e.target.dataset.deleate === "deleate") {
-        const cardForDeleate = e.target.closest('.cart-product');
-        cardForDeleate.remove();
-        cartStatus();
-        cartPrice();
-    }
-});
-
-//Добавление в корзину
-const cartProducts = document.querySelector('.cart-products');
-window.addEventListener('click', (e) => {
-    if(e.target.hasAttribute('data-cart')) {
-        const card = e.target.closest('.product-card');
-        
-        const dataProduct = {
-            id: card.dataset.id,
-            imgSrc: card.querySelector('.js-img-card').getAttribute('src'),
-            title: card.querySelector('.product-card__title').innerText,
-            price: card.querySelector('.product-card__price').innerText
-        };
-
-        const productInCart = cartProducts.querySelector(`[data-id='${dataProduct.id}']`);
-       
-        if (productInCart) {
-            const counterInCart = productInCart.querySelector('[data-counter]');
-            counterInCart.value = ++counterInCart.value;
-        } else {
-            const cardTemplate = `<div class="cart-product" data-id="${dataProduct.id}"> 
-            <div class="cart-product__img"> <img src="${dataProduct.imgSrc}" alt="${dataProduct.title}"/></div>
-            <div class="cart-product__title">${dataProduct.title}</div>
-            <div class="cart-product__counter">
-            <div class="counter"> 
-                <button class="counter__btn counter__btn--down" type="button" data-button="down">-</button>
-                <input class="counter__input" type="number" data-counter="data-counter" value="1"/>
-                <button class="counter__btn counter__btn--up" type="button" data-button="up">+</button>
-            </div>
-            </div>
-            <div class="cart-product__price"> 
-                ${dataProduct.price}
-            </div>
-            <button class="cart-product__deleate btn-close" type="button" data-deleate="deleate"><span> </span></button>
-                </div>`
-
-            cartProducts.insertAdjacentHTML('beforeend', cardTemplate);
-        }
-        cartStatus();
-        cartPrice();
-    }
-});
 
 
 
