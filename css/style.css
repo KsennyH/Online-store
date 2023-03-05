@@ -2089,8 +2089,13 @@ body {
 .cart-footer__total {
   display: flex;
   justify-content: end;
-  column-gap: 15px;
   margin-left: auto;
+}
+.cart-footer__total span:first-child {
+  margin-right: 15px;
+}
+.cart-footer__total span[data-total] {
+  margin-right: 5px;
 }
 
 .cart {
