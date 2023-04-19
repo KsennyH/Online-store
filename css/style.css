@@ -226,6 +226,10 @@ body {
   align-items: center;
 }
 
+.user > * {
+  pointer-events: none;
+}
+
 .user__icon {
   flex: 0 0 25px;
   display: inline-block;
@@ -720,6 +724,10 @@ body {
   font-size: 1rem;
   font-family: "Scada", sans-serif;
   transition: background-color 0.5s ease;
+}
+
+.btn > * {
+  pointer-events: none;
 }
 
 .btn__icon {
@@ -2253,6 +2261,10 @@ body {
   border-radius: 50%;
   width: 30px;
   height: 30px;
+}
+
+.btn-close > * {
+  pointer-events: none;
 }
 
 .btn-close span {
