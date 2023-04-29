@@ -1,11 +1,16 @@
-const spoilers = document.querySelectorAll("[data-name='spoiler']");
-
 const spoilerFooter = () => {
-    spoilers.forEach(el => {
-        el.addEventListener('click', function() {
-            this.nextElementSibling.classList.toggle('spoiler');
+
+    const spoilers = document.querySelectorAll("[data-name='spoiler']");
+
+    if(!spoilers) {
+        return;
+    } else {
+        spoilers.forEach(el => {
+            el.addEventListener('click', () => {
+                el.nextElementSibling.classList.toggle('spoiler');
+            });
         });
-    });
+    }    
 }
 
 export default spoilerFooter;
