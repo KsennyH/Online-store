@@ -24,11 +24,11 @@ block content
                                 .filter__price-block
                                     include ./chunk/price-block.pug
                                 .filter__technics-block
-                                    include ./chunk/checkbox-technics.pug
+                                    +check(jsonData.technicsTitle, jsonData.technics)
                                 .filter__type-block 
-                                    include ./chunk/checkbox-mototype.pug
+                                    +check(jsonData.technicsTypeTitle, jsonData.technicsType)
                                 .filter__brands-block 
-                                    include ./chunk/checkbox-brands.pug
+                                    +check(jsonData.brandsTitle, jsonData.brands)
                                 .filter__size-block 
                                     include ./chunk/size-block.pug
                                 .filter__mileage-block 

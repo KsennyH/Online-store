@@ -24,11 +24,11 @@ block content
                                 .filter__price-block
                                     include ./chunk/price-block.pug
                                 .filter__technics-block
-                                    include ./chunk/checkbox-outfit.pug
+                                    +check(jsonData.outfitTypeTitle, jsonData.outfitType)
                                 .filter__type-block 
-                                    include ./chunk/checkbox-outfittype.pug
+                                    +check(jsonData.outfitTargetTitle, jsonData.outfitTarget)
                                 .filter__brands-block 
-                                    include ./chunk/checkbox-outfitbrands.pug
+                                    +check(jsonData.outfitBrandTitle, jsonData.outfitBrand)
                                 .filter__material-block 
                                     include ./chunk/material-block.pug
                                 .filter__btn 
