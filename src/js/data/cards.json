@@ -1,0 +1,260 @@
+{
+    "moto": [
+        {
+            "id": "01",
+            "image": "1.jpg",
+            "alt": "IRBIS VIRAGO",
+            "title": "IRBIS VIRAGO",
+            "price": "25 000 руб.",
+            "link": "product-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 17931",
+            "year": "2020"
+        },
+        {
+            "id": "02",
+            "image": "2.jpg",
+            "alt": "Racer VIPER",
+            "title": "Racer VIPER",
+            "price": "32 600 руб.",
+            "link": "product-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 17531",
+            "year": "2022"
+        },
+        {
+            "id": "03",
+            "image": "3.jpg",
+            "alt": "IRBIS TTR 110",
+            "title": "IRBIS TTR 110",
+            "price": "36 500 руб.",
+            "link": "product-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 10531",
+            "year": "2021"
+        },
+        {
+            "id": "04",
+            "image": "4.jpg",
+            "alt": "Motoland CRF 10",
+            "title": "Motoland CRF 10",
+            "price": "40 000 руб.",
+            "link": "product-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 17939",
+            "year": "2018"
+        },
+        {
+            "id": "05",
+            "image": "5.jpg",
+            "alt": "Racer SKYWAY",
+            "title": "Racer SKYWAY",
+            "price": "45 000 руб.",
+            "link": "product-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 17567",
+            "year": "2021"
+        },
+        {
+            "id": "06",
+            "image": "6.jpg",
+            "alt": "Irbis ttr 125",
+            "title": "Irbis ttr 125",
+            "price": "54 000 руб.",
+            "link": "product-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 18531",
+            "year": "2019"
+        },
+        {
+            "id": "07",
+            "image": "7.jpg",
+            "alt": "Stels Delta 200",
+            "title": "Stels Delta 200",
+            "price": "57 000 руб.",
+            "link": "product-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 17939",
+            "year": "2021"
+        },
+        {
+            "id": "08",
+            "image": "8.jpg",
+            "alt": "IRBIS VR1 200сс",
+            "title": "IRBIS VR1 200сс",
+            "price": "60 000 руб.",
+            "link": "product-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 17567",
+            "year": "2021"
+        },
+        {
+            "id": "09",
+            "image": "9.jpg",
+            "alt": "IRBIS GR 250сс",
+            "title": "IRBIS GR 250сс",
+            "price": "78 000 руб.",
+            "link": "product-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 18531",
+            "year": "2021"
+        }
+    ],
+    "outfit": [
+        {
+            "id": "20",
+            "image": "outfit-1.jpeg",
+            "alt": "MCP Мотоперчатки классические Wicklow",
+            "title": "MCP Мотоперчатки классические Wicklow",
+            "price": "2 500 руб.",
+            "link": "outfit-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 18031",
+            "year": "2020"
+        },
+        {
+            "id": "21",
+            "image": "outfit-2.jpeg",
+            "alt": "ALPINESTARS Мотоперчатки кожаные SP-8",
+            "title": "ALPINESTARS Мотоперчатки кожаные SP-8",
+            "price": "5 600 руб.",
+            "link": "outfit-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 17691",
+            "year": "2022"
+        },
+        {
+            "id": "22",
+            "image": "outfit-3.jpeg",
+            "alt": "ALPINESTARS Брюки A-10",
+            "title": "ALPINESTARS Брюки A-10",
+            "price": "8 500 руб.",
+            "link": "outfit-card.html",
+            "text": "Под заказ",
+            "articleNumber": "Артикул: 10509",
+            "year": "2021"
+        },
+        {
+            "id": "23",
+            "image": "outfit-4.jpeg",
+            "alt": "MCP Мотокуртка туристическая Winson",
+            "title": "MCP Мотокуртка туристическая Winson",
+            "price": "10 000 руб.",
+            "link": "outfit-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 65939",
+            "year": "2018"
+        },
+        {
+            "id": "24",
+            "image": "outfit-5.jpeg",
+            "alt": "ALPINESTARS Мотоботы FASTER 2 VENTED",
+            "title": "ALPINESTARS Мотоботы FASTER 2 VENTED",
+            "price": "12 700 руб.",
+            "link": "outfit-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 17585",
+            "year": "2021"
+        },
+        {
+            "id": "25",
+            "image": "outfit-6.jpeg",
+            "alt": "ALPINESTARS Мотоботы SMX PLUS",
+            "title": "ALPINESTARS Мотоботы SMX PLUS",
+            "price": "17 000 руб.",
+            "link": "outfit-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 18781",
+            "year": "2019"
+        },
+        {
+            "id": "26",
+            "image": "outfit-7.jpeg",
+            "alt": "SHOEI Мотошлем NEOTECH PLAIN",
+            "title": "SHOEI Мотошлем NEOTECH PLAIN",
+            "price": "27 000 руб.",
+            "link": "outfit-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 17939",
+            "year": "2021"
+        },
+        {
+            "id": "27",
+            "image": "outfit-8.jpeg",
+            "alt": "SHOEI Мотошлем GT-AIR DAUNTLESS",
+            "title": "SHOEI Мотошлем GT-AIR DAUNTLESS",
+            "price": "30 800 руб.",
+            "link": "outfit-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 18467",
+            "year": "2021"
+        },
+        {
+            "id": "28",
+            "image": "outfit-9.jpeg",
+            "alt": "SHOEI Мотошлем NEOTECH EXCURSION",
+            "title": "SHOEI Мотошлем NEOTECH EXCURSION",
+            "price": "50 000 руб.",
+            "link": "outfit-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 18531",
+            "year": "2021"
+        }
+    ],
+    "articles": [
+        {
+            "image": "stels-benelli.jpg",
+            "alt": "stels-benelli",
+            "title": "Обзор мотоцикла Stels 600 Benelli",
+            "date": "15. 09. 2022",
+            "author": "Автор: Алексей Иванов",
+            "href": "article.html",
+            "previewText": "Дорожный байк Stels 600 Benelli по праву можно назвать самым мощным в своей линейке. Двигатель мотоцикла оборотистый и позволяет легко и безопасно маневрировать в городском потоке."
+        },
+        {
+            "image": "dakar.jpg",
+            "alt": "dakar",
+            "title": "Новый Baltmotors Dakar 250 E",
+            "date": "10. 09. 2022",
+            "author": "Автор: Игорь Андреев",
+            "href": "article.html",
+            "previewText": "Dakar 250 – это полноценный эндуро-мотоцикл, предназначенный для эксплуатации на дорогах общего пользования и на бездорожье: горной местности, песках и грязи."
+        },
+        {
+            "image": "winter.jpg",
+            "alt": "Зимнее хранение мотоцикла",
+            "title": "Зимнее хранение мотоцикла",
+            "date": "01. 09. 2022",
+            "author": "Автор: Алексей Иванов",
+            "href": "article.html",
+            "previewText": "Мы предлагаем услугу зимнего хранения Вашего мотоцикла. Стоимость услуги 2000 руб. за месяц хранения, расчет по дням. В эту стоимость входит доставка мотоцикла до места хранения на нашем оборудованном транспорте."
+        },
+        {
+            "image": "kross.jpg",
+            "alt": "Кроссовые мотоциклы",
+            "title": "Виды кроссовых мотоциклов",
+            "date": "25. 08. 2022",
+            "author": "Автор: Алексей Иванов",
+            "href": "article.html",
+            "previewText": "На кроссовых мотоциклах регулярно проводятся соревнования по гонкам на пересеченной местности. Данные мотоциклы выделяются в отдельный класс, прежде всего по объему двигателя."
+        },
+        {
+            "image": "sportbike.jpg",
+            "alt": "Спортбайк",
+            "title": "Нужен ли спортбайк в городе?",
+            "date": "17. 08. 2022",
+            "author": "Автор: Игорь Андреев",
+            "href": "article.html",
+            "previewText": "Многие новички хотят приобрести себе именно спортивный мотоцикл, а не классику. Но они едва ли задумываются о том, будет ли такой байк удобен для них в пределах города. Разбираемся вместе в этой статье."
+        },
+        {
+            "image": "chopper.jpg",
+            "alt": "Chopper Wels",
+            "title": "Как выбрать чоппер?",
+            "date": "11. 08. 2022",
+            "author": "Автор: Игорь Андреев",
+            "href": "article.html",
+            "previewText": "С самого начала Вы должны дать четкий ответ на вопрос: какой объем двигателя Вас интересует? Многие рекомендуют подбирать байк с крупным мотором, но удобно ли это будет для новичка?"
+        }
+    ]
+}

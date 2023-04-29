@@ -1,12 +1,12 @@
-mixin article(img, alt, title, date, author, href="article.html")
+mixin article(img, alt, title, date, author, href, previewText)
     article.article 
-        a(href="article.html").article__image
+        a(href=href).article__image
             img(src="@img/" + img, alt=alt)
         .article__content
             a(href=href).article__link 
                 h2.article__title.title #{title}
             .article__text 
-                block paragraph
+                p #{previewText}
             .article__info 
                 span.article__date #{date}
                 span.article__author #{author}

@@ -8,7 +8,8 @@ export const pug = () => {
         .pipe(gulpPug({
             pretty: true,
             locals : {
-                jsonData: JSON.parse(fs.readFileSync("./src/js/data/checkbox.json", "utf8"), fs.readFileSync("./src/js/data/cards.json", "utf8"))
+                jsonData: JSON.parse(fs.readFileSync("./src/js/data/checkbox.json", "utf8")),
+                jsonCards: JSON.parse(fs.readFileSync("./src/js/data/cards.json", "utf8"))
             }
         }))
         .pipe(app.plugins.replace(/@img\//g, 'img/'))

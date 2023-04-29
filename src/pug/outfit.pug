@@ -39,7 +39,7 @@ block content
                             .catalog__sorting 
                                 include ./chunk/sorting.pug
                             .catalog__cards 
-                                include ./chunk/outfit-block.pug
+                                +cards(jsonCards.outfit)
                             .catalog__pagination
                                 include ./chunk/pagination.pug
                             .catalog__text
