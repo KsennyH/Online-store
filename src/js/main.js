@@ -1,6 +1,7 @@
 import swiper from "./modules/swiper.js";
 import mobileNavigation from "./modules/mobileNavigation.js";
 import tabs from "./modules/tabs.js";
+import features from "./modules/features.js";
 import spoilerFooter from "./modules/spoilerFooter.js";
 import counter from "./modules/counter.js";
 import deleateFromCart from "./modules/deleateFromCart.js";
@@ -12,6 +13,7 @@ addToCart();
 loginModal();
 mobileNavigation();
 tabs();
+features();
 spoilerFooter();
 
 

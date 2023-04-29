@@ -12,22 +12,16 @@ const tabs = () => {
                 let currentTabItem = document.querySelector(idTab);
         
                 if ( !currentTabBtn.classList.contains('active') ) {
-                    btnTab.forEach(el => {
-                        el.classList.remove('active');
-                    });
+                    btnTab.forEach(el => el.classList.remove('active'));
         
-                    tabItem.forEach(el => {
-                        el.classList.remove('active');
-                    });
+                    tabItem.forEach(el => el.classList.remove('active'));
                 }
         
                 currentTabBtn.classList.add('active');
                 currentTabItem.classList.add('active');
             })
-        })
-        if(document.querySelector('.js-btn-tab')) {
             document.querySelector('.js-btn-tab').click();
-        }
+        })
     }
 }
 
