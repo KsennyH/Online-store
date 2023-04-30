@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header"> 
+      <header class="header">
         <div class="top-header"> 
           <div class="container"> 
             <div class="top-header__inner"> 
@@ -31,12 +31,11 @@
                 </div>
                 <div class="top-header__users-wrapper"> <a class="user js-login" href="#" aria-label="Личный кабинет" data-user="user-login">
                     <svg class="user__icon"> 
-                      <use xlink:href="img/sprite.svg#user-busket"></use>
+                      <use xlink:href="img/sprite.svg#user-login"></use>
                     </svg><span class="user__label">Личный кабинет</span></a><a class="user" href="cart.html" aria-label="Корзина" data-user="user-cart">
                     <svg class="user__icon"> 
                       <use xlink:href="img/sprite.svg#user-busket"></use>
-                    </svg><span class="user__label">Корзина</span></a>
-                </div>
+                    </svg><span class="user__label">Корзина</span></a></div>
               </div>
               <div class="top-header__info"> 
                 <div class="address-information"> 
@@ -63,7 +62,7 @@
           <div class="container"> 
             <div class="navigation"> 
               <ul class="navigation__list"> 
-                <li class="navigation__item"> <a class="navigation__link navigation__link--active" href="#"> <span>Главная</span></a>
+                <li class="navigation__item"> <a class="navigation__link navigation__link--active" href="/"> <span>Главная</span></a>
                 </li>
                 <li class="navigation__item"> <a class="navigation__link" href="mototechnics.html"> <span>Мототехника</span></a>
                   <div class="dropdown"> 
@@ -98,6 +97,7 @@
                       <ul class="dropdown__list"> 
                         <li class="dropdown__item"><a class="dropdown__link" href="#">Шлемы</a></li>
                         <li class="dropdown__item"><a class="dropdown__link" href="#">Куртки</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Брюки</a></li>
                         <li class="dropdown__item"><a class="dropdown__link" href="#">Комбинезоны</a></li>
                         <li class="dropdown__item"><a class="dropdown__link" href="#">Перчатки</a></li>
                         <li class="dropdown__item"><a class="dropdown__link" href="#">Мотоботы</a></li>
@@ -124,20 +124,13 @@
             </div>
             <nav class="mobile-nav">
               <ul class="mobile-nav__list">
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="index.html">Главная</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="mototechnics.html">Мототехника</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="#">Мотозапчасти</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="outfit.html">Экипировка</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="motoservices.html">Мотосервис</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="articles.html">Статьи</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="contacts.html">Контакты</a>
-                </li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="/">Главная </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="mototechnics.html">Мототехника </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="outfit.html">Мотозапчасти </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="outfit.html">Экипировка </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="motoservices.html">Мотосервис </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="articles.html">Статьи </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="contacts.html">Контакты </a></li>
               </ul>
             </nav>
           </div>
@@ -174,26 +167,6 @@
               <div class="swiper-wrapper"> 
                 <div class="swiper-slide"> 
                   <div class="products-block__card">
-                    <article class="product-card" data-id="01">
-                      <div class="product-card__img"> <picture><source srcset="img/1.webp" type="image/webp"><img class="js-img-card" src="img/1.jpg" alt="IRBIS VIRAGO"/></picture></div>
-                      <div class="product-card__info"> 
-                        <h3 class="product-card__title card-title">IRBIS VIRAGO</h3>
-                        <div class="product-card__content"> <span class="product-card__article"></span>
-                          <div class="product-card__information"> <span class="product-card__year"></span><span class="product-card__text"></span></div>
-                        </div>
-                      </div><span class="product-card__price btn btn--price">25 000 руб.</span>
-                      <div class="product-card__overlay"><a class="product-card__overlay-link btn btn--link">Подробнее</a>
-                        <button class="product-card__btn btn btn--busket" data-cart="data-cart">
-                          <svg class="btn__icon" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.8094 4.69533C17.9683 4.88251 18.0278 5.10712 17.9881 5.36917L17.2335 9.44968C17.207 9.66187 17.1044 9.83651 16.9257 9.97378C16.747 10.111 16.5452 10.1797 16.3201 10.1797H5.31892L5.10048 11.3402H15.5854C15.8369 11.3402 16.0552 11.4244 16.2406 11.5929C16.426 11.7613 16.5186 11.9703 16.5186 12.2199C16.5186 12.4695 16.426 12.6785 16.2406 12.847C16.0552 13.0154 15.8369 13.0996 15.5854 13.0996H3.98845C3.71044 13.0996 3.47215 12.9936 3.27357 12.7815C3.08824 12.5693 3.01542 12.326 3.05514 12.0515L3.55158 9.50592L2.79699 2.35567L0.652361 1.71926C0.400831 1.64439 0.218802 1.50086 0.106275 1.28875C-0.00625149 1.07659 -0.0294188 0.852006 0.0367735 0.614914C0.116204 0.377822 0.271756 0.206242 0.503429 0.100175C0.735102 -0.00589263 0.970084 -0.0277301 1.20838 0.0346626L3.94874 0.858245C4.12084 0.908159 4.26315 1.00175 4.37568 1.13901C4.4882 1.27628 4.5577 1.43229 4.58418 1.60699L4.74304 3.02954L17.1739 4.33978C17.452 4.37713 17.6638 4.49567 17.8094 4.69533ZM5.39838 13.5863C5.79553 13.5863 6.13311 13.7173 6.41112 13.9794C6.68913 14.2414 6.82813 14.5597 6.82813 14.9341C6.82813 15.3083 6.68913 15.6297 6.41112 15.898C6.13311 16.1663 5.79553 16.3004 5.39838 16.3004C5.00122 16.3004 4.66364 16.1663 4.38564 15.898C4.10763 15.6298 3.96863 15.3084 3.96863 14.9341C3.96863 14.5597 4.10763 14.2414 4.38564 13.9794C4.66361 13.7173 5.00119 13.5863 5.39838 13.5863ZM13.8776 13.5863C14.2747 13.5863 14.6123 13.7173 14.8903 13.9794C15.1682 14.2414 15.3074 14.5597 15.3074 14.9341C15.3074 15.3083 15.1683 15.6297 14.8903 15.898C14.6123 16.1663 14.2747 16.3004 13.8776 16.3004C13.4804 16.3004 13.1428 16.1663 12.8649 15.898C12.5869 15.6298 12.4478 15.3084 12.4478 14.9341C12.4478 14.5597 12.5868 14.2414 12.8649 13.9794C13.1428 13.7173 13.4804 13.5863 13.8776 13.5863Z" fill="white"></path>
-                          </svg><span class="btn__text">В корзину</span>
-                        </button>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-                <div class="swiper-slide"> 
-                  <div class="products-block__card">
                     <article class="product-card" data-id="03">
                       <div class="product-card__img"> <picture><source srcset="img/3.webp" type="image/webp"><img class="js-img-card" src="img/3.jpg" alt="IRBIS TTR 110"/></picture></div>
                       <div class="product-card__info"> 
@@ -214,14 +187,34 @@
                 </div>
                 <div class="swiper-slide"> 
                   <div class="products-block__card">
-                    <article class="product-card" data-id="02">
-                      <div class="product-card__img"> <picture><source srcset="img/2.webp" type="image/webp"><img class="js-img-card" src="img/2.jpg" alt="Racer VIPER"/></picture></div>
+                    <article class="product-card" data-id="06">
+                      <div class="product-card__img"> <picture><source srcset="img/6.webp" type="image/webp"><img class="js-img-card" src="img/6.jpg" alt="Irbis ttr 125"/></picture></div>
                       <div class="product-card__info"> 
-                        <h3 class="product-card__title card-title">Racer VIPER</h3>
+                        <h3 class="product-card__title card-title">Irbis ttr 125</h3>
                         <div class="product-card__content"> <span class="product-card__article"></span>
                           <div class="product-card__information"> <span class="product-card__year"></span><span class="product-card__text"></span></div>
                         </div>
-                      </div><span class="product-card__price btn btn--price">32 600 руб.</span>
+                      </div><span class="product-card__price btn btn--price">54 000 руб.</span>
+                      <div class="product-card__overlay"><a class="product-card__overlay-link btn btn--link">Подробнее</a>
+                        <button class="product-card__btn btn btn--busket" data-cart="data-cart">
+                          <svg class="btn__icon" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.8094 4.69533C17.9683 4.88251 18.0278 5.10712 17.9881 5.36917L17.2335 9.44968C17.207 9.66187 17.1044 9.83651 16.9257 9.97378C16.747 10.111 16.5452 10.1797 16.3201 10.1797H5.31892L5.10048 11.3402H15.5854C15.8369 11.3402 16.0552 11.4244 16.2406 11.5929C16.426 11.7613 16.5186 11.9703 16.5186 12.2199C16.5186 12.4695 16.426 12.6785 16.2406 12.847C16.0552 13.0154 15.8369 13.0996 15.5854 13.0996H3.98845C3.71044 13.0996 3.47215 12.9936 3.27357 12.7815C3.08824 12.5693 3.01542 12.326 3.05514 12.0515L3.55158 9.50592L2.79699 2.35567L0.652361 1.71926C0.400831 1.64439 0.218802 1.50086 0.106275 1.28875C-0.00625149 1.07659 -0.0294188 0.852006 0.0367735 0.614914C0.116204 0.377822 0.271756 0.206242 0.503429 0.100175C0.735102 -0.00589263 0.970084 -0.0277301 1.20838 0.0346626L3.94874 0.858245C4.12084 0.908159 4.26315 1.00175 4.37568 1.13901C4.4882 1.27628 4.5577 1.43229 4.58418 1.60699L4.74304 3.02954L17.1739 4.33978C17.452 4.37713 17.6638 4.49567 17.8094 4.69533ZM5.39838 13.5863C5.79553 13.5863 6.13311 13.7173 6.41112 13.9794C6.68913 14.2414 6.82813 14.5597 6.82813 14.9341C6.82813 15.3083 6.68913 15.6297 6.41112 15.898C6.13311 16.1663 5.79553 16.3004 5.39838 16.3004C5.00122 16.3004 4.66364 16.1663 4.38564 15.898C4.10763 15.6298 3.96863 15.3084 3.96863 14.9341C3.96863 14.5597 4.10763 14.2414 4.38564 13.9794C4.66361 13.7173 5.00119 13.5863 5.39838 13.5863ZM13.8776 13.5863C14.2747 13.5863 14.6123 13.7173 14.8903 13.9794C15.1682 14.2414 15.3074 14.5597 15.3074 14.9341C15.3074 15.3083 15.1683 15.6297 14.8903 15.898C14.6123 16.1663 14.2747 16.3004 13.8776 16.3004C13.4804 16.3004 13.1428 16.1663 12.8649 15.898C12.5869 15.6298 12.4478 15.3084 12.4478 14.9341C12.4478 14.5597 12.5868 14.2414 12.8649 13.9794C13.1428 13.7173 13.4804 13.5863 13.8776 13.5863Z" fill="white"></path>
+                          </svg><span class="btn__text">В корзину</span>
+                        </button>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="products-block__card">
+                    <article class="product-card" data-id="25">
+                      <div class="product-card__img"> <picture><source srcset="img/outfit-6.webp" type="image/webp"><img class="js-img-card" src="img/outfit-6.jpeg" alt="ALPINESTARS Мотоботы SMX PLUS"/></picture></div>
+                      <div class="product-card__info"> 
+                        <h3 class="product-card__title card-title">ALPINESTARS Мотоботы SMX PLUS</h3>
+                        <div class="product-card__content"> <span class="product-card__article"></span>
+                          <div class="product-card__information"> <span class="product-card__year"></span><span class="product-card__text"></span></div>
+                        </div>
+                      </div><span class="product-card__price btn btn--price">17 000 руб.</span>
                       <div class="product-card__overlay"><a class="product-card__overlay-link btn btn--link">Подробнее</a>
                         <button class="product-card__btn btn btn--busket" data-cart="data-cart">
                           <svg class="btn__icon" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -234,14 +227,34 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="products-block__card"> 
-                    <article class="product-card" data-id="04">
-                      <div class="product-card__img"> <picture><source srcset="img/4.webp" type="image/webp"><img class="js-img-card" src="img/4.jpg" alt="Motoland CRF 10"/></picture></div>
+                    <article class="product-card" data-id="20">
+                      <div class="product-card__img"> <picture><source srcset="img/outfit-1.webp" type="image/webp"><img class="js-img-card" src="img/outfit-1.jpeg" alt="MCP Мотоперчатки классические Wicklow"/></picture></div>
                       <div class="product-card__info"> 
-                        <h3 class="product-card__title card-title">Motoland CRF 10</h3>
+                        <h3 class="product-card__title card-title">MCP Мотоперчатки классические Wicklow</h3>
                         <div class="product-card__content"> <span class="product-card__article"></span>
                           <div class="product-card__information"> <span class="product-card__year"></span><span class="product-card__text"></span></div>
                         </div>
-                      </div><span class="product-card__price btn btn--price">40 000 руб.</span>
+                      </div><span class="product-card__price btn btn--price">2 500 руб.</span>
+                      <div class="product-card__overlay"><a class="product-card__overlay-link btn btn--link">Подробнее</a>
+                        <button class="product-card__btn btn btn--busket" data-cart="data-cart">
+                          <svg class="btn__icon" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.8094 4.69533C17.9683 4.88251 18.0278 5.10712 17.9881 5.36917L17.2335 9.44968C17.207 9.66187 17.1044 9.83651 16.9257 9.97378C16.747 10.111 16.5452 10.1797 16.3201 10.1797H5.31892L5.10048 11.3402H15.5854C15.8369 11.3402 16.0552 11.4244 16.2406 11.5929C16.426 11.7613 16.5186 11.9703 16.5186 12.2199C16.5186 12.4695 16.426 12.6785 16.2406 12.847C16.0552 13.0154 15.8369 13.0996 15.5854 13.0996H3.98845C3.71044 13.0996 3.47215 12.9936 3.27357 12.7815C3.08824 12.5693 3.01542 12.326 3.05514 12.0515L3.55158 9.50592L2.79699 2.35567L0.652361 1.71926C0.400831 1.64439 0.218802 1.50086 0.106275 1.28875C-0.00625149 1.07659 -0.0294188 0.852006 0.0367735 0.614914C0.116204 0.377822 0.271756 0.206242 0.503429 0.100175C0.735102 -0.00589263 0.970084 -0.0277301 1.20838 0.0346626L3.94874 0.858245C4.12084 0.908159 4.26315 1.00175 4.37568 1.13901C4.4882 1.27628 4.5577 1.43229 4.58418 1.60699L4.74304 3.02954L17.1739 4.33978C17.452 4.37713 17.6638 4.49567 17.8094 4.69533ZM5.39838 13.5863C5.79553 13.5863 6.13311 13.7173 6.41112 13.9794C6.68913 14.2414 6.82813 14.5597 6.82813 14.9341C6.82813 15.3083 6.68913 15.6297 6.41112 15.898C6.13311 16.1663 5.79553 16.3004 5.39838 16.3004C5.00122 16.3004 4.66364 16.1663 4.38564 15.898C4.10763 15.6298 3.96863 15.3084 3.96863 14.9341C3.96863 14.5597 4.10763 14.2414 4.38564 13.9794C4.66361 13.7173 5.00119 13.5863 5.39838 13.5863ZM13.8776 13.5863C14.2747 13.5863 14.6123 13.7173 14.8903 13.9794C15.1682 14.2414 15.3074 14.5597 15.3074 14.9341C15.3074 15.3083 15.1683 15.6297 14.8903 15.898C14.6123 16.1663 14.2747 16.3004 13.8776 16.3004C13.4804 16.3004 13.1428 16.1663 12.8649 15.898C12.5869 15.6298 12.4478 15.3084 12.4478 14.9341C12.4478 14.5597 12.5868 14.2414 12.8649 13.9794C13.1428 13.7173 13.4804 13.5863 13.8776 13.5863Z" fill="white"></path>
+                          </svg><span class="btn__text">В корзину</span>
+                        </button>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="products-block__card">
+                    <article class="product-card" data-id="09">
+                      <div class="product-card__img"> <picture><source srcset="img/9.webp" type="image/webp"><img class="js-img-card" src="img/9.jpg" alt="IRBIS GR 250сс"/></picture></div>
+                      <div class="product-card__info"> 
+                        <h3 class="product-card__title card-title">IRBIS GR 250сс</h3>
+                        <div class="product-card__content"> <span class="product-card__article"></span>
+                          <div class="product-card__information"> <span class="product-card__year"></span><span class="product-card__text"></span></div>
+                        </div>
+                      </div><span class="product-card__price btn btn--price">78 000 руб.</span>
                       <div class="product-card__overlay"><a class="product-card__overlay-link btn btn--link">Подробнее</a>
                         <button class="product-card__btn btn btn--busket" data-cart="data-cart">
                           <svg class="btn__icon" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -274,14 +287,14 @@
                 </div>
                 <div class="swiper-slide"> 
                   <div class="products-block__card">
-                    <article class="product-card" data-id="06">
-                      <div class="product-card__img"> <picture><source srcset="img/6.webp" type="image/webp"><img class="js-img-card" src="img/6.jpg" alt="Irbis ttr 125"/></picture></div>
+                    <article class="product-card" data-id="27">
+                      <div class="product-card__img"> <picture><source srcset="img/outfit-8.webp" type="image/webp"><img class="js-img-card" src="img/outfit-8.jpeg" alt="SHOEI Мотошлем GT-AIR DAUNTLESS"/></picture></div>
                       <div class="product-card__info"> 
-                        <h3 class="product-card__title card-title">Irbis ttr 125</h3>
+                        <h3 class="product-card__title card-title">SHOEI Мотошлем GT-AIR DAUNTLESS</h3>
                         <div class="product-card__content"> <span class="product-card__article"></span>
                           <div class="product-card__information"> <span class="product-card__year"></span><span class="product-card__text"></span></div>
                         </div>
-                      </div><span class="product-card__price btn btn--price">54 000 руб.</span>
+                      </div><span class="product-card__price btn btn--price">30 800 руб.</span>
                       <div class="product-card__overlay"><a class="product-card__overlay-link btn btn--link">Подробнее</a>
                         <button class="product-card__btn btn btn--busket" data-cart="data-cart">
                           <svg class="btn__icon" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -294,34 +307,14 @@
                 </div>
                 <div class="swiper-slide"> 
                   <div class="products-block__card">
-                    <article class="product-card" data-id="05">
-                      <div class="product-card__img"> <picture><source srcset="img/5.webp" type="image/webp"><img class="js-img-card" src="img/5.jpg" alt="Racer SKYWAY"/></picture></div>
+                    <article class="product-card" data-id="07">
+                      <div class="product-card__img"> <picture><source srcset="img/7.webp" type="image/webp"><img class="js-img-card" src="img/7.jpg" alt="Stels Delta 200"/></picture></div>
                       <div class="product-card__info"> 
-                        <h3 class="product-card__title card-title">Racer SKYWAY</h3>
+                        <h3 class="product-card__title card-title">Stels Delta 200</h3>
                         <div class="product-card__content"> <span class="product-card__article"></span>
                           <div class="product-card__information"> <span class="product-card__year"></span><span class="product-card__text"></span></div>
                         </div>
-                      </div><span class="product-card__price btn btn--price">45 000 руб.</span>
-                      <div class="product-card__overlay"><a class="product-card__overlay-link btn btn--link">Подробнее</a>
-                        <button class="product-card__btn btn btn--busket" data-cart="data-cart">
-                          <svg class="btn__icon" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.8094 4.69533C17.9683 4.88251 18.0278 5.10712 17.9881 5.36917L17.2335 9.44968C17.207 9.66187 17.1044 9.83651 16.9257 9.97378C16.747 10.111 16.5452 10.1797 16.3201 10.1797H5.31892L5.10048 11.3402H15.5854C15.8369 11.3402 16.0552 11.4244 16.2406 11.5929C16.426 11.7613 16.5186 11.9703 16.5186 12.2199C16.5186 12.4695 16.426 12.6785 16.2406 12.847C16.0552 13.0154 15.8369 13.0996 15.5854 13.0996H3.98845C3.71044 13.0996 3.47215 12.9936 3.27357 12.7815C3.08824 12.5693 3.01542 12.326 3.05514 12.0515L3.55158 9.50592L2.79699 2.35567L0.652361 1.71926C0.400831 1.64439 0.218802 1.50086 0.106275 1.28875C-0.00625149 1.07659 -0.0294188 0.852006 0.0367735 0.614914C0.116204 0.377822 0.271756 0.206242 0.503429 0.100175C0.735102 -0.00589263 0.970084 -0.0277301 1.20838 0.0346626L3.94874 0.858245C4.12084 0.908159 4.26315 1.00175 4.37568 1.13901C4.4882 1.27628 4.5577 1.43229 4.58418 1.60699L4.74304 3.02954L17.1739 4.33978C17.452 4.37713 17.6638 4.49567 17.8094 4.69533ZM5.39838 13.5863C5.79553 13.5863 6.13311 13.7173 6.41112 13.9794C6.68913 14.2414 6.82813 14.5597 6.82813 14.9341C6.82813 15.3083 6.68913 15.6297 6.41112 15.898C6.13311 16.1663 5.79553 16.3004 5.39838 16.3004C5.00122 16.3004 4.66364 16.1663 4.38564 15.898C4.10763 15.6298 3.96863 15.3084 3.96863 14.9341C3.96863 14.5597 4.10763 14.2414 4.38564 13.9794C4.66361 13.7173 5.00119 13.5863 5.39838 13.5863ZM13.8776 13.5863C14.2747 13.5863 14.6123 13.7173 14.8903 13.9794C15.1682 14.2414 15.3074 14.5597 15.3074 14.9341C15.3074 15.3083 15.1683 15.6297 14.8903 15.898C14.6123 16.1663 14.2747 16.3004 13.8776 16.3004C13.4804 16.3004 13.1428 16.1663 12.8649 15.898C12.5869 15.6298 12.4478 15.3084 12.4478 14.9341C12.4478 14.5597 12.5868 14.2414 12.8649 13.9794C13.1428 13.7173 13.4804 13.5863 13.8776 13.5863Z" fill="white"></path>
-                          </svg><span class="btn__text">В корзину</span>
-                        </button>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-                <div class="swiper-slide"> 
-                  <div class="products-block__card">
-                    <article class="product-card" data-id="06">
-                      <div class="product-card__img"> <picture><source srcset="img/6.webp" type="image/webp"><img class="js-img-card" src="img/6.jpg" alt="Irbis ttr 125"/></picture></div>
-                      <div class="product-card__info"> 
-                        <h3 class="product-card__title card-title">Irbis ttr 125</h3>
-                        <div class="product-card__content"> <span class="product-card__article"></span>
-                          <div class="product-card__information"> <span class="product-card__year"></span><span class="product-card__text"></span></div>
-                        </div>
-                      </div><span class="product-card__price btn btn--price">54 000 руб.</span>
+                      </div><span class="product-card__price btn btn--price">57 000 руб.</span>
                       <div class="product-card__overlay"><a class="product-card__overlay-link btn btn--link">Подробнее</a>
                         <button class="product-card__btn btn btn--busket" data-cart="data-cart">
                           <svg class="btn__icon" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -343,25 +336,25 @@
         <section class="moto-news"> 
           <div class="moto-news__container container"> 
             <h2 class="moto-news__title title">Новости и статьи</h2>
-            <ul class="moto-news__list"> 
+            <ul class="moto-news__list">
               <li class="moto-news__item"> 
-                <article class="news-card"> <a class="news-card__img" href="article.html"> <picture><source srcset="img/news-1.webp" type="image/webp"><img src="img/news-1.png" alt="Мотоцикл Stels 600 Benelli"/></picture></a>
+                <article class="news-card"> <a class="news-card__img" href="article.html"> <picture><source srcset="img/stels-benelli.webp" type="image/webp"><img src="img/stels-benelli.jpg" alt="stels-benelli"/></picture></a>
                   <div class="news-card__information"> <a class="news-card__title-link" href="article.html"> 
                       <h3 class="card-title">Обзор мотоцикла Stels 600 Benelli</h3></a>
-                    <div class="news-card__preview"> 
-                      <p>Dakar 250 – это полноценный эндуро-мотоцикл, предназначенный для эксплуатации на дорогах общего пользования и на бездорожье: горной местности, песках и грязи.</p>
+                    <div class="news-card__preview">
+                      <p>Дорожный байк Stels 600 Benelli по праву можно назвать самым мощным в своей линейке. Двигатель мотоцикла оборотистый и позволяет легко и безопасно маневрировать в городском потоке.</p>
                     </div>
                   </div>
                   <div class="news-card__info"> 
-                    <time class="news-card__date" datetime="2022-09-10">10. 09. 2022</time><a class="news-card__link" href="article.html">Подробнее</a>
+                    <time class="news-card__date" datetime="2022-09-10">15. 09. 2022</time><a class="news-card__link" href="article.html">Подробнее</a>
                   </div>
                 </article>
               </li>
               <li class="moto-news__item"> 
-                <article class="news-card"> <a class="news-card__img" href="article.html"> <picture><source srcset="img/news-2.webp" type="image/webp"><img src="img/news-2.png" alt="Мотоцикл Baltmotors Dakar 250 E"/></picture></a>
+                <article class="news-card"> <a class="news-card__img" href="article.html"> <picture><source srcset="img/dakar.webp" type="image/webp"><img src="img/dakar.jpg" alt="dakar"/></picture></a>
                   <div class="news-card__information"> <a class="news-card__title-link" href="article.html"> 
                       <h3 class="card-title">Новый Baltmotors Dakar 250 E</h3></a>
-                    <div class="news-card__preview"> 
+                    <div class="news-card__preview">
                       <p>Dakar 250 – это полноценный эндуро-мотоцикл, предназначенный для эксплуатации на дорогах общего пользования и на бездорожье: горной местности, песках и грязи.</p>
                     </div>
                   </div>
@@ -371,11 +364,11 @@
                 </article>
               </li>
               <li class="moto-news__item"> 
-                <article class="news-card"> <a class="news-card__img" href="article.html"> <picture><source srcset="img/news-3.webp" type="image/webp"><img src="img/news-3.jpg" alt="Мотоцикл"/></picture></a>
+                <article class="news-card"> <a class="news-card__img" href="article.html"> <picture><source srcset="img/winter.webp" type="image/webp"><img src="img/winter.jpg" alt="Зимнее хранение мотоцикла"/></picture></a>
                   <div class="news-card__information"> <a class="news-card__title-link" href="article.html"> 
                       <h3 class="card-title">Зимнее хранение мотоцикла</h3></a>
                     <div class="news-card__preview">
-                      <p>Мы предлагаем услугу зимнего хранения Вашего мотоцикла. Стоимость услуги 2000 руб. за месяц хранения, расчет по дням. В эту стоимость входит доставка мотоцикла до места хранения на нашем оборудованном транспорте. </p>
+                      <p>Мы предлагаем услугу зимнего хранения Вашего мотоцикла. Стоимость услуги 2000 руб. за месяц хранения, расчет по дням. В эту стоимость входит доставка мотоцикла до места хранения на нашем оборудованном транспорте.</p>
                     </div>
                   </div>
                   <div class="news-card__info"> 
@@ -384,10 +377,10 @@
                 </article>
               </li>
               <li class="moto-news__item"> 
-                <article class="news-card"> <a class="news-card__img" href="article.html"> <picture><source srcset="img/news-4.webp" type="image/webp"><img src="img/news-4.jpg" alt="Кроссовый мотоцикл"/></picture></a>
+                <article class="news-card"> <a class="news-card__img" href="article.html"> <picture><source srcset="img/kross.webp" type="image/webp"><img src="img/kross.jpg" alt="Кроссовые мотоциклы"/></picture></a>
                   <div class="news-card__information"> <a class="news-card__title-link" href="article.html"> 
                       <h3 class="card-title">Виды кроссовых мотоциклов</h3></a>
-                    <div class="news-card__preview"> 
+                    <div class="news-card__preview">
                       <p>На кроссовых мотоциклах регулярно проводятся соревнования по гонкам на пересеченной местности. Данные мотоциклы выделяются в отдельный класс, прежде всего по объему двигателя.</p>
                     </div>
                   </div>
@@ -397,10 +390,10 @@
                 </article>
               </li>
               <li class="moto-news__item"> 
-                <article class="news-card"> <a class="news-card__img" href="article.html"> <picture><source srcset="img/news-5.webp" type="image/webp"><img src="img/news-5.jpg" alt="Мотоцикл Wels 250cc"/></picture></a>
+                <article class="news-card"> <a class="news-card__img" href="article.html"> <picture><source srcset="img/sportbike.webp" type="image/webp"><img src="img/sportbike.jpg" alt="Спортбайк"/></picture></a>
                   <div class="news-card__information"> <a class="news-card__title-link" href="article.html"> 
                       <h3 class="card-title">Нужен ли спортбайк в городе?</h3></a>
-                    <div class="news-card__preview"> 
+                    <div class="news-card__preview">
                       <p>Многие новички хотят приобрести себе именно спортивный мотоцикл, а не классику. Но они едва ли задумываются о том, будет ли такой байк удобен для них в пределах города. Разбираемся вместе в этой статье.</p>
                     </div>
                   </div>
@@ -410,11 +403,11 @@
                 </article>
               </li>
               <li class="moto-news__item"> 
-                <article class="news-card"> <a class="news-card__img" href="article.html"> <picture><source srcset="img/news-6.webp" type="image/webp"><img src="img/news-6.jpg" alt="Чоппер Wels"/></picture></a>
+                <article class="news-card"> <a class="news-card__img" href="article.html"> <picture><source srcset="img/chopper.webp" type="image/webp"><img src="img/chopper.jpg" alt="Chopper Wels"/></picture></a>
                   <div class="news-card__information"> <a class="news-card__title-link" href="article.html"> 
                       <h3 class="card-title">Как выбрать чоппер?</h3></a>
-                    <div class="news-card__preview"> 
-                      <p>С самого начала Вы должны дать четкий ответ на вопрос: какой объем двигателя Вас интересует? Многие рекомендуют подбирать байк с крупным мотором, но удобно ли это будет для новичка? </p>
+                    <div class="news-card__preview">
+                      <p>С самого начала Вы должны дать четкий ответ на вопрос: какой объем двигателя Вас интересует? Многие рекомендуют подбирать байк с крупным мотором, но удобно ли это будет для новичка?</p>
                     </div>
                   </div>
                   <div class="news-card__info"> 
@@ -485,50 +478,34 @@
                     <div class="footer-nav__list">
                       <h4 class="footer-nav__label" data-name="spoiler">Мототехника</h4>
                       <ul class="footer-nav__content spoiler">
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоциклы</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мопеды</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Скутеры</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Квадроциклы</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Гидроциклы</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Снегоходы</a>
-                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоциклы</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мопеды</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Скутеры</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Квадроциклы</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Гидроциклы</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Снегоходы</a></li>
                       </ul>
                     </div>
                     <div class="footer-nav__list">
                       <h4 class="footer-nav__label" data-name="spoiler">Мотозапчасти</h4>
                       <ul class="footer-nav__content spoiler">
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотохимия</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Шины</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Расходники</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Лобовые стекла</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Пластик</a>
-                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотохимия</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Шины</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Расходники</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Лобовые стекла</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Пластик</a></li>
                       </ul>
                     </div>
                     <div class="footer-nav__list">
                       <h4 class="footer-nav__label" data-name="spoiler">Экипировка</h4>
                       <ul class="footer-nav__content spoiler">
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотошлемы</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотокуртки</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотокомбинезоны</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоперчатки</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоботы</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Аксессуары</a>
-                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Шлемы</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Куртки</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Брюки</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Комбинезоны</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Перчатки</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоботы</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Аксессуары</a></li>
                       </ul>
                     </div>
                   </div>

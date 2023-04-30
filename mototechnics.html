@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header"> 
+      <header class="header">
         <div class="top-header"> 
           <div class="container"> 
             <div class="top-header__inner"> 
@@ -31,12 +31,11 @@
                 </div>
                 <div class="top-header__users-wrapper"> <a class="user js-login" href="#" aria-label="Личный кабинет" data-user="user-login">
                     <svg class="user__icon"> 
-                      <use xlink:href="img/sprite.svg#user-busket"></use>
+                      <use xlink:href="img/sprite.svg#user-login"></use>
                     </svg><span class="user__label">Личный кабинет</span></a><a class="user" href="cart.html" aria-label="Корзина" data-user="user-cart">
                     <svg class="user__icon"> 
                       <use xlink:href="img/sprite.svg#user-busket"></use>
-                    </svg><span class="user__label">Корзина</span></a>
-                </div>
+                    </svg><span class="user__label">Корзина</span></a></div>
               </div>
               <div class="top-header__info"> 
                 <div class="address-information"> 
@@ -63,7 +62,7 @@
           <div class="container"> 
             <div class="navigation"> 
               <ul class="navigation__list"> 
-                <li class="navigation__item"> <a class="navigation__link navigation__link--active" href="#"> <span>Главная</span></a>
+                <li class="navigation__item"> <a class="navigation__link navigation__link--active" href="/"> <span>Главная</span></a>
                 </li>
                 <li class="navigation__item"> <a class="navigation__link" href="mototechnics.html"> <span>Мототехника</span></a>
                   <div class="dropdown"> 
@@ -98,6 +97,7 @@
                       <ul class="dropdown__list"> 
                         <li class="dropdown__item"><a class="dropdown__link" href="#">Шлемы</a></li>
                         <li class="dropdown__item"><a class="dropdown__link" href="#">Куртки</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Брюки</a></li>
                         <li class="dropdown__item"><a class="dropdown__link" href="#">Комбинезоны</a></li>
                         <li class="dropdown__item"><a class="dropdown__link" href="#">Перчатки</a></li>
                         <li class="dropdown__item"><a class="dropdown__link" href="#">Мотоботы</a></li>
@@ -124,20 +124,13 @@
             </div>
             <nav class="mobile-nav">
               <ul class="mobile-nav__list">
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="index.html">Главная</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="mototechnics.html">Мототехника</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="#">Мотозапчасти</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="outfit.html">Экипировка</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="motoservices.html">Мотосервис</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="articles.html">Статьи</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="contacts.html">Контакты</a>
-                </li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="/">Главная </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="mototechnics.html">Мототехника </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="outfit.html">Мотозапчасти </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="outfit.html">Экипировка </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="motoservices.html">Мотосервис </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="articles.html">Статьи </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="contacts.html">Контакты </a></li>
               </ul>
             </nav>
           </div>
@@ -147,7 +140,8 @@
         <div class="breadcrumbs"> 
           <div class="container"> 
             <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+              <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="/">Главная</a>
+              </li>
               <li class="breadcrumbs__item"> <span class="breadcrumbs__link breadcrumbs__link--active">Мототехника</span></li>
             </ul>
           </div>
@@ -158,23 +152,23 @@
               <button class="catalog__filter-btn js-filter-btn" type="button"><img src="img/filter.svg" alt="Фильтр"/></button>
               <aside class="catalog__filter">
                 <form class="filter js-filter" action="/">
-                  <div class="filter__price-block">
+                  <div class="filter__item">
                     <div class="toggle-block"> 
                       <h5 class="toggle-block__title filter-title">Цена (руб)</h5>
                       <div class="toggle-block__body"> 
                         <div class="toggle-block__inputs">
                           <label class="toggle-block__label">
-                            <input class="toggle-block__input" id="price-input-0" min="500" max="999999" placeholder="500" type="number"/>
+                            <input class="toggle-block__input" type="number" id="price-input-0" min="500" max="999999" placeholder="500"/>
                           </label>
                           <label class="toggle-block__label">
-                            <input class="toggle-block__input" id="price-input-1" min="500" max="999999" placeholder="999999" type="number"/>
+                            <input class="toggle-block__input" type="number" id="price-input-1" min="500" max="999999" placeholder="999999"/>
                           </label>
                         </div>
                         <div class="toggle-block__range"></div>
                       </div>
                     </div>
                   </div>
-                  <div class="filter__technics-block">
+                  <div class="filter__item">
                     <div class="checkbox-block"> 
                       <h5 class="checkbox-block__title filter-title">Техника</h5>
                       <ul class="checkbox-block__list">
@@ -211,7 +205,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="filter__type-block"> 
+                  <div class="filter__item"> 
                     <div class="checkbox-block"> 
                       <h5 class="checkbox-block__title filter-title">Тип мотоцикла</h5>
                       <ul class="checkbox-block__list">
@@ -253,7 +247,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="filter__brands-block"> 
+                  <div class="filter__item">
                     <div class="checkbox-block"> 
                       <h5 class="checkbox-block__title filter-title">Бренд</h5>
                       <ul class="checkbox-block__list">
@@ -295,34 +289,34 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="filter__size-block"> 
+                  <div class="filter__item">
                     <div class="toggle-block"> 
                       <h5 class="toggle-block__title filter-title">Объём двигателя (куб. см)</h5>
                       <div class="toggle-block__body"> 
                         <div class="toggle-block__inputs">
                           <label class="toggle-block__label">
-                            <input class="toggle-block__input" id="size-input-0" min="50" max="1000" placeholder="50" type="number"/>
+                            <input class="toggle-block__input" type="number" id="size-input-0" min="50" max="1000" placeholder="50"/>
                           </label>
                           <label class="toggle-block__label">
-                            <input class="toggle-block__input" id="size-input-1" min="50" max="1000" placeholder="1000" type="number"/>
+                            <input class="toggle-block__input" type="number" id="size-input-1" min="50" max="1000" placeholder="1000"/>
                           </label>
                         </div>
                         <div class="toggle-block__range"></div>
                       </div>
                     </div>
                   </div>
-                  <div class="filter__mileage-block"> 
+                  <div class="filter__item">
                     <div class="radio-block"> 
                       <h5 class="radio-block__title filter-title">Пробег (км)</h5>
                       <ul class="radio-block__list"> 
-                        <li class="radio-block__item"> 
+                        <li class="radio-block__item">
                           <label class="radio">
-                            <input class="radio__input" name="mileage" type="radio"/><span class="radio__custom custom-radio"></span><span class="radio__name">С пробегом</span>
+                            <input class="radio__input" name="mileage" type="radio"/><span class="radio__custom custom-radio"></span><span class="radio__name">С пробегом </span>
                           </label>
                         </li>
-                        <li class="radio-block__item"> 
+                        <li class="radio-block__item">
                           <label class="radio">
-                            <input class="radio__input" name="mileage" type="radio"/><span class="radio__custom custom-radio"></span><span class="radio__name">Без пробега</span>
+                            <input class="radio__input" name="mileage" type="radio"/><span class="radio__custom custom-radio"></span><span class="radio__name">Без пробега </span>
                           </label>
                         </li>
                       </ul>
@@ -631,50 +625,34 @@
                     <div class="footer-nav__list">
                       <h4 class="footer-nav__label" data-name="spoiler">Мототехника</h4>
                       <ul class="footer-nav__content spoiler">
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоциклы</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мопеды</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Скутеры</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Квадроциклы</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Гидроциклы</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Снегоходы</a>
-                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоциклы</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мопеды</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Скутеры</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Квадроциклы</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Гидроциклы</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Снегоходы</a></li>
                       </ul>
                     </div>
                     <div class="footer-nav__list">
                       <h4 class="footer-nav__label" data-name="spoiler">Мотозапчасти</h4>
                       <ul class="footer-nav__content spoiler">
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотохимия</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Шины</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Расходники</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Лобовые стекла</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Пластик</a>
-                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотохимия</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Шины</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Расходники</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Лобовые стекла</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Пластик</a></li>
                       </ul>
                     </div>
                     <div class="footer-nav__list">
                       <h4 class="footer-nav__label" data-name="spoiler">Экипировка</h4>
                       <ul class="footer-nav__content spoiler">
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотошлемы</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотокуртки</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотокомбинезоны</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоперчатки</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоботы</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Аксессуары</a>
-                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Шлемы</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Куртки</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Брюки</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Комбинезоны</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Перчатки</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоботы</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Аксессуары</a></li>
                       </ul>
                     </div>
                   </div>
