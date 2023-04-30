@@ -207,6 +207,7 @@
             "alt": "stels-benelli",
             "title": "Обзор мотоцикла Stels 600 Benelli",
             "date": "15. 09. 2022",
+            "datetime": "2022-09-10",
             "author": "Автор: Алексей Иванов",
             "href": "article.html",
             "previewText": "Дорожный байк Stels 600 Benelli по праву можно назвать самым мощным в своей линейке. Двигатель мотоцикла оборотистый и позволяет легко и безопасно маневрировать в городском потоке."
@@ -216,6 +217,7 @@
             "alt": "dakar",
             "title": "Новый Baltmotors Dakar 250 E",
             "date": "10. 09. 2022",
+            "datetime": "2022-09-10",
             "author": "Автор: Игорь Андреев",
             "href": "article.html",
             "previewText": "Dakar 250 – это полноценный эндуро-мотоцикл, предназначенный для эксплуатации на дорогах общего пользования и на бездорожье: горной местности, песках и грязи."
@@ -225,6 +227,7 @@
             "alt": "Зимнее хранение мотоцикла",
             "title": "Зимнее хранение мотоцикла",
             "date": "01. 09. 2022",
+            "datetime": "2022-09-01",
             "author": "Автор: Алексей Иванов",
             "href": "article.html",
             "previewText": "Мы предлагаем услугу зимнего хранения Вашего мотоцикла. Стоимость услуги 2000 руб. за месяц хранения, расчет по дням. В эту стоимость входит доставка мотоцикла до места хранения на нашем оборудованном транспорте."
@@ -234,6 +237,7 @@
             "alt": "Кроссовые мотоциклы",
             "title": "Виды кроссовых мотоциклов",
             "date": "25. 08. 2022",
+            "datetime": "2022-08-25",
             "author": "Автор: Алексей Иванов",
             "href": "article.html",
             "previewText": "На кроссовых мотоциклах регулярно проводятся соревнования по гонкам на пересеченной местности. Данные мотоциклы выделяются в отдельный класс, прежде всего по объему двигателя."
@@ -243,6 +247,7 @@
             "alt": "Спортбайк",
             "title": "Нужен ли спортбайк в городе?",
             "date": "17. 08. 2022",
+            "datetime": "2022-08-17",
             "author": "Автор: Игорь Андреев",
             "href": "article.html",
             "previewText": "Многие новички хотят приобрести себе именно спортивный мотоцикл, а не классику. Но они едва ли задумываются о том, будет ли такой байк удобен для них в пределах города. Разбираемся вместе в этой статье."
@@ -252,9 +257,98 @@
             "alt": "Chopper Wels",
             "title": "Как выбрать чоппер?",
             "date": "11. 08. 2022",
+            "datetime": "2022-08-11",
             "author": "Автор: Игорь Андреев",
             "href": "article.html",
             "previewText": "С самого начала Вы должны дать четкий ответ на вопрос: какой объем двигателя Вас интересует? Многие рекомендуют подбирать байк с крупным мотором, но удобно ли это будет для новичка?"
+        }
+    ],
+    "motoCard": [
+        {
+            "motoInfo": {
+                "title": "Wels Impulse 250сс",
+                "articleNumber": "Артикул: 26894",
+                "price": "150 000 руб."
+            }
+        },
+        {
+            "motoColor": [
+                {
+                    "id": "white",
+                    "image": "wels-white.png",
+                    "alt": "Мотоцикл Wels Impulse 250cc белый"
+                },
+                {
+                    "id": "red",
+                    "image": "wels-red.png",
+                    "alt": "Мотоцикл Wels Impulse 250cc красный"
+                },
+                {
+                    "id": "black",
+                    "image": "wels-black.png",
+                    "alt": "Мотоцикл Wels Impulse 250cc черный"
+                }
+            ]
+        },
+        {
+            "tabColor": [
+                {
+                    "dataAttr": "#white",
+                    "classAttr": "btn-color__tab--white"
+                },
+                {
+                    "dataAttr": "#red",
+                    "classAttr": "btn-color__tab--red"
+                },
+                {
+                    "dataAttr": "#black",
+                    "classAttr": "btn-color__tab--black"
+                }
+            ]
+        }
+    ],
+    "outfitCard": [
+        {
+            "outfitInfo": {
+                "title": "SHOEI Мотошлем NEOTEC EXCURSION",
+                "articleNumber": "Артикул: 26673",
+                "price": "150 000 руб."
+            }
+        },
+        {
+            "outfitColor": [
+                {
+                    "id": "yellow",
+                    "image": "shoei-yellow.png",
+                    "alt": "Мотошлем Shoei желтый"
+                },
+                {
+                    "id": "grey",
+                    "image": "shoei-grey.png",
+                    "alt": "Мотошлем Shoei серый"
+                },
+                {
+                    "id": "white",
+                    "image": "shoei-white.png",
+                    "alt": "Мотошлем Shoei белый"
+                }
+            ]
+        },
+        {
+            "outfitTabColor": [
+                {
+                    "dataAttr": "#yellow",
+                    "classAttr": "btn-color__tab--yellow"
+                },
+                {
+                    "dataAttr": "#grey",
+                    "classAttr": "btn-color__tab--grey"
+                },
+                {
+                    "dataAttr": "#white",
+                    "classAttr": "btn-color__tab--white"
+                }
+            ]
         }
     ]
 }

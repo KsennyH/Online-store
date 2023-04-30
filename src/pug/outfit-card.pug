@@ -5,27 +5,32 @@ block variables
 
 block content
     .wrapper
-        include ./chunk/header.pug
+        header.header
+            include ./chunk/top-header.pug
+            include ./chunk/bottom-header.pug
 
         main.main
             .breadcrumbs 
                 .container 
                     ul.breadcrumbs__list
-                        +breadcrumbs("breadcrumbs__link", "index.html", "Главная")
-                        +breadcrumbs("breadcrumbs__link", "outfit.html", "Экипировка")
-                        +breadcrumbs("breadcrumbs__link", "#", "Шлемы")
+                        li.breadcrumbs__item
+                            +link("breadcrumbs__link", jsonData.nav[0].link, jsonData.nav[0].title)
+                        li.breadcrumbs__item
+                            +link("breadcrumbs__link", "outfit.html", "Экипировка")
+                        li.breadcrumbs__item
+                            +link("breadcrumbs__link", "#", "Шлемы")
                         li.breadcrumbs__item 
                             span.breadcrumbs__link.breadcrumbs__link--active SHOEI Мотошлем NEOTEC EXCURSION
             .card-block
                 .card-block__info
                     .container
-                        +product("SHOEI Мотошлем NEOTEC EXCURSION", "Артикул: 26673", "50 000 руб.")
+                        +product(jsonCards.outfitCard[0].outfitInfo.title, jsonCards.outfitCard[0].outfitInfo.articleNumber, jsonCards.outfitCard[0].outfitInfo.price)
                             block images
                                 .product__images  
-                                    include ./chunk/outfit-card-images.pug
+                                    +card-images(jsonCards.outfitCard[1].outfitColor)
                             block color-tabs
                                 .product__color
-                                    include ./chunk/outfit-color-block.pug
+                                    +color-block(jsonCards.outfitCard[2].outfitTabColor)
                             block size 
                                 .product__size 
                                     include ./chunk/outfit-size-block.pug
@@ -35,7 +40,8 @@ block content
                         .feature__bottom.js-features
                             .container 
                                 .feature__inner
-                                    include ./chunk/outfit-features.pug
+                                    .feature__characteristics
+                                        +characteristics(jsonData.outfitGeneralTitle, jsonData.outfitGeneral)
                 .card-block__text 
                     .container 
                         p NEOTEC II - обновленная версия популярного туристического Flip-Up шлема премиум класса NEOTECH. По сравнению с предшественником была серьезно улучшена система вентиляции и аэродинамика шлема. Обновленные подушечки обеспечивают более плотную посадку и фиксацию шлема на голове, а запирающая система 360° PIVOT LOCKING SYSTEM гарантирует безопасное и надежное закрытие лицевой части шлема.
@@ -44,6 +50,6 @@ block content
                         p Обивка полностью съемная и пригодна для стирки. Новые комфортные подушечки для щек с дополнительной шумоизоляцией. Для снижения уровня шума при длительных путешествиях предусмотрены дополнительные съемные ушные подушечки. Быстросъемный Pinlock, эффективно защищающий стекло от запотевания на большей площади, нежели в предыдущих моделях. Регулируемая система вентиляции, не уступающая по эффективности обычным шлемам-интегралам. 
                         p Форма шлема прошла доводку в аэродинамической трубе. Шлем получил встроенный спойлер в задней части, новый подбородочный спойлер и встроенный Vortex-генератор.
                         p Вес - около 1600 г.
-            include ./chunk/partners.pug
+            +partners(jsonData.partners)
         include ./chunk/footer.pug
     include ./chunk/login.pug

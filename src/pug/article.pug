@@ -5,14 +5,18 @@ block variables
 
 block content
     .wrapper
-        include ./chunk/header.pug
+        header.header
+            include ./chunk/top-header.pug
+            include ./chunk/bottom-header.pug
 
         main.main
             .breadcrumbs 
                 .container 
                     ul.breadcrumbs__list
-                        +breadcrumbs("breadcrumbs__link", "index.html", "Главная")
-                        +breadcrumbs("breadcrumbs__link", "articles.html", "Статьи")
+                        li.breadcrumbs__item
+                            +link("breadcrumbs__link", "index.html", "Главная")
+                        li.breadcrumbs__item
+                            +link("breadcrumbs__link", "articles.html", "Статьи")
                         li.breadcrumbs__item 
                             span.breadcrumbs__link.breadcrumbs__link--active Обзор мотоцикла Stels 600 Benelli
 
@@ -36,12 +40,6 @@ block content
                                         +comment("Олег", "Отличный байк! Брат недавно такой купил, я тоже собираюсь.", "2022-09-16", "16. 09. 2022")
                                 include ./chunk/add-comment.pug
                         .blog-page__aside
-                            .article-aside 
-                                .article-aside__search
-                                    include ./chunk/search-form.pug
-                                .article-aside__category
-                                    include ./chunk/category.pug
-                                .article-aside__tags
-                                    include ./chunk/tags.pug
+                            include ./chunk/article-aside
         include ./chunk/footer.pug
     include ./chunk/login.pug

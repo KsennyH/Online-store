@@ -5,13 +5,16 @@ block variables
 
 block content 
     .wrapper
-        include ./chunk/header.pug
+        header.header
+            include ./chunk/top-header.pug
+            include ./chunk/bottom-header.pug
 
         main.main 
             .breadcrumbs 
                 .container 
                     ul.breadcrumbs__list
-                        +breadcrumbs("breadcrumbs__link", "index.html", "Главная")
+                        li.breadcrumbs__item
+                            +link("breadcrumbs__link", "index.html", "Главная")
                         li.breadcrumbs__item 
                             span.breadcrumbs__link.breadcrumbs__link--active Корзина
             section.cart

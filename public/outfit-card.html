@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header"> 
+      <header class="header">
         <div class="top-header"> 
           <div class="container"> 
             <div class="top-header__inner"> 
@@ -31,12 +31,11 @@
                 </div>
                 <div class="top-header__users-wrapper"> <a class="user js-login" href="#" aria-label="Личный кабинет" data-user="user-login">
                     <svg class="user__icon"> 
-                      <use xlink:href="img/sprite.svg#user-busket"></use>
+                      <use xlink:href="img/sprite.svg#user-login"></use>
                     </svg><span class="user__label">Личный кабинет</span></a><a class="user" href="cart.html" aria-label="Корзина" data-user="user-cart">
                     <svg class="user__icon"> 
                       <use xlink:href="img/sprite.svg#user-busket"></use>
-                    </svg><span class="user__label">Корзина</span></a>
-                </div>
+                    </svg><span class="user__label">Корзина</span></a></div>
               </div>
               <div class="top-header__info"> 
                 <div class="address-information"> 
@@ -63,7 +62,7 @@
           <div class="container"> 
             <div class="navigation"> 
               <ul class="navigation__list"> 
-                <li class="navigation__item"> <a class="navigation__link navigation__link--active" href="#"> <span>Главная</span></a>
+                <li class="navigation__item"> <a class="navigation__link navigation__link--active" href="/"> <span>Главная</span></a>
                 </li>
                 <li class="navigation__item"> <a class="navigation__link" href="mototechnics.html"> <span>Мототехника</span></a>
                   <div class="dropdown"> 
@@ -98,6 +97,7 @@
                       <ul class="dropdown__list"> 
                         <li class="dropdown__item"><a class="dropdown__link" href="#">Шлемы</a></li>
                         <li class="dropdown__item"><a class="dropdown__link" href="#">Куртки</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Брюки</a></li>
                         <li class="dropdown__item"><a class="dropdown__link" href="#">Комбинезоны</a></li>
                         <li class="dropdown__item"><a class="dropdown__link" href="#">Перчатки</a></li>
                         <li class="dropdown__item"><a class="dropdown__link" href="#">Мотоботы</a></li>
@@ -124,20 +124,13 @@
             </div>
             <nav class="mobile-nav">
               <ul class="mobile-nav__list">
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="index.html">Главная</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="mototechnics.html">Мототехника</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="#">Мотозапчасти</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="outfit.html">Экипировка</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="motoservices.html">Мотосервис</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="articles.html">Статьи</a>
-                </li>
-                <li class="mobile-nav__item"> <a class="mobile-nav__link" href="contacts.html">Контакты</a>
-                </li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="/">Главная </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="mototechnics.html">Мототехника </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="outfit.html">Мотозапчасти </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="outfit.html">Экипировка </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="motoservices.html">Мотосервис </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="articles.html">Статьи </a></li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="contacts.html">Контакты </a></li>
               </ul>
             </nav>
           </div>
@@ -147,9 +140,12 @@
         <div class="breadcrumbs"> 
           <div class="container"> 
             <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
-              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="outfit.html">Экипировка</a></li>
-              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Шлемы</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a>
+              </li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="outfit.html">Экипировка</a>
+              </li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Шлемы</a>
+              </li>
               <li class="breadcrumbs__item"> <span class="breadcrumbs__link breadcrumbs__link--active">SHOEI Мотошлем NEOTEC EXCURSION</span></li>
             </ul>
           </div>
@@ -160,12 +156,9 @@
               <div class="product"> 
                 <div class="product__images"> 
                   <div class="card-images"> 
-                    <div class="card-images__image"> <picture><source srcset="img/shoei-yellow.webp" type="image/webp"><img class="js-tab" id="yellow" src="img/shoei-yellow.png" alt="Мотошлем Shoei желтый"/></picture>
-                    </div>
-                    <div class="card-images__image"> <picture><source srcset="img/shoei-grey.webp" type="image/webp"><img class="js-tab" id="grey" src="img/shoei-grey.png" alt="Мотошлем Shoei серый"/></picture>
-                    </div>
-                    <div class="card-images__image"> <picture><source srcset="img/shoei-white.webp" type="image/webp"><img class="js-tab" id="white" src="img/shoei-white.png" alt="Мотошлем Shoei белый"/></picture>
-                    </div>
+                    <div class="card-images__image"> <picture><source srcset="img/shoei-yellow.webp" type="image/webp"><img class="js-tab" id="yellow" src="img/shoei-yellow.png" alt="Мотошлем Shoei желтый"/></picture></div>
+                    <div class="card-images__image"> <picture><source srcset="img/shoei-grey.webp" type="image/webp"><img class="js-tab" id="grey" src="img/shoei-grey.png" alt="Мотошлем Shoei серый"/></picture></div>
+                    <div class="card-images__image"> <picture><source srcset="img/shoei-white.webp" type="image/webp"><img class="js-tab" id="white" src="img/shoei-white.png" alt="Мотошлем Shoei белый"/></picture></div>
                   </div>
                 </div>
                 <div class="product__content">
@@ -202,7 +195,7 @@
                         </li>
                       </ul>
                     </div>
-                  </div><span class="product__price">50 000 руб.</span>
+                  </div><span class="product__price">150 000 руб.</span>
                   <div class="product__buttons"> 
                     <button class="product__btn btn btn--busket"> 
                       <svg class="btn__icon" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -228,16 +221,18 @@
               <div class="feature__bottom js-features">
                 <div class="container"> 
                   <div class="feature__inner">
-                    <div class="characteristics"> 
-                      <h5 class="characteristics__title" data-name="spoiler-feature">Общие характеристики</h5>
-                      <div class="characteristics__wrapper spoiler-feature"> 
-                        <p>Модельный год: 2022</p>
-                        <p>Цвет: желтый, серый, белый</p>
-                        <p>Артикул: 67324</p>
-                        <p>Торговая марка: SHOEI</p>
-                        <p>Размеры:  S, M, L, XL</p>
-                        <p>Пол: мужской, женский</p>
-                        <p>Материал: многослойный композит</p>
+                    <div class="feature__characteristics">
+                      <div class="characteristics"> 
+                        <h5 class="characteristics__title" data-name="spoiler-feature">Общие характеристики</h5>
+                        <div class="characteristics__wrapper spoiler-feature"> 
+                          <p>Модельный год: 2022</p>
+                          <p>Цвет: желтый, серый, белый</p>
+                          <p>Артикул: 67324</p>
+                          <p>Торговая марка: SHOEI</p>
+                          <p>Размеры: S, M, L, XL</p>
+                          <p>Пол: мужской, женский</p>
+                          <p>Материал: многослойный композит</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -325,50 +320,34 @@
                     <div class="footer-nav__list">
                       <h4 class="footer-nav__label" data-name="spoiler">Мототехника</h4>
                       <ul class="footer-nav__content spoiler">
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоциклы</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мопеды</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Скутеры</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Квадроциклы</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Гидроциклы</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Снегоходы</a>
-                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоциклы</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мопеды</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Скутеры</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Квадроциклы</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Гидроциклы</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Снегоходы</a></li>
                       </ul>
                     </div>
                     <div class="footer-nav__list">
                       <h4 class="footer-nav__label" data-name="spoiler">Мотозапчасти</h4>
                       <ul class="footer-nav__content spoiler">
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотохимия</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Шины</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Расходники</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Лобовые стекла</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Пластик</a>
-                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотохимия</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Шины</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Расходники</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Лобовые стекла</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Пластик</a></li>
                       </ul>
                     </div>
                     <div class="footer-nav__list">
                       <h4 class="footer-nav__label" data-name="spoiler">Экипировка</h4>
                       <ul class="footer-nav__content spoiler">
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотошлемы</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотокуртки</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотокомбинезоны</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоперчатки</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоботы</a>
-                        </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Аксессуары</a>
-                        </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Шлемы</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Куртки</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Брюки</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Комбинезоны</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Перчатки</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мотоботы</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Аксессуары</a></li>
                       </ul>
                     </div>
                   </div>

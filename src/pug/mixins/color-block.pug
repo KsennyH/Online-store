@@ -4,4 +4,4 @@ mixin color-block(colors)
         ul.color-block__list 
             each item in colors
                 li.color-block__item 
-                    +btn-color(item.dataColor, item.colorClass)
+                    +btn-color(item.dataAttr, item.classAttr)

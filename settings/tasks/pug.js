@@ -8,7 +8,7 @@ export const pug = () => {
         .pipe(gulpPug({
             pretty: true,
             locals : {
-                jsonData: JSON.parse(fs.readFileSync("./src/js/data/checkbox.json", "utf8")),
+                jsonData: JSON.parse(fs.readFileSync("./src/js/data/data.json", "utf8")),
                 jsonCards: JSON.parse(fs.readFileSync("./src/js/data/cards.json", "utf8"))
             }
         }))

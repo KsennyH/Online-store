@@ -4,4 +4,4 @@ mixin dropdown(navItems)
             ul.dropdown__list 
                 each item in navItems
                     li.dropdown__item
-                        a(href=item.link).dropdown__link #{item.title}
+                        a(href=item.href).dropdown__link #{item.text}

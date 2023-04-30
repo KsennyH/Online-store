@@ -5,5 +5,5 @@ mixin toggle-block(title, inputs)
             .toggle-block__inputs
                 each item in inputs
                     label.toggle-block__label
-                        +input( item.id, item.min, item.max, item.placeholder, item.className, item.type)
+                        input(type="number", id=item.id, min=item.min, max=item.max, placeholder=item.placeholder).toggle-block__input
             .toggle-block__range

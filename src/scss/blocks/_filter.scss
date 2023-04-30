@@ -4,7 +4,10 @@
     &__settings {
         padding: 1.5625rem 1.125rem;
     }
-    &__price-block, &__technics-block, &__brands-block, &__size-block, &__mileage-block, &__material-block, &__type-block {
+    // &__price-block, &__technics-block, &__brands-block, &__size-block, &__mileage-block, &__material-block, &__type-block {
+    //     margin-bottom: 30px;
+    // }
+    &__item {
         margin-bottom: 30px;
     }
     &__btn {

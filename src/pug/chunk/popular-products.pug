@@ -5,28 +5,28 @@ section.popular-products
             .swiper-wrapper 
                 .swiper-slide 
                     .products-block__card
-                        +product-card("01", "1.jpg", "IRBIS VIRAGO", "IRBIS VIRAGO", "25 000 руб.")
+                        +product-card(jsonCards.moto[2].id, jsonCards.moto[2].image, jsonCards.moto[2].alt, jsonCards.moto[2].title, jsonCards.moto[2].price)
                 .swiper-slide 
                     .products-block__card
-                        +product-card("03", "3.jpg", "IRBIS TTR 110", "IRBIS TTR 110", "36 500 руб.")
+                        +product-card(jsonCards.moto[5].id, jsonCards.moto[5].image, jsonCards.moto[5].alt, jsonCards.moto[5].title, jsonCards.moto[5].price)
                 .swiper-slide 
                     .products-block__card
-                        +product-card("02", "2.jpg", "Racer VIPER", "Racer VIPER", "32 600 руб.")
+                        +product-card(jsonCards.outfit[5].id, jsonCards.outfit[5].image, jsonCards.outfit[5].alt, jsonCards.outfit[5].title, jsonCards.outfit[5].price)
                 .swiper-slide
                     .products-block__card 
-                        +product-card("04", "4.jpg", "Motoland CRF 10", "Motoland CRF 10", "40 000 руб.")
+                        +product-card(jsonCards.outfit[0].id, jsonCards.outfit[0].image, jsonCards.outfit[0].alt, jsonCards.outfit[0].title, jsonCards.outfit[0].price)
                 .swiper-slide 
                     .products-block__card
-                        +product-card("05", "5.jpg", "Racer SKYWAY", "Racer SKYWAY", "45 000 руб.")
+                        +product-card(jsonCards.moto[8].id, jsonCards.moto[8].image, jsonCards.moto[8].alt, jsonCards.moto[8].title, jsonCards.moto[8].price)
                 .swiper-slide 
                     .products-block__card
-                        +product-card("06", "6.jpg", "Irbis ttr 125", "Irbis ttr 125", "54 000 руб.")
+                        +product-card(jsonCards.moto[4].id, jsonCards.moto[4].image, jsonCards.moto[4].alt, jsonCards.moto[4].title, jsonCards.moto[4].price)
                 .swiper-slide 
                     .products-block__card
-                        +product-card("05", "5.jpg", "Racer SKYWAY", "Racer SKYWAY", "45 000 руб.")
+                        +product-card(jsonCards.outfit[7].id, jsonCards.outfit[7].image, jsonCards.outfit[7].alt, jsonCards.outfit[7].title, jsonCards.outfit[7].price)
                 .swiper-slide 
                     .products-block__card
-                        +product-card("06", "6.jpg", "Irbis ttr 125", "Irbis ttr 125", "54 000 руб.")
+                        +product-card(jsonCards.moto[6].id, jsonCards.moto[6].image, jsonCards.moto[6].alt, jsonCards.moto[6].title, jsonCards.moto[6].price)
             .popular-products__btns 
                 .swiper-button-prev 
                     img(src="@img/prev-arrow.svg", alt="Кнопка назад")

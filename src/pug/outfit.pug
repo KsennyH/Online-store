@@ -5,13 +5,16 @@ block variables
 
 block content 
     .wrapper
-        include ./chunk/header.pug
+        header.header
+            include ./chunk/top-header.pug
+            include ./chunk/bottom-header.pug
 
         main.main 
             .breadcrumbs 
                 .container 
                     ul.breadcrumbs__list
-                        +breadcrumbs("breadcrumbs__link", "index.html", "Главная")
+                        li.breadcrumbs__item 
+                            +link("breadcrumbs__link", "index.html", "Главная")
                         li.breadcrumbs__item 
                             span.breadcrumbs__link.breadcrumbs__link--active Экипировка
             .catalog
@@ -21,16 +24,16 @@ block content
                             img(src="@img/filter.svg", alt="Фильтр")
                         aside.catalog__filter
                             form(action="/").filter.js-filter
-                                .filter__price-block
-                                    include ./chunk/price-block.pug
-                                .filter__technics-block
+                                .filter__item
+                                    +toggle-block(jsonData.togglePriceTitle, jsonData.priceInput)
+                                .filter__item
                                     +check(jsonData.outfitTypeTitle, jsonData.outfitType)
-                                .filter__type-block 
+                                .filter__item
                                     +check(jsonData.outfitTargetTitle, jsonData.outfitTarget)
-                                .filter__brands-block 
+                                .filter__item
                                     +check(jsonData.outfitBrandTitle, jsonData.outfitBrand)
-                                .filter__material-block 
-                                    include ./chunk/material-block.pug
+                                .filter__item 
+                                    +radio-block(jsonData.radioMaterialTitle, jsonData.radioMaterial)
                                 .filter__btn 
                                     button(type="submit").btn.btn--small Показать
                                 .filter__reset 

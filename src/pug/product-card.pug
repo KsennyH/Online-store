@@ -5,35 +5,45 @@ block variables
 
 block content
     .wrapper
-        include ./chunk/header.pug
+        header.header
+            include ./chunk/top-header.pug
+            include ./chunk/bottom-header.pug
 
         main.main
             .breadcrumbs 
                 .container 
                     ul.breadcrumbs__list
-                        +breadcrumbs("breadcrumbs__link", "index.html", "Главная")
-                        +breadcrumbs("breadcrumbs__link", "mototechnics.html", "Мототехника")
-                        +breadcrumbs("breadcrumbs__link", "#", "Мотоциклы")
+                        li.breadcrumbs__item 
+                            +link("breadcrumbs__link", jsonData.nav[0].link, jsonData.nav[0].title)
+                        li.breadcrumbs__item
+                            +link("breadcrumbs__link", "mototechnics.html", "Мототехника")
+                        li.breadcrumbs__item
+                            +link("breadcrumbs__link", "#", "Мотоциклы")
                         li.breadcrumbs__item 
                             span.breadcrumbs__link.breadcrumbs__link--active Wels Impulse 250сс
         
             .card-block
                 .card-block__info
                     .container
-                        +product("Wels Impulse 250сс", "Артикул: 26894", "150 000 руб.")
+                        +product(jsonCards.motoCard[0].motoInfo.title, jsonCards.motoCard[0].motoInfo.articleNumber, jsonCards.motoCard[0].motoInfo.price)
                             block images
                                 .product__images  
-                                    include ./chunk/moto-card-images.pug
+                                    +card-images(jsonCards.motoCard[1].motoColor)
                             block color-tabs
                                 .product__color
-                                    include ./chunk/moto-color-block.pug
+                                    +color-block(jsonCards.motoCard[2].tabColor)
                 .card-block__feature
                     .feature 
                         include ./chunk/feature-top.pug
                         .feature__bottom.js-features
                             .container 
                                 .feature__inner
-                                    include ./chunk/moto-features.pug
+                                    .feature__characteristics
+                                        +characteristics(jsonData.motoGeneralTitle, jsonData.motoGeneral)
+                                    .feature__characteristics
+                                        +characteristics(jsonData.motoEngineTitle, jsonData.motoEngine)
+                                    .feature__characteristics
+                                        +characteristics(jsonData.motoChassisTitle, jsonData.motoChassis)
                 .card-block__text 
                     .container 
                         p Спортбайк начального уровня. Небольшой объем двигателя (250сс) и вес мотоцикла. Спортивная посадка и хорошая ветрозащита на скорости. Благодаря этому мотоцикл легко управляется даже пилотом без опыта вождения. Маленький расход топлива позволяет преодолевать большие расстояния на одном баке.
@@ -42,7 +52,7 @@ block content
                         p Производитель не скрывает того что Yamaha R1 послужила прообразом для создания IMPULSE 250cc. Даже цвет был позаимствован от юбилейной модели 2012 года.
                         p Освещение на дороге обеспечивает фара с двумя линзами и LED подсветкой – ночь теперь дороге не помеха. Фары ближнего и дальнего света разделены, как и на R1. Свет они излучают яркий и сверхточный. В отличие от своего прототипа передние сигналы поворота на IMPULSE переехали с боковых обтекателей чуть ближе к головной оптике. 
                         p Мотоцикл, который простит начинающему райдеру первые ошибки и даст начальные навыки для езды на таком классе как «спорт».
-            include ./chunk/partners.pug
+            +partners(jsonData.partners)
 
         include ./chunk/footer.pug
     include ./chunk/login.pug

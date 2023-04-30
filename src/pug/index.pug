@@ -5,11 +5,13 @@ block variables
 
 block content
     .wrapper
-        include ./chunk/header.pug
+        header.header
+            include ./chunk/top-header.pug
+            include ./chunk/bottom-header.pug
 
         main.main
             include ./chunk/motomir.pug
-            include ./chunk/partners.pug
+            +partners(jsonData.partners)
             include ./chunk/popular-products.pug
             include ./chunk/moto-news.pug
         include ./chunk/footer.pug

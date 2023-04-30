@@ -2,4 +2,4 @@ mixin card-images(images)
     .card-images 
         each item in images
             .card-images__image 
-                +image-color(item.id, item.image, item.alt)
+                img(id=item.id, src="@img/" + item.image, alt=item.alt).js-tab

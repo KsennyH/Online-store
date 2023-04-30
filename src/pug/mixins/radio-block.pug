@@ -3,5 +3,8 @@ mixin radio-block(title, radioList)
         h5.radio-block__title.filter-title #{title}
         ul.radio-block__list 
             each item in radioList 
-                li.radio-block__item 
-                    +radio(item.name, item.text)
+                li.radio-block__item
+                    label.radio
+                        input(name=item.name, type="radio").radio__input
+                        span.radio__custom.custom-radio
+                        span.radio__name #{item.text} 

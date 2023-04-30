@@ -1,0 +1,7 @@
+.article-aside 
+    .article-aside__search
+        include ./search-form.pug
+    .article-aside__category
+        +category(jsonData.categoryTitle, jsonData.category)
+    .article-aside__tags
+        +tags(jsonData.tagsTitle, jsonData.tags)

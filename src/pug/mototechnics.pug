@@ -5,13 +5,16 @@ block variables
 
 block content 
     .wrapper
-        include ./chunk/header.pug
+        header.header
+            include ./chunk/top-header.pug
+            include ./chunk/bottom-header.pug
 
         main.main 
             .breadcrumbs 
                 .container 
                     ul.breadcrumbs__list
-                        +breadcrumbs("breadcrumbs__link", "index.html", "Главная")
+                        li.breadcrumbs__item 
+                            +link("breadcrumbs__link", jsonData.nav[0].link, jsonData.nav[0].title)
                         li.breadcrumbs__item 
                             span.breadcrumbs__link.breadcrumbs__link--active Мототехника
             .catalog
@@ -21,18 +24,18 @@ block content
                             img(src="@img/filter.svg", alt="Фильтр")
                         aside.catalog__filter
                             form(action="/").filter.js-filter
-                                .filter__price-block
-                                    include ./chunk/price-block.pug
-                                .filter__technics-block
+                                .filter__item
+                                    +toggle-block(jsonData.togglePriceTitle, jsonData.priceInput)
+                                .filter__item
                                     +check(jsonData.technicsTitle, jsonData.technics)
-                                .filter__type-block 
+                                .filter__item 
                                     +check(jsonData.technicsTypeTitle, jsonData.technicsType)
-                                .filter__brands-block 
+                                .filter__item
                                     +check(jsonData.brandsTitle, jsonData.brands)
-                                .filter__size-block 
-                                    include ./chunk/size-block.pug
-                                .filter__mileage-block 
-                                    include ./chunk/mileage-block.pug
+                                .filter__item
+                                    +toggle-block(jsonData.toggleSizeTitle, jsonData.sizeInput)
+                                .filter__item
+                                    +radio-block(jsonData.radioMileageTitle, jsonData.radioMileage)
                                 .filter__btn 
                                     button(type="submit").btn.btn--small Показать
                                 .filter__reset 

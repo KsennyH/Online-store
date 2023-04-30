@@ -1,5 +1,3 @@
-
-
 .footer 
     .footer__content 
         .container 
@@ -14,7 +12,10 @@
                         .address-information__schedule
                             include ./schedule.pug
                     .footer__nav
-                        include ./footer-nav.pug
+                        .footer-nav 
+                            +footerNav(jsonData.technics, jsonData.nav[1].title)
+                            +footerNav(jsonData.spareParts, jsonData.nav[2].title)
+                            +footerNav(jsonData.outfitType, jsonData.nav[3].title)
     .footer__copyright
         .container 
             p © Магазин мототехники 2018 - 2022
