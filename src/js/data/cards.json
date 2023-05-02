@@ -98,6 +98,17 @@
             "text": "В наличии",
             "articleNumber": "Артикул: 18531",
             "year": "2021"
+        },
+        {
+            "id": "50",
+            "image": "wels-white.png",
+            "alt": "Мотоцикл Wels Impulse 250cc белый",
+            "title": "Wels Impulse 250сс",
+            "price": "150 000 руб.",
+            "link": "product-card.html",
+            "text": "В наличии",
+            "articleNumber": "Артикул: 26894",
+            "year": "2021"
         }
     ],
     "outfit": [
@@ -266,6 +277,7 @@
     "motoCard": [
         {
             "motoInfo": {
+                "id": "50",
                 "title": "Wels Impulse 250сс",
                 "articleNumber": "Артикул: 26894",
                 "price": "150 000 руб."
@@ -310,9 +322,10 @@
     "outfitCard": [
         {
             "outfitInfo": {
+                "id": "60",
                 "title": "SHOEI Мотошлем NEOTEC EXCURSION",
                 "articleNumber": "Артикул: 26673",
-                "price": "150 000 руб."
+                "price": "50 000 руб."
             }
         },
         {

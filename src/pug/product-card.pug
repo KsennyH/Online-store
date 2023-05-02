@@ -25,7 +25,7 @@ block content
             .card-block
                 .card-block__info
                     .container
-                        +product(jsonCards.motoCard[0].motoInfo.title, jsonCards.motoCard[0].motoInfo.articleNumber, jsonCards.motoCard[0].motoInfo.price)
+                        +product(jsonCards.motoCard[0].motoInfo.title, jsonCards.motoCard[0].motoInfo.articleNumber, jsonCards.motoCard[0].motoInfo.price, jsonCards.motoCard[0].motoInfo.id)
                             block images
                                 .product__images  
                                     +card-images(jsonCards.motoCard[1].motoColor)

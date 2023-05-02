@@ -24,7 +24,7 @@ block content
             .card-block
                 .card-block__info
                     .container
-                        +product(jsonCards.outfitCard[0].outfitInfo.title, jsonCards.outfitCard[0].outfitInfo.articleNumber, jsonCards.outfitCard[0].outfitInfo.price)
+                        +product(jsonCards.outfitCard[0].outfitInfo.title, jsonCards.outfitCard[0].outfitInfo.articleNumber, jsonCards.outfitCard[0].outfitInfo.price, jsonCards.outfitCard[0].outfitInfo.id)
                             block images
                                 .product__images  
                                     +card-images(jsonCards.outfitCard[1].outfitColor)

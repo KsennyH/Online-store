@@ -1,15 +1,15 @@
 mixin product-card(id, image, alt, title, price, link, text, article, year)
-    article(data-id=id).product-card
+    article(data-id=id).product-card.js-card
         .product-card__img 
             img(src="img/" + image, alt=alt).js-img-card
         .product-card__info 
-            h3.product-card__title.card-title #{title}
+            h3.product-card__title.card-title.js-title #{title}
             .product-card__content 
                 span.product-card__article #{article}
                 .product-card__information 
                     span.product-card__year #{year}
                     span.product-card__text #{text}
-        span.product-card__price.btn.btn--price #{price}
+        span.product-card__price.btn.btn--price.js-price #{price}
         .product-card__overlay
             a(href=link).product-card__overlay-link.btn.btn--link Подробнее
             button(data-cart).product-card__btn.btn.btn--busket

@@ -82,13 +82,13 @@ function renderCard(el) {
 
 function addCard(e) {
     if(e.target.hasAttribute('data-cart')) {
-        const card = e.target.closest('.product-card');
+        const card = e.target.closest('.js-card');
 
         const dataProduct = {
             id: card.dataset.id,
             imgSrc: card.querySelector('.js-img-card').getAttribute('src'),
-            title: card.querySelector('.product-card__title').innerText,
-            price: card.querySelector('.product-card__price').innerText
+            title: card.querySelector('.js-title').innerText,
+            price: card.querySelector('.js-price').innerText
         };
 
         cardsList.push(dataProduct);
