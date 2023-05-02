@@ -231,12 +231,37 @@ body {
   pointer-events: none;
 }
 
+.user__counter {
+  position: relative;
+}
+
 .user__icon {
   flex: 0 0 25px;
   display: inline-block;
   margin-right: 15px;
   width: 25px;
   height: 25px;
+}
+
+.user__quantity {
+  position: absolute;
+  background-color: #2EF30E;
+  padding: 7px;
+  top: -3px;
+  right: 7px;
+  border-radius: 50%;
+  color: #000;
+  font-size: 9px;
+  font-weight: 600;
+  width: 15px;
+  height: 15px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.user__quantity.active {
+  display: flex;
 }
 
 .address-information__item {
@@ -2346,6 +2371,7 @@ body {
   border-radius: 20px;
   padding: 1.875rem 0;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .busket__title {
@@ -2479,7 +2505,7 @@ body {
 }
 
 .cart {
-  padding: 15px 0 30px 0;
+  padding-top: 15px;
 }
 
 .cart__title {

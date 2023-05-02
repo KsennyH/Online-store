@@ -11,7 +11,9 @@
                         +svg("user__icon", "user-login")
                         span.user__label Личный кабинет
                     a(href="cart.html" aria-label="Корзина" data-user="user-cart").user
-                        +svg("user__icon", "user-busket")
+                        .user__counter
+                            +svg("user__icon", "user-cart")
+                            span.user__quantity
                         span.user__label Корзина
             .top-header__info 
                 include ./address-information

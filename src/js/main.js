@@ -35,6 +35,7 @@ if(localStorage.getItem('cards')) {
     cardsList.forEach((el) => renderCard(el));
 }
 
+showQuantity();
 checkEmptyCart();
 getPrice();
 
@@ -96,6 +97,7 @@ function addCard(e) {
 
         renderCard(dataProduct);
 
+        showQuantity();
         checkEmptyCart();
         getPrice();
     }
@@ -112,6 +114,7 @@ function deleteCard(e) {
 
         cardForDeleate.remove();
 
+        showQuantity();
         checkEmptyCart();
         getPrice();
     }
@@ -158,6 +161,7 @@ function changeCounter(e) {
     }
 
     if( e.target.dataset.button === "up" || e.target.dataset.button === "down" ) {
+        showQuantity();
         getPrice();
     }
     console.log(cardsList);
@@ -199,6 +203,17 @@ function getPrice() {
     totalPriceElement.innerText = totalPrice;
 }
 
+function showQuantity() {
+    const userCounter = document.querySelector('.user__quantity');
+    let quantity = cardsList.length;
+
+    if(quantity > 0) {
+        userCounter.classList.add('active');
+        userCounter.innerText = quantity;
+    } else {
+        userCounter.classList.remove('active');
+    }
+}
 
 
 
