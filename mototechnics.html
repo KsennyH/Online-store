@@ -33,9 +33,11 @@
                     <svg class="user__icon"> 
                       <use xlink:href="img/sprite.svg#user-login"></use>
                     </svg><span class="user__label">Личный кабинет</span></a><a class="user" href="cart.html" aria-label="Корзина" data-user="user-cart">
-                    <svg class="user__icon"> 
-                      <use xlink:href="img/sprite.svg#user-busket"></use>
-                    </svg><span class="user__label">Корзина</span></a></div>
+                    <div class="user__counter">
+                      <svg class="user__icon"> 
+                        <use xlink:href="img/sprite.svg#user-cart"></use>
+                      </svg><span class="user__quantity"></span>
+                    </div><span class="user__label">Корзина</span></a></div>
               </div>
               <div class="top-header__info"> 
                 <div class="address-information"> 
@@ -545,28 +547,6 @@
             </div>
           </div>
         </div>
-        <section class="cart">
-          <div class="container"> 
-            <h1 class="cart__title title">Корзина товаров</h1>
-            <div class="cart__info none">
-              <div class="cart-header">
-                <div class="card-header__name">Название</div>
-                <div class="card-header__count">Количество</div>
-                <div class="card-header__price">Цена</div>
-              </div>
-            </div>
-            <div class="cart-products"></div>
-            <div class="cart__total none"> 
-              <div class="cart-footer">
-                <div class="cart-footer__total"> <span>Всего:</span><span data-total="data-total">0</span><span>руб.</span></div>
-              </div>
-            </div>
-            <div class="busket"> 
-              <h2 class="busket__title title">К сожалению, Ваша корзина пуста</h2>
-              <p class="busket__description">Вы можете это исправить: выберите в каталоге интересующий товар и нажмите кнопку “В корзину”.</p>
-            </div>
-          </div>
-        </section>
       </main>
       <div class="footer"> 
         <div class="footer__content"> 

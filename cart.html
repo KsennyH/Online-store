@@ -33,9 +33,11 @@
                     <svg class="user__icon"> 
                       <use xlink:href="img/sprite.svg#user-login"></use>
                     </svg><span class="user__label">Личный кабинет</span></a><a class="user" href="cart.html" aria-label="Корзина" data-user="user-cart">
-                    <svg class="user__icon"> 
-                      <use xlink:href="img/sprite.svg#user-busket"></use>
-                    </svg><span class="user__label">Корзина</span></a></div>
+                    <div class="user__counter">
+                      <svg class="user__icon"> 
+                        <use xlink:href="img/sprite.svg#user-cart"></use>
+                      </svg><span class="user__quantity"></span>
+                    </div><span class="user__label">Корзина</span></a></div>
               </div>
               <div class="top-header__info"> 
                 <div class="address-information"> 
@@ -149,58 +151,22 @@
         <section class="cart">
           <div class="container"> 
             <h1 class="cart__title title">Корзина товаров</h1>
-            <div class="cart-header">
-              <div class="card-header__name">Название</div>
-              <div class="card-header__count">Количество</div>
-              <div class="card-header__price">Цена</div>
-            </div>
-            <div class="cart-products"> 
-              <div class="cart-product"> 
-                <div class="cart-product__img"> <picture><source srcset="img/outfit-1.webp" type="image/webp"><img src="img/outfit-1.jpeg" alt="Перчатки"/></picture></div>
-                <div class="cart-product__title">MCP Мотоперчатки классические Wicklow</div>
-                <div class="cart-product__counter">
-                  <div class="counter"> 
-                    <button class="counter__btn counter__btn--down" type="button" data-button="down">-</button>
-                    <input class="counter__input" type="number" data-counter="data-counter" value="1"/>
-                    <button class="counter__btn counter__btn--up" type="button" data-button="up">+</button>
-                  </div>
-                </div>
-                <div class="cart-product__price">2 500 руб.</div>
-                <button class="cart-product__deleate btn-close" type="button"><span> </span></button>
-              </div>
-              <div class="cart-product"> 
-                <div class="cart-product__img"> <picture><source srcset="img/3.webp" type="image/webp"><img src="img/3.jpg" alt="Мотоцикл"/></picture></div>
-                <div class="cart-product__title">IRBIS TTR 110</div>
-                <div class="cart-product__counter">
-                  <div class="counter"> 
-                    <button class="counter__btn counter__btn--down" type="button" data-button="down">-</button>
-                    <input class="counter__input" type="number" data-counter="data-counter" value="1"/>
-                    <button class="counter__btn counter__btn--up" type="button" data-button="up">+</button>
-                  </div>
-                </div>
-                <div class="cart-product__price">36 500 руб.</div>
-                <button class="cart-product__deleate btn-close" type="button"><span> </span></button>
-              </div>
-              <div class="cart-product"> 
-                <div class="cart-product__img"> <picture><source srcset="img/outfit-9.webp" type="image/webp"><img src="img/outfit-9.jpeg" alt="Шлем"/></picture></div>
-                <div class="cart-product__title">SHOEI Мотошлем NEOTECH EXCURSION</div>
-                <div class="cart-product__counter">
-                  <div class="counter"> 
-                    <button class="counter__btn counter__btn--down" type="button" data-button="down">-</button>
-                    <input class="counter__input" type="number" data-counter="data-counter" value="1"/>
-                    <button class="counter__btn counter__btn--up" type="button" data-button="up">+</button>
-                  </div>
-                </div>
-                <div class="cart-product__price">50 000 руб.</div>
-                <button class="cart-product__deleate btn-close" type="button"><span> </span></button>
+            <div class="cart__info none">
+              <div class="cart-header">
+                <div class="card-header__name">Название</div>
+                <div class="card-header__count">Количество</div>
+                <div class="card-header__price">Цена</div>
               </div>
             </div>
-            <div class="cart-footer">
-              <div class="cart-footer__total"> <span>Всего:</span><span>89 000 руб.</span></div>
+            <div class="cart-products"> </div>
+            <div class="cart__total none"> 
+              <div class="cart-footer">
+                <div class="cart-footer__total"> <span>Всего:</span><span data-total="data-total">0</span><span>руб.</span></div>
+              </div>
             </div>
           </div>
         </section>
-        <section class="busket none"> 
+        <section class="busket"> 
           <div class="container"> 
             <h2 class="busket__title title">К сожалению, Ваша корзина пуста</h2>
             <p class="busket__description">Вы можете это исправить: выберите в каталоге интересующий товар и нажмите кнопку “В корзину”.</p><a class="btn" href="mototechnics.html">Перейти в каталог</a>
