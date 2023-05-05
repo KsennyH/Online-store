@@ -8,12 +8,12 @@ import spoilerFooter from "./modules/spoilerFooter.js";
 import counter from "./modules/counter.js";
 import deleateFromCart from "./modules/deleateFromCart.js";
 import addToCart from "./modules/addToCart.js";
-import loginModal from "./modules/loginModal.js";
+// import loginModal from "./modules/loginModal.js";
 
 // deleateFromCart();
 // counter();
 // addToCart();
-loginModal();
+// loginModal();
 mobileNavigation();
 tabs();
 features();
@@ -164,7 +164,6 @@ function changeCounter(e) {
         showQuantity();
         getPrice();
     }
-    console.log(cardsList);
 }
 
 function checkEmptyCart() {
@@ -214,6 +213,10 @@ function showQuantity() {
         userCounter.classList.remove('active');
     }
 }
+
+
+import login from "./modules/login.js";
+login();
 
 
 
